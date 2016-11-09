@@ -1,0 +1,549 @@
+
+* {
+    margin: 0px;
+}
+
+li {
+    list-style: none
+}
+ul{margin:0px;}
+ 
+.uploadifyQueue {
+    margin: 1em 0
+}
+
+.uploadifyQueueItem {
+    background-color: #f5f5f5;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    font: 11px Verdana,Geneva,sans-serif;
+    margin-top: 5px;
+    max-width: 350px;
+    padding: 10px
+}
+
+.uploadifyError {
+    background-color: #fde5dd!important
+}
+
+.uploadifyQueueItem .cancel {
+    float: right
+}
+
+.uploadifyQueue .completed {
+    background-color: #e5e5e5
+}
+
+.uploadifyProgress {
+    background-color: #e5e5e5;
+    margin-top: 10px;
+    width: 100%
+}
+
+.uploadifyProgressBar {
+    background-color: #09f;
+    height: 3px;
+    width: 1px
+}
+
+.in-step-1,.in-step-2,.in-step-3 {
+    display: none
+}
+
+.step-1 .in-step-1,.step-2 .in-step-2,.step-3 .in-step-3 {
+    display: block
+}
+
+#file_upload {
+}
+
+li.file {
+}
+
+li.file .file-thumb {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: url(fancyupload/file.gif) center no-repeat;
+    left: 12px;
+    top: 12px;
+}
+
+.file-thumb-title {
+    display: none;
+    background: transparent url(../img/success.gif) no-repeat scroll left center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 20px;
+    line-height: 20px;
+    padding-left: 30px
+}
+
+li.post .file-name {
+    display: none;
+    position: absolute;
+    font: bold 14px Tahoma,Verdana,sans-serif;
+    line-height: 50px;
+    left: 45px;
+    top: 0
+}
+
+li.file .file-info {
+    font: 12px normal;
+    margin-left: 10px
+}
+
+li.file .file-remove {
+}
+
+li.file .file-saving {
+    display: none;
+    background: transparent url(fancyupload/progress.gif) no-repeat scroll left center;
+    padding-left: 20px
+}
+
+li.file .file-size {
+}
+
+li.file.file-uploading {
+    background-color: #fff2e1
+}
+
+li.file.file-uploading .file-thumb {
+    background-image: url(fancyupload/uploading.gif)
+}
+
+li.file.file-uploading .file-remove {
+    display: none
+}
+
+li.file.file-success {
+}
+
+li.file.file-success .file-thumb-title {
+}
+
+li.file.file-success .file-thumb {
+    width: 120px;
+    height: 120px;
+    background-image: url(fancyupload/success.gif)
+}
+
+li.file.file-failed .file-info {
+    color: #d64b0d
+}
+
+li.file.file-failed .file-thumb {
+    background-image: url(fancyupload/failed.gif)
+}
+
+li.file .file-up {
+    cursor: pointer;
+    width: 16px;
+    height: 16px;
+    margin: 10px auto;
+    background: transparent url(images/image_up.png) no-repeat
+}
+
+li.file .file-down {
+    cursor: pointer;
+    width: 16px;
+    height: 16px;
+    margin: 10px auto;
+    background: transparent url(images/image_down.png) no-repeat
+}
+
+li.file.is-first .file-up {
+    display: none
+}
+
+li.file.is-last .file-down {
+    display: none
+}
+
+.quote {
+    background: url(images/quote_start.gif) no-repeat;
+    margin-top: 8px;
+    padding: 0 0 0 18px
+}
+
+.quote q {
+    background: transparent url(images/quote_end.gif) no-repeat 100% 100%;
+    color: #555;
+    display: inline;
+    padding-right: 18px
+}
+
+em,cite {
+    font-style: normal
+}
+
+input.general-title {
+    width: 400px;
+    font-size: 14px;
+    padding: 3px
+}
+
+input.half-title {
+    width: 290px;
+    font-size: 14px
+}
+
+textarea.general-description {
+    width: 600px;
+    height: 120px
+}
+
+textarea.general-content {
+    width: 600px;
+    height: 300px
+}
+
+textarea.growarea {
+    overflow: auto
+}
+
+.radius {
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px
+}
+
+.radius-top {
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-topright: 5px;
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-top-right-radius: 5px
+}
+
+#side,.post-bar,.filter-bar,.box-shadow,section.with-bg,.feed-list>li,#posts .tb-wrapper {
+    box-shadow: 2px 2px 2px 0 rgba(0,0,0,.2);
+    border: 1px solid #ccc;
+    border-left: 1px solid #ccc
+}
+
+.ir {
+    text-indent: -9999px;
+    display: block;
+    text-align: left;
+    cursor: pointer
+}
+ 
+
+.debug {
+    display: none
+}
+
+#main section.with-bg {
+    background: #fff;
+    margin: 2em 0
+}
+
+#main section.first {
+    margin-top: 0
+}
+
+#side section,#side .section {
+    margin: 1em 0;
+    position: relative
+}
+
+#side>section>ol,#side>section>ul {
+    overflow: hidden
+}
+
+#side section ul li {
+    line-height: 2em
+}
+
+form fieldset {
+    border-bottom: none;
+    border-right: none;
+    border-top: 2px solid #ccc;
+    position: relative;
+    left: -2px;
+    margin: 10px 0
+}
+
+form fieldset legend {
+    background: #eee;
+    font-size: 14px;
+    font-weight: normal;
+    height: 2em;
+    line-height: 2em;
+    margin: 0 0 0 30px;
+    padding: 0 10px
+}
+
+form p.radio {
+}
+
+form p.radio label.radio {
+    line-height: 3em
+}
+
+form label.radio input.radio {
+    margin-left: .5em;
+    vertical-align: -1px
+}
+
+.form {
+    margin-top: 12px;
+    overflow: hidden
+}
+
+.form dt {
+    float: left;
+    clear: left;
+    font-size: 14px;
+    width: 100px;
+    text-align: right;
+    padding: 4px 0 15px;
+    margin: 0 10px 0 0
+}
+
+.form dd {
+    text-align: left;
+    position: relative;
+    font-size: 12px;
+    margin: 0 0 10px 0;
+    overflow: hidden
+}
+
+.form dd.form-last {
+    margin-bottom: 0
+}
+
+.form dt label {
+    line-height: 1em
+}
+
+.form dd input {
+    line-height: 20px;
+    height: 20px;
+    padding: 3px 3px 3px;
+    width: 194px; 
+  
+}
+
+.form.long-text dd input.text {
+    width: 264px
+}
+
+.form dd input.radio {
+    padding: 0;
+    width: auto;
+    height: auto
+}
+
+.form dd input.checkbox {
+}
+
+.form dd select {
+    margin-top: 3px;
+    padding: 3px 3px 3px
+}
+
+.form dd textarea {
+    width: 264px;
+    height: 105px
+}
+
+.form dd textarea.general-description {
+    width: 500px;
+    height: 150px
+}
+
+.form dd p {
+    color: #9e9e89
+}
+
+.form dd span {
+    position: absolute;
+    left: 210px;
+    top: 0;
+    padding: 5px 10px 4px 25px;
+    border: 0;
+    background: #ffffe0 url(images/icon_attention.gif) no-repeat 5px center
+}
+
+textarea,input[type=text],input[type=password] {
+	/*font-family:"Microsoft Yahei",Tahoma,Verdana,Arial,STHeiTi;
+	background:#fff url(images/input.gif) no-repeat scroll left top;*/
+    border: 1px solid #cfcec3
+}
+
+textarea {
+    display: block;
+    overflow: auto; 
+    padding: 3px;
+    outline: none
+}
+
+textarea:focus,input[type=text]:focus,input[type=password]:focus {
+    border-color: #bbbbb4
+}
+
+.uploadify {
+    position: relative;
+    margin-bottom: 1em
+}
+  
+.uploadify-queue {
+    margin-bottom: 1em
+}
+
+.uploadify-queue-item {
+    background-color: #f5f5f5;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    font: 11px Verdana,Geneva,sans-serif;
+    margin-top: 5px; 
+    padding: 10px
+}
+
+.uploadify-error {
+    background-color: #fde5dd!important
+}
+
+.uploadify-queue-item .cancel a {
+    background: url('../img/uploadify-cancel.png') 0 0 no-repeat;
+    float: right;
+    height: 16px;
+    text-indent: -9999px;
+    width: 16px
+}
+
+.uploadify-queue-item.completed {
+    background-color: #e5e5e5
+}
+
+.uploadify-progress {
+    background-color: #e5e5e5;
+    margin-top: 10px;
+    width: 100%
+}
+
+.uploadify-progress-bar {
+    background-color: #09f;
+    height: 3px;
+    width: 1px
+}
+
+.ipost-list {
+    position: relative;
+    width: 100%
+}
+
+.ipost-list .tpl {
+    display: none
+}
+
+.ipost-list .post {
+    position: relative;
+    padding: 10px 10px 10px 100px;
+    height: 125px;
+    overflow: hidden;
+    margin: 1em 0;
+    background: #eee;
+    border-radius: 5px
+}
+
+.ipost-list .holder {
+    height: 141px;
+    border: 2px dashed #ccc;
+    margin: 1em 0
+}
+
+.ipost-list .data {
+    margin-top: 0
+}
+
+.ipost-list .data dt {
+    padding-bottom: 0
+}
+
+.ipost-list .data dd {
+    margin-bottom: 5px;
+    width: 415px
+}
+
+.ipost-list .data .title .text {
+    width: 400px
+}
+
+.ipost-list .data .description textarea {
+    width: 400px;
+    height: 6em
+}
+
+.ipost-list .data .descriptions textarea {
+    width: 800px;
+    height: 2em
+}
+
+
+.ipost-list .data .tags .text {
+    width: 400px
+}
+
+.ipost-list .tags {
+    display: none
+}
+
+.ipost-list .thumb {
+    position: absolute;
+    top: 10px;
+    left: 50px;
+    display: block;
+    width: 90px;
+    height: 90px;
+    background-repeat: no-repeat;
+}
+
+.ipost-list .thumb img {
+}
+
+.ipost-list .sort a {
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    left: 18px;
+    top: 12px;
+    background: transparent url(../img/sort.png) no-repeat -48px center;
+    cursor: ns-resize
+}
+
+.ipost-list .delete a {
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    background: transparent url(../img/sort.png) no-repeat -26px center
+}
+
+.ipost-list .delete a:hover {
+    background-position: left center
+}
+
+.upimg_main {
+    background: #fff;
+    width: 700px;
+    padding: 0px 10px;
+    min-height: 120px;
+	/*float:left;
+	position:relative;
+	box-shadow:2px 2px 2px rgba(0,0,0,.3);
+	border:1px solid #ccc*/
+}
+
+ 
+.left73 {
+    margin-left: 73px;
+}
+ 
+
+ 

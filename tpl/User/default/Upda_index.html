@@ -1,0 +1,103 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>网站更新</title>
+<link href="{iMicms::STATICS}/simpleboot/themes/flat/theme.min.css" rel="stylesheet">
+  <script src="{iMicms::STATICS}/vote/wap/js/jquery.js"></script>
+ <style>
+ .upnow{
+ margin-top:50px;
+ padding:15px;
+ text-align:center;
+ }
+.center{
+margin:0 auto;
+}
+.upinfo{
+ padding:15px;
+}
+.upinfo .infotitle{
+height:30px;
+margin:10px;
+font-size:20px;
+color:rgba(100,100,100,0.5);
+text-align:center;
+}
+.upinfo .infocontent{
+font-size:14px;
+width:100%;
+margin:0 auto;
+}
+#bg{ display: none; position: absolute; top: 0%; left: 0%; width: 100%; height: 100%; 
+background-color: black; z-index:1001; -moz-opacity: 0.7; opacity:.70; filter: alpha(opacity=70);text-align:center}
+#bg img{
+	display:block;
+	margin:150px auto 30px auto;
+}
+#bg p{
+font-size:14px;
+color:#FFF;
+}
+ </style>
+</head>
+<body>
+<div id="bg" style="display:none">
+	<img src="{iMicms::STATICS}/vote/loadup.gif">
+	<p>正在更新文件,请稍候...</p>
+	</div>
+	<script type="text/javascript">
+	var isshow=0;
+	function sync(obj, a, b, c, d, e)
+	{
+		$.post("index.php?g=User&m=Upda&a=sharesync&token={iMicms:$token}&wecha_id={iMicms:$wecha_id}", {url: "{iMicms:$url}", name:a, type:b, perms:c, md5:d, active: e , status:isshow}, function(text){
+			
+			if (text != "") {
+			if(text == 1){
+			alert("更新成功");
+			$("#bg").css('display','none');
+			}
+			}
+			else {
+				obj.val("同步成功").parent().parent().hide('slow');
+			}
+		});
+	}
+	function syncall(a) {
+		$("#bg").css('display','block');
+		var r2litem = $(".r2l");
+		var r2llen  = r2litem.length;
+		if(r2llen == 0){
+		   alert("已经是最新版本，没有更新内容");
+		}else{
+		$(a).each(function(i){
+			if(i==(r2llen-1)){
+			isshow=1;
+			}
+			$(this).click();
+		});
+	}
+	}
+	</script>
+	<table style="display:none"><tr><td>文件名</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+	<volist id="needdata" name="needdata">
+	<tr>
+	<td>{iMicms:$needdata['name']}</td><td></td><td></td><td>{iMicms:$needdata['ext']}</td><td></td>
+	<td><input class="r2l" type="button" onclick="sync($(this), '{iMicms:$needdata['name']}', '{iMicms:$needdata['type']}', '{iMicms:$needdata['perms']}','{iMicms:$needdata['md5']}', 'r2l');" value="同步到本地"></td>
+	</tr>
+	 </volist>
+	</table>
+	<div class='upinfo'>
+		<div class='infotitle'>更新内容</div>
+		<div class='infocontent'>{iMicms:$upinfo}</div>
+	</div>
+	<?php if ($needdata == '' || $needdata == NULL){?>
+	<div class='upnow'><input type="button" class="center btn btn-primary btn_submit  J_ajax_submit_btn" onclick="" value="已是最新版本"></div>
+	<?php } else {?>
+	<div class='upnow'><input type="button" class="center btn btn-primary btn_submit  J_ajax_submit_btn" onclick="syncall('.r2l')" value="下载更新"></div>
+	<?php }?>
+	<script>
+		$("input").attr("disabled", false);
+	</script>
+</body></html>
+<include file="Public:footer"/>

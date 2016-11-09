@@ -1,0 +1,123 @@
+<include file="Public:head"/>  
+        <div class="content" >
+          <div class="cLineB">
+		  <h4>大转盘管理</h4>
+		  <a href="{iMicms::U('User/Vote/index')}" class="right btn btn-primary btn_submit  J_ajax_submit_btn" style="margin-top:-27px">返回</a></div>
+             
+                 
+              <div class="clr"></div>
+          </div>
+          <div class="cLine">
+            <div class="pageNavigator left">
+			<a href='/index.php?g=User&m=Lottery&a=add' title='新增幸运大转盘活动' class='btnGrayS vm bigbtn'><img src="{iMicms::STATICS}/guajiang/activity-lottery.png" class="vm" />新增幸运大转盘活动</a>
+              
+            </div>
+          
+            <div class="clr"></div>
+          </div>
+          <div class="msgWrap">
+          <form method="post"  action="" id="info" >
+          <input name="delall"  type="hidden" value="" />
+           <input name="wxid"  type="hidden" value="" />
+            <TABLE class="ListProduct" border="0" cellSpacing="0" cellPadding="0" width="100%">
+              <THEAD>
+                <TR>
+<TH class="select">选择</TH>
+<TH>活动名称</TH>
+<TH>关键字</TH>
+<TH>有效参与人数</TH>
+<TH style="display:none">总浏览数</TH>
+<TH>开始时间/结束时间</TH>
+<TH>状态</TH>
+<TH>外链代码</TH>
+<TH class="norightborder">操作</TH>
+                </TR>
+              </THEAD>
+              <TBODY>
+                <TR></TR>
+                  <volist id="list" name="list">
+                <TR>
+                  <TD><input type="checkbox" name='del_id[]' value="842" class="checkitem"></TD>
+                  <TD>{iMicms:$list.title}</TD>
+                  <TD>{iMicms:$list.keyword}</TD> 
+				  <TD>{iMicms:$list.joinnum}</TD>
+                  <TD style="display:none">{iMicms:$list.click}</TD>                  
+                  <TD>{iMicms:$list.statdate|date="Y-m-d H:i:s",###}<br />{iMicms:$list.enddate|date="Y-m-d H:i:s",###}</TD>
+                  <TD>
+				  <if condition="$list['status'] eq 0"><span class="red">未开始</span><elseif condition="$list['status'] eq 2"/><span class="red">已经结束</span><else/><span class="green">已经开始</span></if>
+				  
+				 </TD>
+                  <TD><a href="{iMicms::U('Wap/Lottery/index',array('token'=>$_SESSION['token'],'id'=>$list['id']))}" target='_blank'>大转盘 {iMicms:$list.id}</a></TD>
+                   <TD class="norightborder">
+				   <a href="index.php?g=User&m=Lottery&a=sn&id={iMicms:$list.id}">SN码管理</a> 
+				   <a href="index.php?g=User&m=Lottery&a=cheat&id={iMicms:$list.id}">作弊</a> 
+				   <a href="index.php?g=User&m=Lottery&a=edit&id={iMicms:$list.id}">编辑</a>  
+				   <a href="
+				   <if condition="$list['status'] eq 1">				   
+				   javascript:drop_confirm('你确定要结束活动吗，结束后也可再开启本活动!', 'index.php?g=User&m=Lottery&a=endLottery&id={iMicms:$list.id}');<else/>index.php?g=User&m=Lottery&a=startLottery&id={iMicms:$list.id}   
+				   </if>">
+				   <if condition="$list['status'] eq 0">开始<else/>结束</if>				   
+				   </a>
+				  
+				   <a href="index.php?g=User&m=Lottery&a=del&id={iMicms:$list.id}" onclick="if (confirm('确定要删除吗？')) return true; else return false;">删除</a></TD>
+                </TR>
+				</volist>
+                         
+              </TBODY>
+            </TABLE>
+           </form> 
+           <script>
+   function checkvotethis() {
+var aa=document.getElementsByName('del_id[]');
+var mnum = aa.length;
+j=0;
+for(i=0;i<mnum;i++){
+if(aa[i].checked){
+j++;
+}
+}
+if(j>0) {
+document.getElementById('info').submit();
+} else {
+alert('未选中任何文章或回复！')
+}
+}
+
+   </script>
+          </div>
+            
+ 
+          <div class="cLine">
+            <div class="pageNavigator right">
+                 <div class="pages"></div>
+              </div>
+            <div class="clr"></div>
+          </div>
+        </div>
+
+        <div class="clr"></div>
+      </div>
+    </div>
+  </div>
+  <script>
+
+function checkAll(form, name) {
+for(var i = 0; i < form.elements.length; i++) {
+var e = form.elements[i];
+if(e.name.match(name)) {
+e.checked = form.elements['chkall'].checked;
+}
+}
+}
+
+function changesort(tid,sortval){
+
+var image=new Image();   
+image.src='index.php?ac=app&op=sort&wxid=gh_423dwjkewad&tid='+tid+'&sort='+sortval+'&r='+Math.random(); 
+
+}
+  </script>
+  <!--底部-->
+  	</div>
+<include file="Public:footer"/>
+ 

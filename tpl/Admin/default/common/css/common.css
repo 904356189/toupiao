@@ -1,0 +1,27 @@
+body{background-color:#f4f9fe;}
+
+/*font*/
+.f12{font-size:12px}
+.f25{font-size:25px}
+
+/*margin*/
+.mt20{margin-top:20px}
+.ml60{margin-left:60px}
+.ml15{margin-left:15px}
+.mb20{margin-bottom:20px}
+.bc{margin:0 auto} 
+
+/*padding*/
+.pt30{padding-top:30px}
+.pb20{padding-bottom:20px}
+
+/*border*/
+.bn{border:none !important}
+
+
+/*container*/
+.container{width:950px}
+
+
+/*footer*/
+.footer{height:70px;color:#999;line-height:24px;text-align:center;width:100%;}

@@ -1,0 +1,75 @@
+body, div, iframe, ul, ol, dl, dt, dd, h1, h2, h3, h4, h5, h6, p, pre, table, th, td, 
+form, input, button, select, textarea {margin: 0;padding: 0;font-weight: normal;font-style: normal;font-size: 100%;font-family: inherit;}
+ol, ul {list-style: none;}
+img {border: 0;}
+a:link,a:visited {color:#666;text-decoration:none;}
+a:hover {color:#c00;text-decoration:underline;}
+body {font-size:12px;color:#666;font-family:arial, sans-serif;background:#fff}
+div,form,img,ul,ol,li,dl,dt,dd {margin: 0; padding: 0; border:0; }
+h1,h2,h3,h4,h5,h6 {margin:0; padding:0; font-size:12px; font-weight:normal;}
+table,td,tr,th{font-size:12px;}
+li{list-style-type:none;}
+img{vertical-align:top;}
+.cr {clear:both;height:0px;overflow:hidden;}
+.fl {float:left;}
+.fr {float:right;}
+.mt15 {margin-top:15px;}
+.mt8 {margin-top:8px;}
+.ins {display:none}
+
+#header {background:url(headbg.png) repeat-x;height:178px;width:100%;z-index:8;position:relative;overflow:hidden}
+.top{background:url(topbg.jpg) no-repeat;height:92px;}
+.top .login {margin:50px 20px 0 0;float:right;font-size:14px;color:#fff;font-weight:bold}
+.top .login a,.top .login a:visited {color:#fff;}
+.top .login a:hover {color:#ff0}
+.top .login b {color:#f60}
+.top .login {
+margin: 53px 20px 0 0;
+float: right;
+font-size: 12px;
+color: #fff;
+}
+.top .login li {
+float: left;
+padding: 5px;
+line-height: 12px;
+}
+
+/* 公供 */
+a.logo,a.logo:visited {float:left;width:556px;display:block;line-height:240px;height:80px;overflow:hidden;background:url(logo.gif) no-repeat;margin-top:10px}
+.tm {line-height:29px;height:29px;padding:7px 0 7px 10px;clear:both;}
+.tm li {float:left;font-size:14px;width:85px;height:29px;line-height:29px;font-weight:bold;margin-left:12px;display:inline;text-align:center}
+.tm li a,.tm li a:visited {color:#fff;display:block;}
+.tm li.curr ,.tm li a:hover {background:url(menuh.png) no-repeat; text-decoration:none;color:#fff}
+.topnav {line-height:35px;height:35px;padding-bottom:9px;overflow:hidden;clear:both;}
+.topnav p {float:left}
+.topnav p a,.topnav p a:visited {color:#888;margin-left:10px;background:url(topnav.gif) no-repeat;padding-left:24px}
+.topnav #togglemenu {}
+.topnav #allmenu { background-position:0 -26px;padding-left:20px}
+.topnav .action {float:left;padding-left:30px;}
+.topnav .fr a,.topnav .fr a:visited {color:#4A4A4A;margin:0 6px;}
+.tico {display:block;width:15px;line-height:9px;height:9px;overflow:hidden;background:url(tico.png) no-repeat; position:absolute;top:169px;left:198px;}
+#footer {padding:8px 0 0;height:20px;line-height:20px;color:#fff;background:url(footbg.png) repeat-x;width:100%; position:relative}
+#footer .tico {top:0;background-position:0 -10px}
+#footer p {line-height:20px; font-family:Arial, Helvetica, sans-serif;}
+#footer .fl {height:20px;background:url(footlogo.jpg) no-repeat;padding-left:200px;}
+#footer .fl a,#footer .fl a:visited {margin:0 3px}
+#footer .fr {padding-right:20px;}
+#footer a,#footer a:visited {color:#fff}
+#footer a:hover {color:#ff0}
+
+
+
+#content { position:relative;heigsht:100%;}
+body.showmenu #frmTitle {display:block;}
+body.hidemenu #frmTitle{display:none;}
+
+#frmTitle {background:url(leftbg.png) repeat-y right 100%;padding:0 12px 0 0px;border-right:1px solid #A7A7A5}
+
+.mbox {widtH:168px;background:url(mbox.jpg) repeat-y -168px 100%;margin:4px auto 0}
+.mbox h3 {height:34px;line-height:34px;text-align:center;background:url(mbox.jpg) no-repeat;color:#fff;font-size:14px;font-weight:bold;padding-bottom:12px;}
+.mbox .m_b {background:url(mbox.jpg) no-repeat -336px 0 ;height:30px;overflow:hidden}
+.mbox ul {margin:10px auto;width:154px;height:100%;overflow:hidden}
+.mbox ul li {float:left;width:154px;height:32px;line-height:32px;overflow:hidden;text-align:center;font-weight:bold;}
+.mbox ul li a,.mbox ul li a:visited {color:#4A4A4A;display:block}
+.mbox ul li a:hover {background:url(mboxh.jpg) no-repeat; text-decoration:none;}

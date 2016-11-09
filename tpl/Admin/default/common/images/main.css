@@ -1,0 +1,114 @@
+body, div, iframe, ul, ol, dl, dt, dd, h1, h2, h3, h4, h5, h6, p, pre, table, th, td, 
+form, input, button, select, textarea {margin: 0;padding: 0;font-weight: normal;font-style: normal;font-size: 100%;font-family: inherit;}
+ol, ul {list-style: none;}
+img {border: 0;}
+a:link,a:visited {color:#5A5A5A;text-decoration:none;}
+a:hover {color:#c00;text-decoration:underline;}
+body {font-size:12px;color:#5A5A5A;font-family:arial, sans-serif;background:#fff}
+div,form,img,ul,ol,li,dl,dt,dd {margin: 0; padding: 0; border:0; }
+h1,h2,h3,h4,h5,h6 {margin:0; padding:0; font-size:12px; font-weight:normal;}
+table,td,tr,th{font-size:12px;}
+li{list-style-type:none;}
+img{vertical-align:top;}
+.cr {clear:both;height:0px;overflow:hidden;}
+.fl {float:left;}
+.fr {float:right;}
+.mt15 {margin-top:15px;}
+.mt8 {margin-top:8px;}
+.ins {display:none}
+.dis {display:none}
+
+.content {height:100%;overflow:hidden;padding:10px 0 30px 10px;}
+.box {float:left;widtH:48%;margin:0px 0 2px 10px;_display:inline;padding-bottom:12px;height:380px;background:url(main/boxb.png) no-repeat center bottom;}
+.box h3 {border:1px solid #DADADA;background:url(main/boxbg.png) repeat-x;height:33px;line-height:33px;color:#4D4D4D;font-weight:bold;padding:0 14px}
+.box .con {padding:4px;height:336px;border:1px solid #DADADA;border-top:0;background:#F2F2F2;}
+.box .dcon {padding:20px 20px 0;height:324px}
+
+a.isub,a.isub:visited,a.isub:hover {background:url(isub.png) no-repeat;display:inline-block;color:#fff;heighT:32px;line-height:32px;text-align:center}
+.update {margin-bottom:20px}
+.update p {line-heighT:32px;}
+.update a.isub,.update a.isub:visited {width:73px;}
+.myinfo,.news,.count  {border:1px solid #E9E7E8;background:#fff;padding:14px;}
+.myinfo li {height:26px;line-heighT:26px; position:relative}
+.myinfo li .fl {widtH:60%}
+.myinfo li span {display:block;width:190px;right:0;top:0;height:26px;line-height:26px; position:absolute}
+.myinfo .title {font-weight:bold;padding:10px 0;background:none;}
+.kjinfo li {background:url(main/j.gif) no-repeat 0 7px;padding-left:20px;}
+
+.kjnav {height:29px;padding:10px 0 20px 0;}
+.kjnav a,.kjnav a:visited {text-indent:12px;display:inlein-block;float:left;margin-right:10px;widtH:79px;line-height:29px;height:29px;background:url(main/kjico.png) no-repeat;color:#255C85;}
+.kjnav a:hover {color:#f00; text-decoration:none}
+
+.news,.count {padding:6px 10px;clear:both;height:322px;}
+.news li {height:32px;line-height:32px;overflow:hidden;background:url(main/x.gif) no-repeat 0 3px;padding-left:24px;}
+.news li span {float:right;color:#999}
+.count {}
+.count li {text-indent:10px;height:32px;line-height:32px;}
+.count .bg {background:#F4F4F4}
+
+/* 颜色 */
+.red {color:#f00}
+.blue,a.blue,a.blue:visited {color:#1CA1DA}
+.ipt {border:1px solid #BFBFBF;border-bottom:1px solid #E4E4E4;border-right:1px solid #E4E4E4;background:#E9E9E9;line-height:24px;height:24px;padding:0 3px; vertical-align:middle}
+.button {
+	background: url('buttom.png');
+	width: 100px;
+	height: 29px;
+	line-height: 25px;
+	font-size: 10px;
+	color: white;
+}
+.warp {background:#F1F1F1;height:100%}
+/* 权限管理 */
+#gtitle {height:58px;padding:0 0 2px 1px;background:url(main/gtitle.png) repeat-x;}
+#gtitle li {float:left;line-height:58px;height:58px;padding:0 20px;background:url(main/gtitle.png) no-repeat right -60px}
+#gtitle li a,#gtitle li a:visited {color:#222}
+#gtitle .curr {background:url(main/gtitle.png) repeat-x 0 -120px;}
+#gtitle .curr a,#gtitle .curr a:visited {color:#fff}
+
+.itable dl {clear:both;background:url(main/hbline.gif) repeat-x 100% bottom;padding:5px 10px 5px 20px;line-height:40px;height:40px;}
+.itable dl dt {float:left;font-weight:bold;color:#222}
+.itable dl dd {float:left}
+.itable dl dd input { vertical-align:middle}
+.msub {padding:15px;text-align:center}
+.msub input,.ksearch .ksub {width:130px;height:41px;background:url(isub.png) no-repeat 0 -35px;border:none;margin:0 6px;cursor: pointer;}
+.msub .ireust { background-position:0 -77px}
+
+/* 文章管理 */
+#artlist {}
+#artlist .mod {height:44px;background:url(main/artbg.png) repeat-x 0 -56px;padding:14px 0 0 12px} 
+.ksearch {line-height:29px;height:29px;padding:6px 0 5px;background:url(main/artbg.png) repeat-x 0 -114px;color:#747474}
+.ksearch .fl {padding-left:14px}
+.ksearch b {color:#222;}
+.ksearch .kserico {padding:2px 0 2px 22px;background:url(main/kserico.gif) no-repeat;}
+.ksearch select,.ksearch input,.bottom select { vertical-align:middle;color:#777}
+.ksearch .ksub { background-position:-75px 0;width:80px;height:29px;}
+.look {heighT:39px;line-height:39px;background:url(main/artbg.png) repeat-x 0 -154px;padding-left:14px;}
+.look a.curr,.look a.curr:visited {color:#f60}
+.bottom {line-height:28px;height:28px;padding:14px;background:url(main/artbg.png) repeat-x;border-bottom:1px solid  #D8D8D8}
+.bottom span {padding:0 8px}
+.bottom span b {color:#222}
+
+#alist th {height:40px;line-height:40px;background:#fff url(main/artbg.png) repeat-x 0 -193px;border-bottom:1px solid #CDCDCD}
+#alist td { text-align:center;height:40px;border-bottom:1px solid #E7E7E7}
+#alist .xtit {text-align:left;}
+#alist .xtit p {background:url(main/j.gif) no-repeat;padding-left:20px}
+#alist th.xtit {text-indent:100px}
+#alist a.edit,#alist a.edit:visited,#alist a.del,#alist a.del:visited,#alist a.tui,#alist a.tui:visited {display:inline-block;width:20px;line-height:60px;height:20px;overflow:hidden;background:url(main/gico.gif) no-repeat;margin:0 2px}
+#alist a.del,#alist a.del:visited { background-position:0 -21px}
+#alist a.tui,#alist a.tui:visited { background-position:0 -42px}
+
+.addn {padding:10px;}
+#addn {border:solid #d2d2d2;border-width:1px 1px 0 1px;}
+#addn th {background:url(main/addnbg.png) repeat-x;heighT:34px;line-height:34px;text-align:left;text-indent:30px;font-weight:bold;color:#222}
+#addn th ,
+#addn td {border-bottom:1px solid #D2D2D2;line-height:26px}
+#addn td input { vertical-align:middle}
+#addkey {float:left;padding-left:10px;}
+.fabu {float:right;padding-right:10px}
+
+/* 分页 */
+.listpage {padding:16px 30px 16px 0;clear:both;text-align:right}
+.listpage a,
+.listpage a:visited,.listpage a:hover,.listpage b {padding:0px 8px; border:1px solid #F7F7F7;border-bottom:1px solid #DFDFDF;border-right:1px solid #DFDFDF;display:inline-block;height:20px;line-heighT:20px;text-decoration:none;color:#11396A;margin:0 3px;font-family:'宋体';background:#F7F7F7}
+.listpage a:hover,.listpage b {border:0;padding:1px 9px; color:#fff;background:#3F8EF3 url(main/pageh.png) no-repeat;}

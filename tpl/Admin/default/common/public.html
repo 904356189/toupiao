@@ -1,0 +1,15 @@
+<link href="{Wesambo::RES}/images/main.css" type="text/css" rel="stylesheet">
+<script src="{Wesambo::STATICS}/jquery.min.js" type="text/javascript"></script>
+<script src="{Wesambo::STATICS}/function.js" type="text/javascript"></script>
+<meta http-equiv="x-ua-compatible" content="ie=7" />
+</head>
+<body class="warp">
+<div id="artlist">
+	<div class="mod kjnav">
+		<volist name="nav" id="vo">
+		<a href="{Wesambo::U($action.'/'.$vo['name'],array('pid'=>$_GET['pid'],'level'=>3,'title'=>urlencode
+($vo['title'])))}">{Wesambo:$vo['title']}</a>
+		<if condition="($action eq 'Article') or ($action eq 'Img') or ($action eq 'Text') or ($action eq 'Voiceresponse')"><php>break;</php></if>
+		</volist>
+	</div>   	
+</div>

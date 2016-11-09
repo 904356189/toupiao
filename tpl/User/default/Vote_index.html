@@ -1,0 +1,117 @@
+<include file="Public:head"/>
+
+<div class="content">
+         
+          <div class="cLineB">
+             <h4 class="left">您已创建微信投票活动 ({iMicms:$count}) 个 <span class="FAQ"></span></h4>
+              <div class="clr"></div>
+          </div>
+          <div class="cLine">
+            <div class="pageNavigator left">
+            <if condition="$ok eq 1">
+			<a href=""  title="发起文字投票" class="btn btn-primary btn_submit  J_ajax_submit_btn" style="display:none"><img src="{iMicms::RES}/images/text.png" class="vm">发起文字投票</a>　
+			<a href="" title="发起图片投票" class="btn btn-primary btn_submit  J_ajax_submit_btn"><img src="{iMicms::RES}/images/pic.png" class="vm">发起图片投票</a>
+			<a href="{iMicms::U('./Home/Index/help',array('token'=>$_SESSION['token']))}"   title="API接口" class="btn btn-primary btn_submit  J_ajax_submit_btn">API接口</a>&nbsp&nbsp&nbsp
+			<a href="{iMicms::U('Diymen/index',array('token'=>$_SESSION['token']))}"   title="底部菜单" class="btn btn-primary btn_submit  J_ajax_submit_btn">底部菜单</a>&nbsp&nbsp&nbsp
+			<a href="{iMicms::U('Vote/gongzhong',array('id'=>$_SESSION['id']))}"   title="信息绑定" class="btn btn-primary btn_submit  J_ajax_submit_btn">信息绑定</a>&nbsp&nbsp&nbsp
+			<a href="{iMicms::U('Vote/check',array('id'=>$_SESSION['id']))}"   title="审核信息" class="btn btn-primary btn_submit  J_ajax_submit_btn">审核信息</a>&nbsp&nbsp&nbsp
+			<a href="{iMicms::U('Areply/index',array('id'=>$_SESSION['id'],'token'=>$_SESSION['token']))}"   title="关注回复" class="btn btn-primary btn_submit  J_ajax_submit_btn">关注回复</a>&nbsp&nbsp&nbsp
+			<a href="{iMicms::U('Index/useredit')}"   title="修改密码" class="btn btn-primary btn_submit  J_ajax_submit_btn">修改密码</a>&nbsp&nbsp&nbsp
+			<a href="{iMicms::U('Home/Index/logout')}"   title="退出登陆" class="btn btn-primary btn_submit  J_ajax_submit_btn">退出登陆</a>&nbsp&nbsp&nbsp
+            <else/>
+            <a href="{iMicms::U('Vote/add',array('type'=>'text'))}"  title="发起文字投票" class="btn btn-primary btn_submit  J_ajax_submit_btn" style="display:none"><img src="{iMicms::RES}/images/text.png" class="vm">发起文字投票</a>
+			<a href="{iMicms::U('Vote/add',array('type'=>'img'))}"   title="发起图片投票" class="btn btn-primary btn_submit  J_ajax_submit_btn"><img src="{iMicms::RES}/images/pic.png" class="vm">发起图片投票</a>&nbsp&nbsp&nbsp
+			<a href="{iMicms::U('Vote/check',array('id'=>$_SESSION['uid']))}"   title="审核信息" class="btn btn-primary btn_submit  J_ajax_submit_btn">审核选手</a>&nbsp&nbsp&nbsp
+			<a href="{iMicms::U('./Home/Index/help',array('token'=>$_SESSION['token']))}"   title="API接口" class="btn btn-primary btn_submit  J_ajax_submit_btn">接口绑定</a>&nbsp&nbsp&nbsp
+			<a href="{iMicms::U('Diymen/index',array('token'=>$_SESSION['token']))}"   title="底部菜单" class="btn btn-primary btn_submit  J_ajax_submit_btn">自定义菜单</a>&nbsp&nbsp&nbsp
+			<a href="{iMicms::U('Areply/index',array('id'=>$_SESSION['id'],'token'=>$_SESSION['token']))}"   title="关注回复" class="btn btn-primary btn_submit  J_ajax_submit_btn">回复设置</a>&nbsp&nbsp&nbsp
+			
+			
+			<a href="{iMicms::U('Vote/gongzhong',array('id'=>$_SESSION['uid']))}"   title="投票设置" class="btn btn-primary btn_submit  J_ajax_submit_btn">投票设置</a>&nbsp&nbsp&nbsp
+			<a href="{iMicms::U('Lottery/index',array('id'=>$_SESSION['uid']))}"   title="大转盘管理" class="btn btn-primary btn_submit  J_ajax_submit_btn">大转盘管理</a>&nbsp&nbsp&nbsp
+			<a href="{iMicms::U('Index/useredit')}"   title="修改密码" class="btn btn-primary btn_submit  J_ajax_submit_btn">修改密码</a>&nbsp&nbsp&nbsp
+			<a href="{iMicms::U('Home/Index/logout')}"   title="退出登陆" class="btn btn-primary btn_submit  J_ajax_submit_btn">退出登陆</a>
+			</if>
+            </div>
+            <div class="clr"></div>
+          </div>
+          <div class="msgWrap">
+          <form method="post" action="index.php?ac=vote-manage&amp;id=9878" id="info">
+          <input name="delall" type="hidden" value="del">
+           <input name="wxid" type="hidden" value="gh_423dwjkewad">
+            <table class="ListProduct" border="0" cellspacing="0" cellpadding="0" width="100%">
+              <thead>
+                <tr>
+					<th class="select">选择</th>
+					<th>活动关键词</th>
+					<th>活动标题</th>
+					<th>报名人数</th>
+					<th class="time">报名时间</th>
+					<th class="time">投票时间</th>
+					<th>活动链接</th>
+					<th class="norightborder">操作</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr></tr>
+                  <volist id="list" name="list">
+                <tr>
+                  <td>  <input type="checkbox" name="del_id[]" value="674" class="checkitem"></td>
+                  <td>{iMicms:$list.keyword}</td>
+                  <td>{iMicms:$list.title}</td>
+                  <td align="center" style="font-weight:900">{iMicms:$list.count}</td>
+                  <td>{iMicms:$list.start_time|date='Y-m-d',###}至{iMicms:$list.over_time|date='Y-m-d',###}</td>
+                  <td>{iMicms:$list.statdate|date='Y-m-d',###}至{iMicms:$list.enddate|date='Y-m-d',###}</td>
+                  <td>  <a href="{iMicms::U('Wap/Vote/index',array('token'=>$_SESSION['token'],'id'=>$list['id']))}" target="_blank"> <if condition="$list['type'] eq 'text'">文字投票<else/>图片投票</if>{iMicms:$list.id}</a></td>
+                   <td class="norightborder">
+				   <a href="{iMicms::U('Vote/edit',array('type'=>$list['type'],'id'=>$list['id']))}"  class="btn btn-primary btn_submit  J_ajax_submit_btn">修改活动</a>
+				   <a href="{iMicms::U('Vote/eitem',array('token'=>$_SESSION['token'],'id'=>$list['id']))}"class="btn btn-primary btn_submit  J_ajax_submit_btn">选手设置</a>
+				   <a href="{iMicms::U('Vote/totals',array('type'=>$list['type'],'id'=>$list['id']))}"class="btn btn-primary btn_submit  J_ajax_submit_btn">投票结果</a>
+				   <a href="{iMicms::U('Vote/lock',array('token'=>$_SESSION['token'],'id'=>$list['id']))}" class="btn btn-primary btn_submit  J_ajax_submit_btn">锁定管理</a>				   
+<!--				   <a href="{iMicms::U('Vote/share',array('token'=>$_SESSION['token'],'id'=>$list['id']))}" target="_blank" title="推广页" class="btn btn-primary btn_submit  J_ajax_submit_btn">推广页</a>-->
+					<a href="javascript:" class="btn btn-primary btn_submit  J_ajax_submit_btn">{iMicms:$list.show}</a>
+				   <a href="javascript:drop_confirm('您确定要删除吗?删除会把投票结果也一起删除！', '{iMicms::U('Vote/del',array('type'=>$list['type'],'id'=>$list['id']))}');" class="btn btn-primary btn_submit  J_ajax_submit_btn">删除</a> 
+
+
+                   </td>
+          
+                </tr>
+                  </volist>
+      			                
+                  
+              </tbody>
+            </table>
+           </form> 
+<script>
+function showno(){
+alert("为避免影响投票功能，请在晚22:00--早6:00期间进行编辑");
+return false;
+}
+function showend(){
+alert("活动已结束");
+return false;
+}
+   function checkvotethis() {
+var aa=document.getElementsByName('del_id[]');
+var mnum = aa.length;
+j=0;
+for(i=0;i<mnum;i++){
+if(aa[i].checked){
+j++;
+}
+}
+if(j>0) {
+document.getElementById('info').submit();
+} else {
+alert('未选中内容！')
+}
+}</script>
+   </div> 
+          <div class="cLine">
+            <div class="pageNavigator right">
+                 <div class="pages"></div>
+              </div>
+            <div class="clr"></div>
+          </div>
+  </div>
+<include file="Public:footer"/>

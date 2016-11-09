@@ -1,0 +1,100 @@
+<include file="Public:head"/>
+<div class="content">
+         
+          <div class="cLineB">
+              <h4 class="left">"{iMicms:$thisLottery.title}"作弊管理</h4>
+                  <div>
+         
+      <a href="{iMicms::U('User/Lottery/index')}" class="right btn btn-primary btn_submit  J_ajax_submit_btn" style="margin-top:-7px">返回</a>
+          
+          </div>
+              <div class="clr"></div> 
+          </div>
+        
+  <div style="background:#fefbe4;border:1px solid #f3ecb9;color:#993300;padding:10px;margin-top:5px;">使用方法：在需要中奖的微信里向本公众号发送“cheat {iMicms:$thisLottery.id} {iMicms:$thisLottery.parssword} 获奖等级 备注”（参数分别是：cheat 活动id 兑奖密码 获奖等级 备注），比如想让王局长获得一等奖那么就用王局长的手机发送“cheat {iMicms:$thisLottery.id} {iMicms:$thisLottery.parssword} 1 王局长”，发送完后，到后台本列表里找到发送时备注内容的项 确认 下，王局长在抽奖的时候就会中奖了</div>
+
+          <div class="msgWrap">
+          <form method="post"  action="" id="info" >
+          <input name="delall"  type="hidden" value="" />
+           <input name="wxid"  type="hidden" value="" />
+            <TABLE class="ListProduct" border="0" cellSpacing="0" cellPadding="0" width="100%">
+              <THEAD>
+                <TR style="text-align: center;">
+					<TH>wechat id</TH>
+					<TH>奖项</TH>
+					<TH>备注</TH>
+					<TH>已使用</TH>
+					<TH class="norightborder">操作</TH>
+                </TR>
+				
+              </THEAD>
+              <TBODY>
+				<volist name="records" id="record">
+					 <TR style="line-height:30px;height: 43px;line-height: 59px;">
+						<td>{iMicms:$record.wecha_id}</td>
+						<td>{iMicms:$record.prizetype}</td>
+						<td>{iMicms:$record.intro}</td>
+						<td><notempty name='record.isuse'>是<else/>否</notempty></td>
+						<TD class="norightborder">
+						<notempty name='record.isok'>已确认<else/>
+						<a href="{iMicms::U('User/Lottery/okcheat',array('id'=>$record['id']))}">确认</a></notempty>|<a href="###" onclick="if(confirm('确定要删除吗')){location.href='/index.php?g=User&m=Lottery&a=deleteCheat&id={iMicms:$record.id}';}">删除</a></TD>
+					</TR>
+				</volist>
+			  </TBODY>
+            </TABLE>
+           </form> 
+           <script>
+   function checkvotethis() {
+var aa=document.getElementsByName('del_id[]');
+var mnum = aa.length;
+j=0;
+for(i=0;i<mnum;i++){
+if(aa[i].checked){
+j++;
+}
+}
+if(j>0) {
+document.getElementById('info').submit();
+} else {
+alert('未选中任何文章或回复！')
+}
+}
+
+   </script>
+          </div>
+            
+ 
+          <div class="cLine">
+            <div class="pageNavigator right">
+                 <div class="pages"></div>
+              </div>
+            <div class="clr"></div>
+          </div>
+        </div>
+
+        <div class="clr"></div>
+      </div>
+    </div>
+  </div>
+  <script>
+
+function checkAll(form, name) {
+for(var i = 0; i < form.elements.length; i++) {
+var e = form.elements[i];
+if(e.name.match(name)) {
+e.checked = form.elements['chkall'].checked;
+}
+}
+}
+
+function changesort(tid,sortval){
+
+var image=new Image();   
+image.src='index.php?ac=app&op=sort&wxid=gh_423dwjkewad&tid='+tid+'&sort='+sortval+'&r='+Math.random(); 
+
+}
+  </script>
+  <!--底部-->
+  	</div>
+<include file="Public:footer"/>
+        

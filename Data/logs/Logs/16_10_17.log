@@ -1,0 +1,885 @@
+[ 2016-10-17T08:43:48+08:00 ] 0.0.0.0 /weixintoupiaoyuanma/
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+NOTIC: [2048] Declaration of IndexAction::show() should be compatible with that of Action::show() D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\Lib\Action\Home\IndexAction.class.php 第 4 行.
+NOTIC: [8] Undefined index: 1 D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\_Core\Lib\Core\Action.class.php 第 209 行.
+NOTIC: [2] Cannot use a scalar value as an array D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\_Core\Lib\Core\Action.class.php 第 209 行.
+SQL: SHOW COLUMNS FROM `tp_agent` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://localhost' ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-1.038059s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-1.040059s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007000s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-1.047059s ]
+INFO: Run TokenBuild Behavior [ RunTime:-1.047059s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-1.048059s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-1.049060s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003001s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-1.050060s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-10-17T09:53:05+08:00 ] 0.0.0.0 /weixintoupiaoyuanma/index.php?m=Users&a=checklogin
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: 1 D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\_Core\Lib\Core\Action.class.php 第 209 行.
+NOTIC: [2] Cannot use a scalar value as an array D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\_Core\Lib\Core\Action.class.php 第 209 行.
+SQL: SHOW COLUMNS FROM `tp_agent` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://localhost' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_users` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_users` WHERE ( `username` = 'admin' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_token_open` [ RunTime:0.015600s ]
+SQL: SELECT `token` FROM `tp_token_open` WHERE ( `uid` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_user_group` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_user_group` WHERE ( `id` = 7 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: UPDATE `tp_users` SET `lasttime`=1476669185,`lastloginmonth`=10,`lastip`='0.0.0.0' WHERE ( `id` = 1 ) [ RunTime:0.000000s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-1.060802s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-1.060802s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-1.060802s ]
+INFO: Run TokenBuild Behavior [ RunTime:-1.060802s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-1.060802s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-1.060802s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-1.060802s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-10-17T09:53:07+08:00 ] 0.0.0.0 /weixintoupiaoyuanma/index.php?g=User&m=Vote&a=index
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: 1 D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\_Core\Lib\Core\Action.class.php 第 209 行.
+NOTIC: [2] Cannot use a scalar value as an array D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\_Core\Lib\Core\Action.class.php 第 209 行.
+SQL: SHOW COLUMNS FROM `tp_agent` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://localhost' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_user_group` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_user_group` WHERE ( `id` = 7 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_users` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_users` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_users` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_wxuser` [ RunTime:0.015600s ]
+SQL: SELECT `wxname`,`weixin`,`wxid`,`headerpic` FROM `tp_wxuser` WHERE ( `token` = 'Eioa5C5oj3S32qhH' ) AND ( `uid` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_token_open` [ RunTime:0.000000s ]
+SQL: SELECT `queryname` FROM `tp_token_open` WHERE ( `token` = 'Eioa5C5oj3S32qhH' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `gid`,`activitynum`,`sum` FROM `tp_users` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_user_group` WHERE ( `id` = 7 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_vote` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_vote` WHERE ( `token` = 'Eioa5C5oj3S32qhH' ) ORDER BY id DESC  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_vote_item` [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_vote_item` WHERE ( `vid` = 19 ) AND ( `status` > 0 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_vote_item` WHERE ( `vid` = 18 ) AND ( `status` > 0 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_vote_item` WHERE ( `vid` = 16 ) AND ( `status` > 0 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_vote_item` WHERE ( `vid` = 15 ) AND ( `status` > 0 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_vote_item` WHERE ( `vid` = 14 ) AND ( `status` > 0 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_vote_item` WHERE ( `vid` = 13 ) AND ( `status` > 0 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_vote_item` WHERE ( `vid` = 12 ) AND ( `status` > 0 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_vote_item` WHERE ( `vid` = 11 ) AND ( `status` > 0 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_vote` WHERE ( `token` = 'Eioa5C5oj3S32qhH' ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-1.076402s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: ok D:\phpStudy\WWW\weixintoupiaoyuanma\Data\logs\Cache\User\f70321ef24e437eb7147c67ab8f0460a.php 第 165 行.
+NOTIC: [8] Undefined index: id D:\phpStudy\WWW\weixintoupiaoyuanma\Data\logs\Cache\User\f70321ef24e437eb7147c67ab8f0460a.php 第 180 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-1.076402s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-1.076402s ]
+INFO: Run TokenBuild Behavior [ RunTime:-1.076402s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-1.076402s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-1.076402s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-1.076402s ]
+INFO: [ view_end ] --END-- [ RunTime:0.015600s ]
+
+[ 2016-10-17T09:53:07+08:00 ] ERR: (ThinkException) 无法加载模块:tpl
+[ 2016-10-17T09:53:07+08:00 ] ERR: (ThinkException) 无法加载模块:tpl
+[ 2016-10-17T09:53:13+08:00 ] 0.0.0.0 /weixintoupiaoyuanma/index.php?g=User&m=Lottery&a=index&id=1
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of LotteryAction::index() should be compatible with that of LotteryBaseAction::index() D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\Lib\Action\User\LotteryAction.class.php 第 4 行.
+NOTIC: [2048] Declaration of LotteryAction::add() should be compatible with that of LotteryBaseAction::add() D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\Lib\Action\User\LotteryAction.class.php 第 4 行.
+NOTIC: [2048] Declaration of LotteryAction::edit() should be compatible with that of LotteryBaseAction::edit() D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\Lib\Action\User\LotteryAction.class.php 第 4 行.
+NOTIC: [2048] Declaration of LotteryAction::sn() should be compatible with that of LotteryBaseAction::sn() D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\Lib\Action\User\LotteryAction.class.php 第 4 行.
+NOTIC: [8] Undefined index: 1 D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\_Core\Lib\Core\Action.class.php 第 209 行.
+NOTIC: [2] Cannot use a scalar value as an array D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\_Core\Lib\Core\Action.class.php 第 209 行.
+SQL: SHOW COLUMNS FROM `tp_agent` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://localhost' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_user_group` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_user_group` WHERE ( `id` = 7 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_users` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_users` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_users` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_wxuser` [ RunTime:0.000000s ]
+SQL: SELECT `wxname`,`weixin`,`wxid`,`headerpic` FROM `tp_wxuser` WHERE ( `token` = 'Eioa5C5oj3S32qhH' ) AND ( `uid` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_token_open` [ RunTime:0.015600s ]
+SQL: SELECT `queryname` FROM `tp_token_open` WHERE ( `token` = 'Eioa5C5oj3S32qhH' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `queryname` FROM `tp_token_open` WHERE ( `token` = 'Eioa5C5oj3S32qhH' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_function` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_function` WHERE ( `funname` = 'lottery' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_lottery` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_lottery` WHERE ( `token` = 'Eioa5C5oj3S32qhH' ) AND ( `type` = 1 )  [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_lottery` WHERE ( `token` = 'Eioa5C5oj3S32qhH' ) AND ( `type` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-1.092002s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-1.092002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015600s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-1.107602s ]
+INFO: Run TokenBuild Behavior [ RunTime:-1.107602s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-1.107602s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-1.107602s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-1.107602s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-10-17T09:55:37+08:00 ] 0.0.0.0 /weixintoupiaoyuanma/index.php?g=User&m=Vote&a=index
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: 1 D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\_Core\Lib\Core\Action.class.php 第 209 行.
+NOTIC: [2] Cannot use a scalar value as an array D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\_Core\Lib\Core\Action.class.php 第 209 行.
+SQL: SHOW COLUMNS FROM `tp_agent` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://localhost' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_user_group` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_user_group` WHERE ( `id` = 7 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_users` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_users` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_users` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_wxuser` [ RunTime:0.000000s ]
+SQL: SELECT `wxname`,`weixin`,`wxid`,`headerpic` FROM `tp_wxuser` WHERE ( `token` = 'Eioa5C5oj3S32qhH' ) AND ( `uid` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_token_open` [ RunTime:0.015600s ]
+SQL: SELECT `queryname` FROM `tp_token_open` WHERE ( `token` = 'Eioa5C5oj3S32qhH' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `gid`,`activitynum`,`sum` FROM `tp_users` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_user_group` WHERE ( `id` = 7 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_vote` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_vote` WHERE ( `token` = 'Eioa5C5oj3S32qhH' ) ORDER BY id DESC  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_vote_item` [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_vote_item` WHERE ( `vid` = 19 ) AND ( `status` > 0 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_vote_item` WHERE ( `vid` = 18 ) AND ( `status` > 0 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_vote_item` WHERE ( `vid` = 16 ) AND ( `status` > 0 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_vote_item` WHERE ( `vid` = 15 ) AND ( `status` > 0 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_vote_item` WHERE ( `vid` = 14 ) AND ( `status` > 0 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_vote_item` WHERE ( `vid` = 13 ) AND ( `status` > 0 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_vote_item` WHERE ( `vid` = 12 ) AND ( `status` > 0 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_vote_item` WHERE ( `vid` = 11 ) AND ( `status` > 0 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_vote` WHERE ( `token` = 'Eioa5C5oj3S32qhH' ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-1.076402s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: ok D:\phpStudy\WWW\weixintoupiaoyuanma\Data\logs\Cache\User\f70321ef24e437eb7147c67ab8f0460a.php 第 165 行.
+NOTIC: [8] Undefined index: id D:\phpStudy\WWW\weixintoupiaoyuanma\Data\logs\Cache\User\f70321ef24e437eb7147c67ab8f0460a.php 第 180 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-1.076402s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015600s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-1.092002s ]
+INFO: Run TokenBuild Behavior [ RunTime:-1.092002s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-1.092002s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-1.092002s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-1.092002s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-10-17T09:55:37+08:00 ] ERR: (ThinkException) 无法加载模块:tpl
+[ 2016-10-17T09:55:37+08:00 ] ERR: (ThinkException) 无法加载模块:tpl
+[ 2016-10-17T09:55:41+08:00 ] 0.0.0.0 /weixintoupiaoyuanma/index.php?g=User&m=Vote&a=add&type=img
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: 1 D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\_Core\Lib\Core\Action.class.php 第 209 行.
+NOTIC: [2] Cannot use a scalar value as an array D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\_Core\Lib\Core\Action.class.php 第 209 行.
+SQL: SHOW COLUMNS FROM `tp_agent` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://localhost' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_user_group` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_user_group` WHERE ( `id` = 7 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_users` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_users` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_users` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_wxuser` [ RunTime:0.000000s ]
+SQL: SELECT `wxname`,`weixin`,`wxid`,`headerpic` FROM `tp_wxuser` WHERE ( `token` = 'Eioa5C5oj3S32qhH' ) AND ( `uid` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_token_open` [ RunTime:0.015600s ]
+SQL: SELECT `queryname` FROM `tp_token_open` WHERE ( `token` = 'Eioa5C5oj3S32qhH' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `sum` FROM `tp_users` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_vote` [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_vote` WHERE ( `token` = 'Eioa5C5oj3S32qhH' ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-1.060802s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: type D:\phpStudy\WWW\weixintoupiaoyuanma\Data\logs\Cache\User\06910c565e1450d396eed27237367a2f.php 第 166 行.
+NOTIC: [8] Undefined index: type D:\phpStudy\WWW\weixintoupiaoyuanma\Data\logs\Cache\User\06910c565e1450d396eed27237367a2f.php 第 171 行.
+NOTIC: [8] Undefined index: id D:\phpStudy\WWW\weixintoupiaoyuanma\Data\logs\Cache\User\06910c565e1450d396eed27237367a2f.php 第 175 行.
+NOTIC: [8] Undefined index: moban D:\phpStudy\WWW\weixintoupiaoyuanma\Data\logs\Cache\User\06910c565e1450d396eed27237367a2f.php 第 181 行.
+NOTIC: [8] Undefined index: moban D:\phpStudy\WWW\weixintoupiaoyuanma\Data\logs\Cache\User\06910c565e1450d396eed27237367a2f.php 第 182 行.
+NOTIC: [8] Undefined index: moban D:\phpStudy\WWW\weixintoupiaoyuanma\Data\logs\Cache\User\06910c565e1450d396eed27237367a2f.php 第 183 行.
+NOTIC: [8] Undefined index: moban D:\phpStudy\WWW\weixintoupiaoyuanma\Data\logs\Cache\User\06910c565e1450d396eed27237367a2f.php 第 184 行.
+NOTIC: [8] Undefined index: moban D:\phpStudy\WWW\weixintoupiaoyuanma\Data\logs\Cache\User\06910c565e1450d396eed27237367a2f.php 第 185 行.
+NOTIC: [8] Undefined index: moban D:\phpStudy\WWW\weixintoupiaoyuanma\Data\logs\Cache\User\06910c565e1450d396eed27237367a2f.php 第 186 行.
+NOTIC: [8] Undefined index: moban D:\phpStudy\WWW\weixintoupiaoyuanma\Data\logs\Cache\User\06910c565e1450d396eed27237367a2f.php 第 187 行.
+NOTIC: [8] Undefined index: keyword D:\phpStudy\WWW\weixintoupiaoyuanma\Data\logs\Cache\User\06910c565e1450d396eed27237367a2f.php 第 196 行.
+NOTIC: [8] Undefined index: title D:\phpStudy\WWW\weixintoupiaoyuanma\Data\logs\Cache\User\06910c565e1450d396eed27237367a2f.php 第 200 行.
+NOTIC: [8] Undefined variable: guanggao D:\phpStudy\WWW\weixintoupiaoyuanma\Data\logs\Cache\User\06910c565e1450d396eed27237367a2f.php 第 203 行.
+NOTIC: [8] Undefined index: picurl_guanggao D:\phpStudy\WWW\weixintoupiaoyuanma\Data\logs\Cache\User\06910c565e1450d396eed27237367a2f.php 第 217 行.
+NOTIC: [8] Undefined index: fxms D:\phpStudy\WWW\weixintoupiaoyuanma\Data\logs\Cache\User\06910c565e1450d396eed27237367a2f.php 第 226 行.
+NOTIC: [8] Undefined index: wappicurl D:\phpStudy\WWW\weixintoupiaoyuanma\Data\logs\Cache\User\06910c565e1450d396eed27237367a2f.php 第 232 行.
+NOTIC: [8] Undefined index: ydgzts D:\phpStudy\WWW\weixintoupiaoyuanma\Data\logs\Cache\User\06910c565e1450d396eed27237367a2f.php 第 238 行.
+NOTIC: [8] Undefined index: wxgzurl D:\phpStudy\WWW\weixintoupiaoyuanma\Data\logs\Cache\User\06910c565e1450d396eed27237367a2f.php 第 242 行.
+NOTIC: [8] Undefined index: tpnub D:\phpStudy\WWW\weixintoupiaoyuanma\Data\logs\Cache\User\06910c565e1450d396eed27237367a2f.php 第 247 行.
+NOTIC: [8] Undefined index: ipnubs D:\phpStudy\WWW\weixintoupiaoyuanma\Data\logs\Cache\User\06910c565e1450d396eed27237367a2f.php 第 252 行.
+NOTIC: [8] Undefined index: btcdxz D:\phpStudy\WWW\weixintoupiaoyuanma\Data\logs\Cache\User\06910c565e1450d396eed27237367a2f.php 第 256 行.
+NOTIC: [8] Undefined index: shumat D:\phpStudy\WWW\weixintoupiaoyuanma\Data\logs\Cache\User\06910c565e1450d396eed27237367a2f.php 第 274 行.
+NOTIC: [8] Undefined index: shuma D:\phpStudy\WWW\weixintoupiaoyuanma\Data\logs\Cache\User\06910c565e1450d396eed27237367a2f.php 第 278 行.
+NOTIC: [8] Undefined index: shumbt D:\phpStudy\WWW\weixintoupiaoyuanma\Data\logs\Cache\User\06910c565e1450d396eed27237367a2f.php 第 284 行.
+NOTIC: [8] Undefined index: shumb D:\phpStudy\WWW\weixintoupiaoyuanma\Data\logs\Cache\User\06910c565e1450d396eed27237367a2f.php 第 288 行.
+NOTIC: [8] Undefined index: shumct D:\phpStudy\WWW\weixintoupiaoyuanma\Data\logs\Cache\User\06910c565e1450d396eed27237367a2f.php 第 294 行.
+NOTIC: [8] Undefined index: shumc D:\phpStudy\WWW\weixintoupiaoyuanma\Data\logs\Cache\User\06910c565e1450d396eed27237367a2f.php 第 298 行.
+NOTIC: [8] Undefined index: xncheck D:\phpStudy\WWW\weixintoupiaoyuanma\Data\logs\Cache\User\06910c565e1450d396eed27237367a2f.php 第 304 行.
+NOTIC: [8] Undefined index: xntps D:\phpStudy\WWW\weixintoupiaoyuanma\Data\logs\Cache\User\06910c565e1450d396eed27237367a2f.php 第 308 行.
+NOTIC: [8] Undefined index: xnbms D:\phpStudy\WWW\weixintoupiaoyuanma\Data\logs\Cache\User\06910c565e1450d396eed27237367a2f.php 第 312 行.
+NOTIC: [8] Undefined index: cnzz D:\phpStudy\WWW\weixintoupiaoyuanma\Data\logs\Cache\User\06910c565e1450d396eed27237367a2f.php 第 321 行.
+NOTIC: [8] Undefined index: music D:\phpStudy\WWW\weixintoupiaoyuanma\Data\logs\Cache\User\06910c565e1450d396eed27237367a2f.php 第 326 行.
+NOTIC: [8] Undefined index: gonggao D:\phpStudy\WWW\weixintoupiaoyuanma\Data\logs\Cache\User\06910c565e1450d396eed27237367a2f.php 第 330 行.
+NOTIC: [8] Undefined index: sms_content D:\phpStudy\WWW\weixintoupiaoyuanma\Data\logs\Cache\User\06910c565e1450d396eed27237367a2f.php 第 335 行.
+NOTIC: [8] Undefined index: picurl_guanggao D:\phpStudy\WWW\weixintoupiaoyuanma\Data\logs\Cache\User\06910c565e1450d396eed27237367a2f.php 第 344 行.
+NOTIC: [8] Undefined index: cknums D:\phpStudy\WWW\weixintoupiaoyuanma\Data\logs\Cache\User\06910c565e1450d396eed27237367a2f.php 第 476 行.
+NOTIC: [8] Undefined index: cknums D:\phpStudy\WWW\weixintoupiaoyuanma\Data\logs\Cache\User\06910c565e1450d396eed27237367a2f.php 第 477 行.
+NOTIC: [8] Undefined index: votelimit D:\phpStudy\WWW\weixintoupiaoyuanma\Data\logs\Cache\User\06910c565e1450d396eed27237367a2f.php 第 488 行.
+NOTIC: [8] Undefined index: is_sendsms D:\phpStudy\WWW\weixintoupiaoyuanma\Data\logs\Cache\User\06910c565e1450d396eed27237367a2f.php 第 498 行.
+NOTIC: [8] Undefined index: is_sendsms D:\phpStudy\WWW\weixintoupiaoyuanma\Data\logs\Cache\User\06910c565e1450d396eed27237367a2f.php 第 503 行.
+NOTIC: [8] Undefined index: is_sh D:\phpStudy\WWW\weixintoupiaoyuanma\Data\logs\Cache\User\06910c565e1450d396eed27237367a2f.php 第 509 行.
+NOTIC: [8] Undefined index: is_sh D:\phpStudy\WWW\weixintoupiaoyuanma\Data\logs\Cache\User\06910c565e1450d396eed27237367a2f.php 第 514 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-1.060802s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015600s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-1.076402s ]
+INFO: Run TokenBuild Behavior [ RunTime:-1.076402s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-1.076402s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-1.076402s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-1.076402s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-10-17T09:55:41+08:00 ] ERR: (ThinkException) 无法加载模块:tpl
+[ 2016-10-17T09:58:15+08:00 ] 0.0.0.0 /weixintoupiaoyuanma/index.php?g=User&m=Vote&a=index
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: 1 D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\_Core\Lib\Core\Action.class.php 第 209 行.
+NOTIC: [2] Cannot use a scalar value as an array D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\_Core\Lib\Core\Action.class.php 第 209 行.
+SQL: SHOW COLUMNS FROM `tp_agent` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://localhost' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_user_group` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_user_group` WHERE ( `id` = 7 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_users` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_users` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_users` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_wxuser` [ RunTime:0.015600s ]
+SQL: SELECT `wxname`,`weixin`,`wxid`,`headerpic` FROM `tp_wxuser` WHERE ( `token` = 'Eioa5C5oj3S32qhH' ) AND ( `uid` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_token_open` [ RunTime:0.000000s ]
+SQL: SELECT `queryname` FROM `tp_token_open` WHERE ( `token` = 'Eioa5C5oj3S32qhH' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `gid`,`activitynum`,`sum` FROM `tp_users` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_user_group` WHERE ( `id` = 7 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_vote` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_vote` WHERE ( `token` = 'Eioa5C5oj3S32qhH' ) ORDER BY id DESC  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_vote_item` [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_vote_item` WHERE ( `vid` = 19 ) AND ( `status` > 0 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_vote_item` WHERE ( `vid` = 18 ) AND ( `status` > 0 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_vote_item` WHERE ( `vid` = 16 ) AND ( `status` > 0 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_vote_item` WHERE ( `vid` = 15 ) AND ( `status` > 0 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_vote_item` WHERE ( `vid` = 14 ) AND ( `status` > 0 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_vote_item` WHERE ( `vid` = 13 ) AND ( `status` > 0 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_vote_item` WHERE ( `vid` = 12 ) AND ( `status` > 0 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_vote_item` WHERE ( `vid` = 11 ) AND ( `status` > 0 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_vote` WHERE ( `token` = 'Eioa5C5oj3S32qhH' ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-1.045201s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: ok D:\phpStudy\WWW\weixintoupiaoyuanma\Data\logs\Cache\User\f70321ef24e437eb7147c67ab8f0460a.php 第 165 行.
+NOTIC: [8] Undefined index: id D:\phpStudy\WWW\weixintoupiaoyuanma\Data\logs\Cache\User\f70321ef24e437eb7147c67ab8f0460a.php 第 180 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-1.045201s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015601s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-1.060802s ]
+INFO: Run TokenBuild Behavior [ RunTime:-1.060802s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-1.060802s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-1.060802s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-1.060802s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-10-17T09:58:16+08:00 ] ERR: (ThinkException) 无法加载模块:tpl
+[ 2016-10-17T09:58:16+08:00 ] ERR: (ThinkException) 无法加载模块:tpl
+[ 2016-10-17T09:58:29+08:00 ] 0.0.0.0 /weixintoupiaoyuanma/index.php?g=admin&m=Index&a=login
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: 1 D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\_Core\Lib\Core\Action.class.php 第 209 行.
+NOTIC: [2] Cannot use a scalar value as an array D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\_Core\Lib\Core\Action.class.php 第 209 行.
+SQL: SHOW COLUMNS FROM `tp_agent` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://localhost' ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-1.045202s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-1.045202s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-1.045202s ]
+INFO: Run TokenBuild Behavior [ RunTime:-1.045202s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-1.045202s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-1.045202s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-1.045202s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-10-17T09:58:34+08:00 ] 0.0.0.0 /weixintoupiaoyuanma/index.php?g=Admin&m=Index&a=index
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: 1 D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\_Core\Lib\Core\Action.class.php 第 209 行.
+NOTIC: [2] Cannot use a scalar value as an array D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\_Core\Lib\Core\Action.class.php 第 209 行.
+SQL: SHOW COLUMNS FROM `tp_agent` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://localhost' ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-1.029602s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-1.029602s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-1.029602s ]
+INFO: Run TokenBuild Behavior [ RunTime:-1.029602s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-1.029602s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-1.029602s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-1.029602s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-10-17T09:58:38+08:00 ] 0.0.0.0 /weixintoupiaoyuanma/index.php?g=Admin&m=Index&a=qtuser
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: 1 D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\_Core\Lib\Core\Action.class.php 第 209 行.
+NOTIC: [2] Cannot use a scalar value as an array D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\_Core\Lib\Core\Action.class.php 第 209 行.
+SQL: SHOW COLUMNS FROM `tp_agent` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://localhost' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_users` [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_users` LIMIT 1   [ RunTime:0.000000s ]
+SQL: select a.id,a.username,a.tel,a.email,a.sum,a.overtime,a.gongzhong,a.lastip,a.lasttime,a.status,b.token as token from tp_users a left join tp_token_open b on a.id=b.uid order by a.id desc limit 0,10  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_users` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_users`  [ RunTime:0.000000s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-1.060802s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./tpl/Admin/default/Index_header.html) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\_Core\Lib\Template\ThinkTemplate.class.php 第 624 行.
+NOTIC: [2] file_get_contents(./tpl/Admin/default/common_public.html) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\_Core\Lib\Template\ThinkTemplate.class.php 第 624 行.
+NOTIC: [2] file_get_contents(./tpl/Admin/default/Index_footer.html) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\_Core\Lib\Template\ThinkTemplate.class.php 第 624 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-1.060802s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-1.060802s ]
+INFO: Run TokenBuild Behavior [ RunTime:-1.060802s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-1.060802s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-1.060802s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-1.060802s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-10-17T09:58:45+08:00 ] 0.0.0.0 /weixintoupiaoyuanma/index.php?g=Admin&m=Index&a=qtuseredit&id=1&token=Eioa5C5oj3S32qhH
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: 1 D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\_Core\Lib\Core\Action.class.php 第 209 行.
+NOTIC: [2] Cannot use a scalar value as an array D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\_Core\Lib\Core\Action.class.php 第 209 行.
+SQL: SHOW COLUMNS FROM `tp_agent` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://localhost' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_users` [ RunTime:0.000000s ]
+SQL: select a.id,a.username,a.tel,a.email,a.sum,a.overtime,a.gongzhong,a.lastip,a.lasttime,a.status,b.token as token from tp_users a left join tp_token_open b on a.id=b.uid where a.id=1 [ RunTime:0.000000s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-1.031602s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./tpl/Admin/default/Index_header.html) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\_Core\Lib\Template\ThinkTemplate.class.php 第 624 行.
+NOTIC: [2] file_get_contents(./tpl/Admin/default/Index_footer.html) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\_Core\Lib\Template\ThinkTemplate.class.php 第 624 行.
+NOTIC: [8] Undefined variable: title D:\phpStudy\WWW\weixintoupiaoyuanma\Data\logs\Cache\Admin\56b2ff81f7110e9ca089fd97cb9d1445.php 第 171 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-1.031602s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015600s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-1.047202s ]
+INFO: Run TokenBuild Behavior [ RunTime:-1.047202s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-1.047202s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-1.047202s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-1.047202s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-10-17T09:59:08+08:00 ] 0.0.0.0 /weixintoupiaoyuanma/index.php
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of IndexAction::show() should be compatible with that of Action::show() D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\Lib\Action\Home\IndexAction.class.php 第 4 行.
+NOTIC: [8] Undefined index: 1 D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\_Core\Lib\Core\Action.class.php 第 209 行.
+NOTIC: [2] Cannot use a scalar value as an array D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\_Core\Lib\Core\Action.class.php 第 209 行.
+SQL: SHOW COLUMNS FROM `tp_agent` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://localhost' ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-1.060802s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-1.060802s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-1.060802s ]
+INFO: Run TokenBuild Behavior [ RunTime:-1.060802s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-1.060802s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-1.060802s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-1.060802s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-10-17T09:59:13+08:00 ] 0.0.0.0 /weixintoupiaoyuanma/index.php?m=Users&a=checklogin
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: 1 D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\_Core\Lib\Core\Action.class.php 第 209 行.
+NOTIC: [2] Cannot use a scalar value as an array D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\_Core\Lib\Core\Action.class.php 第 209 行.
+SQL: SHOW COLUMNS FROM `tp_agent` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://localhost' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_users` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_users` WHERE ( `username` = 'admin' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_token_open` [ RunTime:0.000000s ]
+SQL: SELECT `token` FROM `tp_token_open` WHERE ( `uid` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_user_group` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_user_group` WHERE ( `id` = 7 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: UPDATE `tp_users` SET `lasttime`=1476669553,`lastloginmonth`=10,`lastip`='0.0.0.0' WHERE ( `id` = 1 ) [ RunTime:0.000000s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-1.029602s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-1.029602s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015600s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-1.045202s ]
+INFO: Run TokenBuild Behavior [ RunTime:-1.045202s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-1.045202s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-1.045202s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-1.045202s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-10-17T09:59:15+08:00 ] 0.0.0.0 /weixintoupiaoyuanma/index.php?g=User&m=Vote&a=index
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: 1 D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\_Core\Lib\Core\Action.class.php 第 209 行.
+NOTIC: [2] Cannot use a scalar value as an array D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\_Core\Lib\Core\Action.class.php 第 209 行.
+SQL: SHOW COLUMNS FROM `tp_agent` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://localhost' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_user_group` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_user_group` WHERE ( `id` = 7 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_users` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_users` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_users` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_wxuser` [ RunTime:0.000000s ]
+SQL: SELECT `wxname`,`weixin`,`wxid`,`headerpic` FROM `tp_wxuser` WHERE ( `token` = 'Eioa5C5oj3S32qhH' ) AND ( `uid` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_token_open` [ RunTime:0.015600s ]
+SQL: SELECT `queryname` FROM `tp_token_open` WHERE ( `token` = 'Eioa5C5oj3S32qhH' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `gid`,`activitynum`,`sum` FROM `tp_users` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_user_group` WHERE ( `id` = 7 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_vote` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_vote` WHERE ( `token` = 'Eioa5C5oj3S32qhH' ) ORDER BY id DESC  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_vote_item` [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_vote_item` WHERE ( `vid` = 19 ) AND ( `status` > 0 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_vote_item` WHERE ( `vid` = 18 ) AND ( `status` > 0 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_vote_item` WHERE ( `vid` = 16 ) AND ( `status` > 0 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_vote_item` WHERE ( `vid` = 15 ) AND ( `status` > 0 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_vote_item` WHERE ( `vid` = 14 ) AND ( `status` > 0 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_vote_item` WHERE ( `vid` = 13 ) AND ( `status` > 0 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_vote_item` WHERE ( `vid` = 12 ) AND ( `status` > 0 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_vote_item` WHERE ( `vid` = 11 ) AND ( `status` > 0 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_vote` WHERE ( `token` = 'Eioa5C5oj3S32qhH' ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-1.092002s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: ok D:\phpStudy\WWW\weixintoupiaoyuanma\Data\logs\Cache\User\f70321ef24e437eb7147c67ab8f0460a.php 第 165 行.
+NOTIC: [8] Undefined index: id D:\phpStudy\WWW\weixintoupiaoyuanma\Data\logs\Cache\User\f70321ef24e437eb7147c67ab8f0460a.php 第 180 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-1.092002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015600s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-1.107602s ]
+INFO: Run TokenBuild Behavior [ RunTime:-1.107602s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-1.107602s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-1.107602s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-1.107602s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-10-17T09:59:15+08:00 ] ERR: (ThinkException) 无法加载模块:tpl
+[ 2016-10-17T09:59:15+08:00 ] ERR: (ThinkException) 无法加载模块:tpl
+[ 2016-10-17T09:59:21+08:00 ] 0.0.0.0 /weixintoupiaoyuanma/index.php?g=Home&m=Index&a=help&token=Eioa5C5oj3S32qhH
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of IndexAction::show() should be compatible with that of Action::show() D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\Lib\Action\Home\IndexAction.class.php 第 4 行.
+NOTIC: [8] Undefined index: 1 D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\_Core\Lib\Core\Action.class.php 第 209 行.
+NOTIC: [2] Cannot use a scalar value as an array D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\_Core\Lib\Core\Action.class.php 第 209 行.
+SQL: SHOW COLUMNS FROM `tp_agent` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://localhost' ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-1.060802s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./tpl/Home/default/Public_header.html) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\_Core\Lib\Template\ThinkTemplate.class.php 第 624 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-1.060802s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-1.060802s ]
+INFO: Run TokenBuild Behavior [ RunTime:-1.060802s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-1.060802s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-1.060802s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-1.060802s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-10-17T09:59:21+08:00 ] ERR: (ThinkException) 无法加载模块:style
+[ 2016-10-17T10:00:05+08:00 ] 0.0.0.0 /weixintoupiaoyuanma/index.php?g=User&m=Vote&a=index
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: 1 D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\_Core\Lib\Core\Action.class.php 第 209 行.
+NOTIC: [2] Cannot use a scalar value as an array D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\_Core\Lib\Core\Action.class.php 第 209 行.
+SQL: SHOW COLUMNS FROM `tp_agent` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://localhost' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_user_group` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_user_group` WHERE ( `id` = 7 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_users` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_users` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_users` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_wxuser` [ RunTime:0.000000s ]
+SQL: SELECT `wxname`,`weixin`,`wxid`,`headerpic` FROM `tp_wxuser` WHERE ( `token` = 'Eioa5C5oj3S32qhH' ) AND ( `uid` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_token_open` [ RunTime:0.015600s ]
+SQL: SELECT `queryname` FROM `tp_token_open` WHERE ( `token` = 'Eioa5C5oj3S32qhH' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `gid`,`activitynum`,`sum` FROM `tp_users` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_user_group` WHERE ( `id` = 7 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_vote` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_vote` WHERE ( `token` = 'Eioa5C5oj3S32qhH' ) ORDER BY id DESC  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_vote_item` [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_vote_item` WHERE ( `vid` = 19 ) AND ( `status` > 0 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_vote_item` WHERE ( `vid` = 18 ) AND ( `status` > 0 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_vote_item` WHERE ( `vid` = 16 ) AND ( `status` > 0 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_vote_item` WHERE ( `vid` = 15 ) AND ( `status` > 0 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_vote_item` WHERE ( `vid` = 14 ) AND ( `status` > 0 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_vote_item` WHERE ( `vid` = 13 ) AND ( `status` > 0 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_vote_item` WHERE ( `vid` = 12 ) AND ( `status` > 0 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_vote_item` WHERE ( `vid` = 11 ) AND ( `status` > 0 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_vote` WHERE ( `token` = 'Eioa5C5oj3S32qhH' ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-1.045202s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: ok D:\phpStudy\WWW\weixintoupiaoyuanma\Data\logs\Cache\User\f70321ef24e437eb7147c67ab8f0460a.php 第 165 行.
+NOTIC: [8] Undefined index: id D:\phpStudy\WWW\weixintoupiaoyuanma\Data\logs\Cache\User\f70321ef24e437eb7147c67ab8f0460a.php 第 180 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-1.045202s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015600s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-1.060802s ]
+INFO: Run TokenBuild Behavior [ RunTime:-1.060802s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-1.060802s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-1.060802s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-1.060802s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-10-17T10:00:05+08:00 ] ERR: (ThinkException) 无法加载模块:tpl
+[ 2016-10-17T10:00:05+08:00 ] ERR: (ThinkException) 无法加载模块:tpl
+[ 2016-10-17T10:02:57+08:00 ] 0.0.0.0 /weixintoupiaoyuanma/index.php?g=User&m=Vote&a=check&id=1
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: 1 D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\_Core\Lib\Core\Action.class.php 第 209 行.
+NOTIC: [2] Cannot use a scalar value as an array D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\_Core\Lib\Core\Action.class.php 第 209 行.
+SQL: SHOW COLUMNS FROM `tp_agent` [ RunTime:0.006001s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://localhost' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_user_group` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `tp_user_group` WHERE ( `id` = 7 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_users` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `tp_users` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_users` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_wxuser` [ RunTime:0.003000s ]
+SQL: SELECT `wxname`,`weixin`,`wxid`,`headerpic` FROM `tp_wxuser` WHERE ( `token` = 'Eioa5C5oj3S32qhH' ) AND ( `uid` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_token_open` [ RunTime:0.003000s ]
+SQL: SELECT `queryname` FROM `tp_token_open` WHERE ( `token` = 'Eioa5C5oj3S32qhH' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_vote` [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `tp_vote_item` [ RunTime:0.002001s ]
+SQL: SELECT * FROM `tp_vote` WHERE ( `token` = 'Eioa5C5oj3S32qhH' ) ORDER BY id desc  [ RunTime:0.001000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_vote_item` WHERE ( `status` = 0 ) AND ( `vid` IN ('19','18','16','15','14','13','12','11') ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_vote_item` WHERE ( `status` = 0 ) AND ( `vid` IN ('19','18','16','15','14','13','12','11') ) ORDER BY id DESC LIMIT 0,20   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: IIIIIIlI1111 D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\Lib\Action\User\VoteAction.class.php 第 825 行.
+SQL: SELECT SUM(vcount) AS tp_sum FROM `tp_vote_item` WHERE ( `vid` = null ) LIMIT 1   [ RunTime:0.001000s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-1.055061s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-1.056061s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-1.065061s ]
+INFO: Run TokenBuild Behavior [ RunTime:-1.065061s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-1.065061s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-1.066061s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-1.066061s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-10-17T10:03:02+08:00 ] 0.0.0.0 /weixintoupiaoyuanma/index.php?g=User&m=Vote&a=index
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: 1 D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\_Core\Lib\Core\Action.class.php 第 209 行.
+NOTIC: [2] Cannot use a scalar value as an array D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\_Core\Lib\Core\Action.class.php 第 209 行.
+SQL: SHOW COLUMNS FROM `tp_agent` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://localhost' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_user_group` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `tp_user_group` WHERE ( `id` = 7 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_users` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `tp_users` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_users` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tp_wxuser` [ RunTime:0.002001s ]
+SQL: SELECT `wxname`,`weixin`,`wxid`,`headerpic` FROM `tp_wxuser` WHERE ( `token` = 'Eioa5C5oj3S32qhH' ) AND ( `uid` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_token_open` [ RunTime:0.002000s ]
+SQL: SELECT `queryname` FROM `tp_token_open` WHERE ( `token` = 'Eioa5C5oj3S32qhH' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `gid`,`activitynum`,`sum` FROM `tp_users` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_user_group` WHERE ( `id` = 7 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_vote` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `tp_vote` WHERE ( `token` = 'Eioa5C5oj3S32qhH' ) ORDER BY id DESC  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_vote_item` [ RunTime:0.002000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_vote_item` WHERE ( `vid` = 19 ) AND ( `status` > 0 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_vote_item` WHERE ( `vid` = 18 ) AND ( `status` > 0 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_vote_item` WHERE ( `vid` = 16 ) AND ( `status` > 0 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_vote_item` WHERE ( `vid` = 15 ) AND ( `status` > 0 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_vote_item` WHERE ( `vid` = 14 ) AND ( `status` > 0 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_vote_item` WHERE ( `vid` = 13 ) AND ( `status` > 0 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_vote_item` WHERE ( `vid` = 12 ) AND ( `status` > 0 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_vote_item` WHERE ( `vid` = 11 ) AND ( `status` > 0 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_vote` WHERE ( `token` = 'Eioa5C5oj3S32qhH' ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-1.052060s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: ok D:\phpStudy\WWW\weixintoupiaoyuanma\Data\logs\Cache\User\f70321ef24e437eb7147c67ab8f0460a.php 第 165 行.
+NOTIC: [8] Undefined index: id D:\phpStudy\WWW\weixintoupiaoyuanma\Data\logs\Cache\User\f70321ef24e437eb7147c67ab8f0460a.php 第 180 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-1.052060s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-1.062061s ]
+INFO: Run TokenBuild Behavior [ RunTime:-1.062061s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-1.063061s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-1.063061s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-1.063061s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-10-17T10:03:02+08:00 ] ERR: (ThinkException) 无法加载模块:tpl
+[ 2016-10-17T10:03:02+08:00 ] ERR: (ThinkException) 无法加载模块:tpl
+[ 2016-10-17T10:03:05+08:00 ] 0.0.0.0 /weixintoupiaoyuanma/index.php?g=Home&m=Index&a=help&token=Eioa5C5oj3S32qhH
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of IndexAction::show() should be compatible with that of Action::show() D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\Lib\Action\Home\IndexAction.class.php 第 4 行.
+NOTIC: [8] Undefined index: 1 D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\_Core\Lib\Core\Action.class.php 第 209 行.
+NOTIC: [2] Cannot use a scalar value as an array D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\_Core\Lib\Core\Action.class.php 第 209 行.
+SQL: SHOW COLUMNS FROM `tp_agent` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://localhost' ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-1.019058s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./tpl/Home/default/Public_header.html) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\_Core\Lib\Template\ThinkTemplate.class.php 第 624 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-1.019058s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005000s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-1.024058s ]
+INFO: Run TokenBuild Behavior [ RunTime:-1.024058s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-1.025058s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-1.025058s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-1.025058s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-10-17T10:03:05+08:00 ] ERR: (ThinkException) 无法加载模块:style
+[ 2016-10-17T10:05:10+08:00 ] 0.0.0.0 /weixintoupiaoyuanma/index.php?g=User&m=Vote&a=index
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: 1 D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\_Core\Lib\Core\Action.class.php 第 209 行.
+NOTIC: [2] Cannot use a scalar value as an array D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\_Core\Lib\Core\Action.class.php 第 209 行.
+SQL: SHOW COLUMNS FROM `tp_agent` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://localhost' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_user_group` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_user_group` WHERE ( `id` = 7 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_users` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_users` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_users` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_wxuser` [ RunTime:0.000000s ]
+SQL: SELECT `wxname`,`weixin`,`wxid`,`headerpic` FROM `tp_wxuser` WHERE ( `token` = 'Eioa5C5oj3S32qhH' ) AND ( `uid` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_token_open` [ RunTime:0.000000s ]
+SQL: SELECT `queryname` FROM `tp_token_open` WHERE ( `token` = 'Eioa5C5oj3S32qhH' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `gid`,`activitynum`,`sum` FROM `tp_users` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_user_group` WHERE ( `id` = 7 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_vote` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_vote` WHERE ( `token` = 'Eioa5C5oj3S32qhH' ) ORDER BY id DESC  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_vote_item` [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_vote_item` WHERE ( `vid` = 19 ) AND ( `status` > 0 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_vote_item` WHERE ( `vid` = 18 ) AND ( `status` > 0 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_vote_item` WHERE ( `vid` = 16 ) AND ( `status` > 0 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_vote_item` WHERE ( `vid` = 15 ) AND ( `status` > 0 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_vote_item` WHERE ( `vid` = 14 ) AND ( `status` > 0 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_vote_item` WHERE ( `vid` = 13 ) AND ( `status` > 0 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_vote_item` WHERE ( `vid` = 12 ) AND ( `status` > 0 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_vote_item` WHERE ( `vid` = 11 ) AND ( `status` > 0 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_vote` WHERE ( `token` = 'Eioa5C5oj3S32qhH' ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-1.030001s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: ok D:\phpStudy\WWW\weixintoupiaoyuanma\Data\logs\Cache\User\f70321ef24e437eb7147c67ab8f0460a.php 第 165 行.
+NOTIC: [8] Undefined index: id D:\phpStudy\WWW\weixintoupiaoyuanma\Data\logs\Cache\User\f70321ef24e437eb7147c67ab8f0460a.php 第 180 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-1.030001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-1.040001s ]
+INFO: Run TokenBuild Behavior [ RunTime:-1.040001s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-1.040001s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-1.040001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-1.040001s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-10-17T10:05:10+08:00 ] ERR: (ThinkException) 无法加载模块:tpl
+[ 2016-10-17T10:05:10+08:00 ] ERR: (ThinkException) 无法加载模块:tpl
+[ 2016-10-17T10:13:47+08:00 ] 0.0.0.0 /weixintoupiaoyuanma/index.php?g=Admin&m=Index&a=qtuser
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: 1 D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\_Core\Lib\Core\Action.class.php 第 209 行.
+NOTIC: [2] Cannot use a scalar value as an array D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\_Core\Lib\Core\Action.class.php 第 209 行.
+SQL: SHOW COLUMNS FROM `tp_agent` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://localhost' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_users` [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_users` LIMIT 1   [ RunTime:0.000000s ]
+SQL: select a.id,a.username,a.tel,a.email,a.sum,a.overtime,a.gongzhong,a.lastip,a.lasttime,a.status,b.token as token from tp_users a left join tp_token_open b on a.id=b.uid order by a.id desc limit 0,10  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_users` [ RunTime:0.010000s ]
+SQL: SELECT * FROM `tp_users`  [ RunTime:0.000000s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-1.030001s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./tpl/Admin/default/Index_header.html) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\_Core\Lib\Template\ThinkTemplate.class.php 第 624 行.
+NOTIC: [2] file_get_contents(./tpl/Admin/default/common_public.html) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\_Core\Lib\Template\ThinkTemplate.class.php 第 624 行.
+NOTIC: [2] file_get_contents(./tpl/Admin/default/Index_footer.html) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\_Core\Lib\Template\ThinkTemplate.class.php 第 624 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-1.030001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-1.040001s ]
+INFO: Run TokenBuild Behavior [ RunTime:-1.040001s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-1.040001s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-1.040001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-1.040001s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-10-17T10:13:49+08:00 ] 0.0.0.0 /weixintoupiaoyuanma/index.php?g=Admin&m=Index&a=user
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: 1 D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\_Core\Lib\Core\Action.class.php 第 209 行.
+NOTIC: [2] Cannot use a scalar value as an array D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\_Core\Lib\Core\Action.class.php 第 209 行.
+SQL: SHOW COLUMNS FROM `tp_agent` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://localhost' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_admin` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_admin` WHERE id=1  [ RunTime:0.000000s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-1.010001s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./tpl/Admin/default/Index_header.html) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\_Core\Lib\Template\ThinkTemplate.class.php 第 624 行.
+NOTIC: [2] file_get_contents(./tpl/Admin/default/common_public.html) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\_Core\Lib\Template\ThinkTemplate.class.php 第 624 行.
+NOTIC: [2] file_get_contents(./tpl/Admin/default/Index_footer.html) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\_Core\Lib\Template\ThinkTemplate.class.php 第 624 行.
+NOTIC: [8] Undefined variable: page D:\phpStudy\WWW\weixintoupiaoyuanma\Data\logs\Cache\Admin\3665903ccb57be958a79fd025c8a4a7e.php 第 186 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-1.010001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-1.020001s ]
+INFO: Run TokenBuild Behavior [ RunTime:-1.020001s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-1.020001s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-1.020001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-1.020001s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-10-17T10:13:52+08:00 ] 0.0.0.0 /weixintoupiaoyuanma/index.php?g=Admin&m=Index&a=set
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.010000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010000s ]
+NOTIC: [8] Undefined index: 1 D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\_Core\Lib\Core\Action.class.php 第 209 行.
+NOTIC: [2] Cannot use a scalar value as an array D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\_Core\Lib\Core\Action.class.php 第 209 行.
+SQL: SHOW COLUMNS FROM `tp_agent` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://localhost' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_admin` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_admin`  [ RunTime:0.000000s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-1.000002s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./tpl/Admin/default/Index_header.html) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\_Core\Lib\Template\ThinkTemplate.class.php 第 624 行.
+NOTIC: [2] file_get_contents(./tpl/Admin/default/common_public.html) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\_Core\Lib\Template\ThinkTemplate.class.php 第 624 行.
+NOTIC: [2] file_get_contents(./tpl/Admin/default/Index_footer.html) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\_Core\Lib\Template\ThinkTemplate.class.php 第 624 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-1.000002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-1.010002s ]
+INFO: Run TokenBuild Behavior [ RunTime:-1.010002s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-1.010002s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-1.010002s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-1.010002s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000000s ]
+

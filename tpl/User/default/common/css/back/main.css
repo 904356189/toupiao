@@ -1,0 +1,46 @@
+
+td,th,div,input,select,textarea,li,ol,dt,dd,h1,h2,h3,h4,h5,h6,font,span{font-size:14px;}
+/* 头部开始 */
+#header{width:100%; min-width:1000px; height:56px; overflow:hidden; background:url(../images/main/header-bg.jpg) left 51px repeat-x #272C30; position:fixed;}
+#header .logo{width:220px; height:56px; float:left; overflow:hidden; text-align:center; background:url(../images/main/logo-bg.jpg) repeat-x;}
+#header .logo img{height:50px;}
+#header ul{margin-left:20px; position:absolute; left:220px; top:0;}
+#header ul li{float:left; height:50px; line-height:50px; margin-right:55px; text-indent:20px; background-position:left 19px; background-repeat:no-repeat;}
+#header ul li a{color:#B2B2B4; font-weight:bold; font-size:12px;}
+#header ul li.ico-0{background-image:url(../images/main/h-ico-0.jpg);}
+#header ul li.ico-1{background-image:url(../images/main/h-ico-1.jpg);}
+#header ul li.ico-2{background-image:url(../images/main/h-ico-2.jpg);}
+#header ul li.ico-3{background-image:url(../images/main/h-ico-3.jpg);}
+#header ul li.ico-4{background-image:url(../images/main/h-ico-4.jpg);}
+#header ul li.ico-5{background-image:url(../images/main/h-ico-5.jpg);}
+#header ul li.ico-6{background-image:url(../images/main/h-ico-6.jpg);}
+/* 头部结束 */
+
+#main{width:100%; min-width:1000px; padding-top:56px;}
+#main .menu{float:left; width:220px; height:100%; background:url(../images/main/menu-bg.jpg) repeat-y; overflow:hidden;}
+#main .menu dl{padding:6px 0;}
+#main .menu dt{background:url(../images/main/menu-item-bg.png); height:44px; line-height:44px; color:#fff; font-weight:bold; cursor:default; width:208px; margin:0 auto; margin-bottom:6px;}
+#main .menu dt.cur{background:url(../images/main/menu-item-bg-cur.png);}
+#main .menu dt img{vertical-align:middle; padding:0 8px;}
+#main .menu dd{display:block; width:208px; margin:0 auto;}
+#main .menu dd div{height:40px; line-height:40px; color:#fff; text-indent:35px; background:url(../images/main/menu-dd-bg.jpg) left bottom repeat-x;}
+#main .menu dd div.cur, #main .menu dd div.cur a{color:#ff6600;}
+#main .menu dd div a{color:#fff; font-size:14px;}
+#main .iframe{float:left; height:100%; overflow:hidden;}
+#main .iframe iframe{width:100%; height:100%; overflow-x:hidden;}
+
+.clear {
+margin: 0px auto;
+clear: both;
+height: 0px;
+font-size: 0px;
+overflow: hidden;
+}
+#footer{width:100%; min-width:1000px; background:url(../images/main/footer-bg.jpg) right 0 repeat-y #252A2D; text-align:center;}
+#footer .oem{color:#fff; height:30px; line-height:30px; text-align:right; padding-right:20px; overflow:hidden;}
+#footer .oem .*{color:#fff;}
+
+
+#iframe_page .iframe_content {
+padding: 15px 25px;
+}

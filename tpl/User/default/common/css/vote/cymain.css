@@ -1,0 +1,22 @@
+.tab {height: 35px; margin:10px 0 0 0;background:#eee;border-bottom: 1px solid #d7dde6;}
+.tab ul{ height: 35px;}
+
+.tab ul li{ float:left; height:30px; border: 1px solid #d7dde6; background: #f6f6f6; font-size: 14px; line-height: 30px; margin: 4px 0 0 10px; display: inline; cursor: pointer; white-space: nowrap ;  padding:0 18px}
+.tab ul li.current{ background:#fff; font-weight:bold; line-height:28px; border-bottom:none; height:31px;padding:0 18px; cursor:default;}
+.tab ul li.last{border:none; margin-left:50px; background:none;}
+
+.oper{margin:20px 0; background:#f9fcff}
+.oper a{height:18px; line-height:18px; margin: 0 20px 0 0; font-size:14px}
+a.back{background:url(../icons/arrow_redo.png) no-repeat; padding:2px 0 2px 20px}
+a.add{background:url(../icons/add.png) no-repeat; padding:0px 0 0px 20px}
+a.taxis{background:url(../icons/arrow_switch.png) no-repeat; padding:2px 0 2px 20px}
+a.delete{background:url(../icons/cross.png) no-repeat; padding:2px 0 2px 20px}
+a.recommend{background:url(../icons/layers.png) no-repeat; padding:2px 0 2px 20px}
+a.excel{background:url(../icons/page_excel.png) no-repeat; padding:2px 0 2px 20px}
+a.handle{background:url(../icons/folder_database.png) no-repeat; padding:2px 0 2px 20px}
+a.transfer{background:url(../icons/arrow_redo.png) no-repeat; padding:2px 0 2px 20px}
+a.mp{background:url(../icons/phone.png) no-repeat; padding:2px 0 2px 20px}
+a.help{background:url(../icons/help.png) no-repeat; padding:2px 0 2px 20px}
+a.grade{background:url(../icons/photocat.gif) no-repeat; padding:2px 0 2px 20px}
+
+input.error,textarea.error{ border:1px solid #f00; } label.error,option.error{ color:#f00; } 

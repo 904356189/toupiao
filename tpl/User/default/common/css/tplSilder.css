@@ -1,0 +1,26 @@
+.list_carousel {position:relative;width: 960px;margin:10px auto;}
+.caroufredsel_wrapper{width:960px!important;}
+.list_carousel ul {margin: 0;padding: 0;list-style: none;display: block;}
+.list_carousel li {font-size: 14px;color: #999;text-align: center;width: 240px;height:383px;padding: 0;display: block;float: left;}
+.list_carousel li a{display:block;width:170px;margin:auto;position:relative; background:url(../images/img/radio_iphone0.png)}
+.list_carousel li a:hover {background:url(../images/img/radio_iphone.png)}
+.list_carousel li img{width:170px;height:353px;margin:0px auto; display:inline;}
+.list_carousel.responsive {width: auto;margin-left: 0;}
+.clearfix {float: none;clear: both;}
+.prev, .next{display:inline-block;width:28px;height:50px;position:absolute;	top:50%;margin-top:-50px;z-index:100;background:url(../images/prev_next.png) no-repeat 0 center;left:-20px;}
+.prev{background-position:0 -305px;}
+.next {left:auto;right:-20px;background-position:-30px -305px;}
+
+
+.list_carousel2 {position:relative;width: 960px;margin:10px auto;}
+.caroufredsel_wrapper2{width:960px!important;}
+.list_carousel2 ul {margin: 0;padding: 0;list-style: none;display: block;}
+.list_carousel2 li {font-size: 14px;color: #999;text-align: center;width: 240px;height:383px;padding: 0;display: block;float: left;}
+.list_carousel2 li a{display:block;width:170px;margin:auto;position:relative; background:url(../images/img/radio_iphone0.png)}
+.list_carousel2 li a:hover {background:url(../images/img/radio_iphone.png)}
+.list_carousel2 li img{width:170px;height:353px;margin:0px auto; display:inline;}
+
+.clearfix2 {float: none;clear: both;}
+.prev2, .next2{display:inline-block;width:28px;height:50px;position:absolute;	top:50%;margin-top:-50px;z-index:100;background:url(../images/prev_next.png) no-repeat 0 center;left:-20px;}
+.prev2{background-position:0 -305px;}
+.next2 {left:auto;right:-20px;background-position:-30px -305px;}

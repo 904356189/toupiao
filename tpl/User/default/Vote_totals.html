@@ -1,0 +1,84 @@
+﻿<include file="Public:head"/> 
+  <link href="{iMicms::STATICS}/vote/wap/skins/all.css?v=0.9.1" rel="stylesheet">
+    <link href="{iMicms::STATICS}/vote/wap/vote.css" rel="stylesheet">
+  <script src="{iMicms::STATICS}/vote/wap/js/jquery.js"></script>
+  <script src="{iMicms::STATICS}/vote/wap/jquery.icheck.min.js?v=0.9.1"></script>
+  <link href="{iMicms::STATICS}/vote/index.css" rel="stylesheet" media>
+<style>
+section.list ul li{
+margin-right:0;
+}
+ul{list-style-type:none; margin:0;width:98%; }
+ul li{ width:150px; float:left;}
+ul li img{ width:150px; height:178px;float:left;}
+.linkp{
+list-style-type:none;
+margin-right:30px;
+text-align:right;
+color:red;
+letter-spacing:5px;
+}
+.linkp a{
+color:#000;
+}
+.linkp li a{
+letter-spacing:2px;
+}
+.linkp .total{
+float:right;
+}
+</style>
+<div class="content">
+    
+
+  <div class="layout clear">
+      <div class="skin skin-line">          
+         
+            <div class="skin-section">
+              <h4>{iMicms:$vote.title}</h4>  
+             <h3><a href="{iMicms::U('Vote/index')}" class="right btn btn-primary btn_submit  J_ajax_submit_btn" style="margin-top:-27px">返回</a>
+			 </h3><h3><a href="{iMicms::U('Vote/outxls',array('id'=>$vote['id']))}" class="right btn btn-primary btn_submit  J_ajax_submit_btn" style="margin-top:-27px;margin-right:5px;">导出EXCEL</a>
+			 </h3>
+              
+             <p class="modus"> <if condition="$vote['cknums'] eq 1"> 单选<else/>多选</if>投票，<span class="number">共有{iMicms:$count}人参与投票</span></p>
+		<section class="list" id="allplayer">
+		<div id="main" role="main">
+				<ul id="tiles">
+				<volist name="vote_item" id="li">
+					<li>
+						<img src="{iMicms:$li.startpicurl}" width="150" height="178">
+						<p class="tit">编号:{iMicms:$li.id} <br />{iMicms:$li.item}</p>
+						<p>取消关注：<b>{iMicms:$li.prode}个</b></p><p> 减去票数：<b>{iMicms:$li['prode']}个</b></p>
+						<p>最终票数：<b>{iMicms:$li['pro']}</b></p>
+						<p style="color:#FF0000;">名次：<b>{iMicms:$li.mingci}</b></p>
+					</li>
+				</volist>
+				</ul>
+		 </div>
+		 <div style="clear:both"></div>
+		<div class="linkp">{iMicms:$page}</div>
+		 </section>        
+     </div>
+    
+
+<script>
+  $(document).ready(function(){
+     $('.skin-line input').each(function(){
+       var self = $(this),
+        label = self.next(),
+        label_text = label.text();
+        
+       label.remove();
+       self.iCheck({
+         checkboxClass: 'icheckbox_line-orange',
+         radioClass: 'iradio_line-orange',
+         insert: '<div class="icheck_line-icon"></div>' + label_text
+       });       
+        
+    });
+});
+</script>  
+</div> 
+</div>  
+</div>
+<include file="Public:footer"/>

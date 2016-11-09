@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=uft-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <meta charset="uft-8">
+    <title>{iMicms:$vote.title}</title>
+    <meta name="description" content="{iMicms:$vote.title}">
+    <link rel="stylesheet" href="{iMicms::STATICS}/vote/index{iMicms:$vote['moban']}/touch.css">    
+	<script type="text/javascript" src="{iMicms::STATICS}/vote/index{iMicms:$vote['moban']}/jquery-2.1.3.min.js"></script>
+
+                 <script type="text/javascript" src="{iMicms::STATICS}/vote/index{iMicms:$vote['moban']}/app.js"></script>
+                 <script type="text/javascript" src="{iMicms::STATICS}/vote/index{iMicms:$vote['moban']}/jquery.masonry.min.js"></script>
+  <style>
+.slider{display:none;}
+.focus span{width:5px;height:5px;margin-left:5px;border-radius:50%;background:#CDCDCD;font-size:0}
+.focus span.current{background:red;}
+</style>
+                
+    </head>
+<body>
+<header>
+ <img src="{iMicms:$vote.wappicurl}" alt="shareImg" width="0px" height="0px"/>  
+
+    <div class="m_head clearfix">
+    	<notempty name="ggduotu">
+        <div class="slider">
+		<ul>
+        <volist name="ggpic" id="li">  <!-- ggt为图片分组 -->
+	    					<li><a href="#"><img src="{iMicms:$li.ggurl}"/></a></li>
+      </volist>
+				  	</ul>
+		</div>
+       <else/>
+        	<img src="{iMicms:$ggpic[0]['ggurl']}" title="{iMicms:$vote.title}">
+       </notempty>
+
+
+        	     
+        <div class="num_box">
+            <if condition="$ishavezp eq 1"><a href="{iMicms::U('Vote/detail',array('token'=>$token,'id'=>$id,'zid'=>$havezpid))}" class="join_us">我的参赛</a>
+			<else/>
+			<if  condition="$istime eq 1"><a href="{iMicms::U('Vote/signup',array('token'=>$token,'id'=>$id))}" class="join_us">我要报名</a></if></if>          
+            <ul class="num_box_ul">
+                <li>
+                    <span class="text">已报名</span>
+                    <span>{iMicms:$rc}</span>
+                </li>
+                <li>
+                    <span class="text">投票人次</span>
+                    <span>{iMicms:$tpl}</span>
+                </li>
+                <li>
+                    <span class="text">浏览量</span>
+                    <span>{iMicms:$check}</span>
+                </li>
+            </ul>
+            <img src="{iMicms::STATICS}/vote/index{iMicms:$vote['moban']}/mw_004.jpg" />
+        </div>
+        <div class="search">
+    <form action="{iMicms::U('Vote/search')}" id="search_form" method="post" accept-charset="utf-8">
+    <input type="hidden" name="id" value="{iMicms:$id}" />
+	<input type="hidden" name="token" value="{iMicms:$token}" />
+        <div class="search_con">
+            <div class="btn"><input type="submit" name="seachid" id="searchBtn" value="搜索"></div>
+            <div class="text_box"><input type="search" id="searchText" value="" name="keyword" placeholder="请输入选手姓名或编号" autocomplete="off"></div>
+        </div>
+    </form>
+</div>    </div>
+</header>
+
+<section class="content" id="get_info" data-rid="503" data-sort="" data-kw="" data-page="">
+    <div class="text_a clearfix" id="sort">
+        <a href="{iMicms::U('Vote/index',array('token'=>$token,'id'=>$id))}" >最新参赛</a>
+        <a href="{iMicms::U('Vote/rank',array('token'=>$token,'id'=>$id))}" class="active">投票排行</a>
+    </div>
+    <div class="blank20"></div>
+    <div id="pageCon" class="match_page masonry" style="padding-bottom: 50px">
+        <ul class="list_box masonry clearfix" style="position: relative;">
+        			<volist name="zuopins" id="li">
+                      <li class="picCon">
+                        <div>
+                            <i class="number">{iMicms:$li.id}号</i>
+                            <a href="{iMicms::U('Vote/detail',array('token'=>$token,'id'=>$id,'zid'=>$li['id']))}" class="img">
+                            
+                                <img src="{iMicms:$li.startpicurl}" alt="">
+                                                  
+                            </a>
+                            <div class="clearfix">
+                                <p>
+                                   {iMicms:$li.item}<br/>
+                                   {iMicms:$li.vcount}票
+                                </p>
+                                <a href="" class="vote" data-itid="{iMicms:$li.id}" data-vote_num="{iMicms:$li.id}" data-rule_id="{iMicms:$li.id}">投票</a>
+                            </div>
+                        </div>
+                    </li>
+                  </volist>
+                                </ul>
+
+    </div>
+
+    <div class="pagination pagination-centered"> <ul>{iMicms:$page_string}</ul></div>
+</section>
+<img class="bg" src="{iMicms::STATICS}/vote/index{iMicms:$vote['moban']}/mw_005.jpg" />
+
+<section class="rules">
+<div class="text">
+ <notempty name="vote.shumat">
+            <div class="prize">{iMicms:$vote['shumat']}</div>
+            <div class="neirong"><?php 
+	echo html_entity_decode(htmlspecialchars_decode($vote['shuma']));  
+	?></div>
+    </notempty>
+    <notempty name="vote.shumbt">
+        <div class="prize">{iMicms:$vote['shumbt']}</div>
+            <div class="neirong"><?php 
+	echo html_entity_decode(htmlspecialchars_decode($vote['shumb']));  
+	?></div>
+   	 </notempty>
+</div>
+<div class="text">
+  <notempty name="vote.shumct">
+       <div class="prize">{iMicms:$vote['shumct']}</div>
+            <div class="neirong"><?php 
+	echo html_entity_decode(htmlspecialchars_decode($vote['shumc']));  
+	?></div>
+   </notempty>
+   </div>
+    <div style=" height:60px; width:100%; display:block;"></div>
+
+</section>
+
+<section>
+    <div class="pop" id="guanzhu"  style="display:none" >
+        <div class="mengceng"></div>
+        <div class="pop_up">
+                        <p class="tit_p">{iMicms:$user.ydgzbt}</p> <!--  引导关注标题 -->
+            <p class="tit_txt">{iMicms:$vote.ydgzts}</p> <!--  微信引导关注提示语 -->
+            <a href="{iMicms:$vote.wxgzurl}" class="gz_btn">{iMicms:$user.ydgzan}</a> <!-- 引导用户关注按钮名称 -->
+                    </div>   <!-- 投票引导关注链接 -->
+    </div>
+    <div class="pop" id="voted" style="display:none;">
+        <div class="mengceng"></div>
+        <div class="pop_up">
+            <span class="closed close_pop_up" id="toupiaook">&nbsp;</span>
+            <p class="tit_p" id="dia_title">投票成功!</p>
+            <p class="tit_txt" id="content">恭喜您为您支持的作品投上了一票！</p>                   <!-- 投票奖励积分说明 -->
+            <if condition="$user['tpjl']==1 && $user['tpjlnum'] gt 0"><p class="tit_txt" id="content">恭喜您获得{iMicms:$user['tpjlnum']}点积分</p></if>
+            <if condition="$user['tpjl']==1 && $user['tpjlnum'] gt 0 && $user['gldzpid'] neq null" > <a href="{iMicms::U('Wap/Lottery/index',array('token'=>$token,'id'=>$user['gldzpid']))}" class="gz_btn">快去花积分，抽大奖吧！</a></if>  <!-- 奖励积分消费活动链接  奖励积分消费活动说明 -->
+            <p class="tit_txt" id="subcontent"></p>
+        </div>
+    </div>
+
+<div class="pop" id="voting2" style="display:none;">
+        <div class="mengceng"></div>
+        <div class="pop_up">
+         
+            <p class="tit_txt" >投票数据分析中，请等待......</p>
+        </div>
+    </div>
+    
+    <div class="pop" id="voting" style="display:none;">
+        <div class="mengceng"></div>
+        <div class="pop_up">
+            <span class="closed close_pop_up" id="toupiaook2">&nbsp;</span>
+            <p class="tit_p" id="voting_title"></p>
+            <p class="tit_txt" id="voting_content"></p>
+        </div>
+    </div>
+ <eq name='user.yzm' value='1'>
+
+ 
+    <div class="pop" id="validata" style="display:none">
+        <div class="mengceng" onclick="document.getElementById('validata').style.display='none';"></div>
+        <div class="pop_up" style="width:310px;">
+            <script src="http://api.geetest.com/get.php?gt={iMicms:$user['yzmid']}&width=280" type="text/javascript"></script>
+        </div>
+    </div>
+ </eq>
+ 
+    <div class="share_overmask" style="display: none;">
+        <div class="share_arrow"></div>
+        <div class="share_words"></div>
+    </div>
+</section>
+
+<link rel="stylesheet" type="text/css" href="{iMicms::STATICS}/vote/index2/daohang.css">
+
+<div class="bot_main">
+  <ul>
+    <li class="ico_1"><span class="ico"><img src="{iMicms::STATICS}/vote//index2/i1.png" /></span><span class="txt">首页</span></li>
+    <li class="ico_2"><span class="ico"><img src="{iMicms::STATICS}/vote//index2/i3.png" /></span><span class="txt">排名</span></li>
+    <li class="ico_3"><span class="ico"><img src="{iMicms::STATICS}/vote//index2/i11.png" /></span><span class="txt"><notempty name='ishavezp' >我的<else/>报名</notempty></span></li>
+    <if condition="$user['tpjl']==1 && $user['tpjlnum'] gt 0 && $user['gldzpid'] neq 0" >
+   <li class="ico_4"><span class="ico"><img src="{iMicms::STATICS}/vote/index2/i4.png" /></span><span class="txt">免费抽奖</span></li>
+   <else/>
+	<li class="ico_4"><span class="ico"><img src="{iMicms::STATICS}/vote/index2/i4.png" /></span><span class="txt">{iMicms:$user.dbdhm}</span></li>
+	</if>
+  </ul>
+</div>
+
+
+<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+<script type="text/javascript">
+    wx.config({
+        debug: false, // 开启调试模式,调用的所有api的返回值会在客户端alert出来，若要查看传入的参数，可以在pc端打开，参数信息会通过log打出，仅在pc端时才会打印。
+         appId: '{iMicms:$signPackage.appId}', // 必填，公众号的唯一标识
+        timestamp: "{iMicms:$signPackage.timestamp}", // 必填，生成签名的时间戳
+        nonceStr: '{iMicms:$signPackage.nonceStr}', // 必填，生成签名的随机串
+        signature: '{iMicms:$signPackage.signature}',// 必填，签名，见附录1
+        jsApiList: ['onMenuShareTimeline', 'onMenuShareAppMessage'] // 必填，需要使用的JS接口列表，所有JS接口列表见附录2
+    });
+
+   wx.ready(function(){
+        wx.error(function(res){
+            console.log(res);
+        });
+        //朋友圈
+        wx.onMenuShareTimeline({
+            title: "{iMicms:$vote['title']}", // 分享标题
+            link: "{iMicms::C('site_url')}{iMicms::U('Vote/index',array('token'=>$token,'id'=>$id))}", // 分享链接
+            imgUrl: "{iMicms:$vote['wappicurl']}", // 分享图标
+            success: function () {
+                // 用户确认分享后执行的回调函数
+            },
+            cancel: function () {
+                // 用户取消分享后执行的回调函数
+            }
+        });
+
+        //分享给朋友
+        wx.onMenuShareAppMessage({
+            title: "{iMicms:$vote['title']}", // 分享标题
+            desc: "{iMicms:$vote['fxms']}", // 分享描述
+            link: "{iMicms::C('site_url')}{iMicms::U('Vote/index',array('token'=>$token,'id'=>$id))}", // 分享链接
+            imgUrl: "{iMicms:$vote['wappicurl']}", // 分享图标
+            type: '', // 分享类型,music、video或link，不填默认为link
+            dataUrl: '', // 如果type是music或video，则要提供数据链接，默认为空
+            success: function () {
+                // 用户确认分享后执行的回调函数
+            },
+            cancel: function () {
+                // 用户取消分享后执行的回调函数
+            }
+        });
+    });
+</script>
+
+<script type="text/javascript">
+    $(function(){
+        $("#toupiaook").on('click',function(){
+                window.location.href = "{iMicms::U('Vote/rank',array('token'=>$token,'id'=>$id,'page'=>$page))}";
+        });
+		 $("#toupiaook2").on('click',function(){
+                window.location.href = "{iMicms::U('Vote/rank',array('token'=>$token,'id'=>$id,'page'=>$page))}";
+        });
+    });
+$(function($){
+	$("#search_form").submit(function(){
+		var keyword = $("#searchText").val();
+		if(keyword.length == 0){alert('请输入选手姓名或编号');return false;}
+	});
+});
+    $(function(){
+        $("#toupiaook").on('click',function(){
+                window.location.href = "{iMicms::U('Vote/index',array('token'=>$token,'id'=>$id))}";
+        });
+    });	
+$('.ico_1').on('click', function(){
+  location.href = "{iMicms::U('Vote/index',array('token'=>$token,'id'=>$id))}";
+});
+$('.ico_2').on('click', function(){
+  location.href = "{iMicms::U('Vote/top',array('token'=>$token,'id'=>$id))}";
+});
+$('.ico_3').on('click', function(){
+ <notempty name="ishavezp">
+  	location.href = "{iMicms::U('Vote/detail',array('token'=>$token,'id'=>$id,'zid'=>$havezpid))}";
+  <else/>
+  	<if condition="$vote['start_time'] lt time() && $vote['over_time'] gt time()">
+  		location.href = "{iMicms::U('Vote/signup',array('token'=>$token,'id'=>$id))}";
+  	<else/>
+  		<if condition="$vote['start_time'] gt time()">
+						$('#voting_title').html("<php>echo date('Y-m-d H:i:s',$vote['start_time']);</php>后才能报名");
+						$('#voting_content').html('');
+                        $('#voting').show();
+  		<else/>
+						$('#voting_title').html('报名已结束！');
+						$('#voting_content').html('');
+                        $('#voting').show();
+  		</if>
+  	</if>
+  </notempty>
+});
+<if condition="$user['tpjl']==1 && $user['tpjlnum'] gt 0 && $user['gldzpid'] neq 0" >
+$('.ico_4').on('click', function(){
+ 
+ location.href = "{iMicms::U('Wap/Lottery/index',array('token'=>$token,'id'=>$user['gldzpid']))}";
+ 
+});
+<else/>
+$('.ico_4').on('click', function(){
+ 
+	location.href = "{iMicms:$user['dbdhurl']}";  //底部导航链接 
+	
+});
+</if>
+
+</script>
+
+<script type="text/javascript">
+
+<eq name='user.yzm' value='1'>
+
+function gt_custom_ajax(result, selector, message) {
+  if (result) { 
+		$('#validata').hide(); 
+		$('#voting2').show();
+            $.ajax({
+                type: "POST",
+                url: "{iMicms::U('Vote/ticket')}",
+                cache: false,
+                data: {
+                    zid:itid,
+					vid:'{iMicms:$id}',
+					token:'{iMicms:$token}',
+					'__hash__':$('input[name="__hash__"]').val()
+					},
+                success: function(data) {
+                      if (data == 102) {//未关注
+                        $('#voting2').hide();
+						$('#guanzhu').show();
+                    } else if (data == 108) {//投票成功
+                         $('#voting2').hide();
+						$('#voted').show();
+                    } else if (data == 106) {//此用户今日已无法投票
+						 $('#voting2').hide();
+						$('#voting_title').html('无法投票');
+						$('#voting_content').html('<eq name="user.tpxzmos" value="1"> 您今日的票数已投完，请明日再投！<else/> 您本次活动的票数已投完，感谢您的参与！</eq>');
+                        $('#voting').show();
+                    } else if (data == 105) {//此IP下今日已无法投票
+						 $('#voting2').hide();
+						$('#voting_title').html('无法投票');
+						$('#voting_content').html('此IP今日票数已投完，请明日再投！');
+                        $('#voting').show();
+                    } else if (data == 103) {//投票还未开始
+						 $('#voting2').hide();
+						$('#voting_title').html('投票还未开始');
+						$('#voting_content').html('请{iMicms:$vote.statdate|date='Y-m-d H:i:s',###}后再来！');
+                        $('#voting').show();
+                    } else if (data == 104) {//投票已经结束
+						 $('#voting2').hide();
+						$('#voting_title').html('投票已经结束');
+						$('#voting_content').html('');
+                        $('#voting').show();
+                    } else if (data == 107) {//投票已经结束
+						 $('#voting2').hide();
+						$('#voting_title').html('投票失败');
+						$('#voting_content').html('此作品无法投票，可能出于审核中或已被屏蔽！');
+                        $('#voting').show();
+                    } else if (data == 110) {//ip不在限制区域中
+						 $('#voting2').hide();
+						$('#voting_title').html('投票失败');
+						$('#voting_content').html("仅允许 {iMicms:$user['area']} 区域的用户投票！");  //不在允许投票区域的提示
+                        $('#voting').show();
+                    }else if (data == 109) {//投票已经结束
+						 $('#voting2').hide();
+						$('#voting_title').html('投票失败');
+						$('#voting_content').html('<eq name="user.tpxzmos" value="1"> 您已经投过啦，每天可投一次,明天再来吧!<else/> 您已经投过了，同一用户只能投票一次!</eq>');  //限制期内已给他投过提示
+                        $('#voting').show();
+                    }else if (data == 111) {//投票已经结束
+						  $('#voting2').hide();
+						$('#voting_title').html('投票失败');
+						$('#voting_content').html('您不能投票给自己!');  //限制期内已给他投过提示
+                        $('#voting').show();
+                    }else if (data == 120) {//报名期间达到投票限制数
+						 $('#voting2').hide();
+						$('#voting_title').html('投票失败');
+						$('#voting_content').html('报名期内优先投票最多{iMicms:$vote.btcdxz}票！正式投票为<php> echo date("Y-m-d H:i",$vote[statdate]);</php>开始，请到时再继续投票 感谢您的参与！');
+                        $('#voting').show();
+                    }else if (data == 888) {//编号投票
+						 $('#voting2').hide();
+						$('#voting_title').html('进入公众号，回复“TP' + itid + '”给我投票哦！');
+						$('#voting_content').html('<a href="{iMicms:$vote['wxgzurl']}" class="gz_btn">进入我们的公众号</a>');
+                        $('#voting').show();
+                    }
+                }
+            });
+	}else{  
+		if(message == "Fail") {
+		}
+		if(message == "Abuse" || message == "Forbidden") {
+		}
+  	}
+  	//$('.gt_refresh_button')[0].click(); 
+}
+var itid;
+    $(function(){
+        $('.vote').on('tap', function(e){
+            e.preventDefault();
+            var self = $(e.target).closest('.vote');
+			itid = self.data('itid'); 
+			$('#validata').show();
+        });
+
+        var container = $('#pageCon ul');
+
+        container.imagesLoaded(function(){
+            container.masonry({
+                itemSelector: '.picCon'
+            });
+        });
+    });
+<else/>
+    $(function(){
+        $('.vote').on('tap', function(e){
+            e.preventDefault();
+            var self = $(e.target).closest('.vote');
+			$('#voting2').show();
+            $.ajax({
+                type: "POST",
+                url: "{iMicms::U('Vote/ticket')}",
+                cache: false,
+                data: {
+                    zid:self.data('itid'),
+					vid:'{iMicms:$id}',
+					token:'{iMicms:$token}',
+					'__hash__':$('input[name="__hash__"]').val()
+					
+                },
+                success: function(data) {
+                  if (data == 102) {//未关注
+                         $('#voting2').hide();
+						$('#guanzhu').show();
+                    } else if (data == 108) {//投票成功
+                         $('#voting2').hide();
+						$('#voted').show();
+                    } else if (data == 106) {//此用户今日已无法投票
+						 $('#voting2').hide();
+						$('#voting_title').html('无法投票');
+						$('#voting_content').html('<eq name="user.tpxzmos" value="1"> 您今日的票数已投完，请明日再投！<else/> 您本次活动的票数已投完，感谢您的参与！</eq>');
+                        $('#voting').show();
+                    } else if (data == 105) {//此IP下今日已无法投票
+						 $('#voting2').hide();
+						$('#voting_title').html('无法投票');
+						$('#voting_content').html('此IP今日票数已投完，请明日再投！');
+                        $('#voting').show();
+                    } else if (data == 103) {//投票还未开始
+						 $('#voting2').hide();
+						$('#voting_title').html('投票还未开始');
+						$('#voting_content').html('请{iMicms:$vote.statdate|date='Y-m-d H:i:s',###}后再来！');
+                        $('#voting').show();
+                    } else if (data == 104) {//投票已经结束
+						 $('#voting2').hide();
+						$('#voting_title').html('投票已经结束');
+						$('#voting_content').html('');
+                        $('#voting').show();
+                    } else if (data == 107) {//投票已经结束
+						 $('#voting2').hide();
+						$('#voting_title').html('投票失败');
+						$('#voting_content').html('此作品无法投票，可能出于审核中或已被屏蔽！');
+                        $('#voting').show();
+                    } else if (data == 110) {//ip不在限制区域中
+						 $('#voting2').hide();
+						$('#voting_title').html('投票失败');
+						$('#voting_content').html("仅允许 {iMicms:$user['area']} 区域的用户投票！");  //不在允许投票区域的提示
+                        $('#voting').show();
+                    }else if (data == 111) {//投票已经结束
+						  $('#voting2').hide();
+						$('#voting_title').html('投票失败');
+						$('#voting_content').html('您不能投票给自己!');  //限制期内已给他投过提示
+                        $('#voting').show();
+                    }else if (data == 109) {//投票已经结束
+						 $('#voting2').hide();
+						$('#voting_title').html('投票失败');
+						$('#voting_content').html('<eq name="user.tpxzmos" value="1"> 您已经投过啦，每天可投一次,明天再来吧!<else/> 您已经投过了，同一用户只能投票一次!</eq>');  //限制期内已给他投过提示
+                        $('#voting').show();
+                    }else if (data == 120) {//报名期间达到投票限制数
+						 $('#voting2').hide();
+						$('#voting_title').html('投票失败');
+						$('#voting_content').html('报名期内优先投票最多{iMicms:$vote.btcdxz}票！正式投票为<php> echo date("Y-m-d H:i",$vote[statdate]);</php>开始，请到时再继续投票 感谢您的参与！');
+                        $('#voting').show();
+                    }else if (data == 888) {//编号投票
+						 $('#voting2').hide();
+						$('#voting_title').html('进入公众号，回复“TP' +  self.data('itid') + '”给我投票哦！');
+						$('#voting_content').html('<a href="{iMicms:$vote['wxgzurl']}" class="gz_btn">进入我们的公众号</a>');
+                        $('#voting').show();
+                    }
+                }
+            });
+        });
+
+        var container = $('#pageCon ul');
+
+        container.imagesLoaded(function(){
+            container.masonry({
+                itemSelector: '.picCon'
+            });
+        });
+    });
+</eq>
+
+    
+</script>
+<notempty name="ggduotu">  <!-- 判断首页幻灯片是否为多图  -->
+  <script type="text/javascript" src="{iMicms::STATICS}/vote/slider/yxMobileSlider.js"></script>
+<script type="text/javascript">
+	$(".slider").yxMobileSlider({during:5000,height:{iMicms:$user['hdgd']}});   //height可以设置首页幻灯片高度
+	var nowtime=new Date().getTime();
+	function _fresh(){
+		var endtime=new Date("2015/02/18 12:00:00");//这里设置的时间为2011年，您可以修改为其它时间。
+		//var nowtime = new Date();
+		var leftsecond=parseInt((endtime.getTime()-nowtime)/1000);
+		if(leftsecond<0){leftsecond=0;}
+			__d=parseInt(leftsecond/3600/24);
+			__h=parseInt((leftsecond/3600)%24);
+			__m=parseInt((leftsecond/60)%60);
+			__s=parseInt(leftsecond%60);
+		var sums=__d+__h+__m+__s;
+		var if_Receive="";
+		if(sums!=0){
+			var d=document.getElementById("_d");
+			var h=document.getElementById("_h");
+			var m=document.getElementById("_m");
+			var s=document.getElementById("_s");
+			h.innerHTML=__h+__d*24;
+			m.innerHTML=__m;
+			s.innerHTML=__s;
+		nowtime=nowtime+1000;
+		setTimeout(_fresh,1000);
+		}else if(!if_Receive){
+			document.getElementById("msg").innerHTML="";
+		}
+	}
+	_fresh();
+</script>
+</notempty>
+
+<div style="display:none">
+<?php 
+	echo html_entity_decode(htmlspecialchars_decode($vote['cnzz']));  
+	?>
+	</div></body>
+</html>

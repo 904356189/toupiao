@@ -1,0 +1,33 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.right {
+    position: absolute;
+    right: 0;
+    top: 0px;
+    bottom: 0px;
+    z-index: 7;
+    left: 207px;
+}
+
+.reight_p {
+    left: 0px;
+}
+
+.main {
+    height: 100%;
+    position: absolute;
+    width: 100%;
+}
+
+    .main iframe {
+        height: 100%;
+        width: 99.99%;
+        z-index: 20;
+        border: 0;
+        padding: 0px;
+        margin: 0px;
+    }

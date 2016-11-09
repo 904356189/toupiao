@@ -1,0 +1,97 @@
+html,body,h1,h2,h3{font-family:"Microsoft YaHei UI", "微软雅黑", "宋体";}
+.ng-cloak{display:none;}
+body{overflow-y:scroll;background:#f9f9f9;}
+a:focus{outline:none; -moz-outline:none}
+.list-group .list-group-item.active{background-color:#428bca;border-color:#428bca;}
+.list-group .list-group-item a{color:#555;}
+.list-group .list-group-item a:hover{text-decoration:none;}
+.list-group .list-group-item.active a{color:#fff;}
+.row .row, .form-group .form-group{margin-left:auto;margin-right:auto;}
+.row.row-fix, .form-group.form-group-fix{margin-left:-15px;margin-right:-15px;}
+.breadcrumb{background:#F9F9F9;}
+/*登录注册*/
+.login,.register{background:#3a3a3a url('../images/gw-bg.jpg') no-repeat fixed; background-size:cover; -webkit-background-size:cover; -o-background-size:cover;padding-top:5em;}
+.login .logo,.register .logo{width:100%; text-align:center; margin-bottom:2em;}
+.login .logo a,.register .logo a{background:url('../images/gw-logo.png') no-repeat; display:inline-block;width:420px;height:95px;margin-left:0 !important;}
+.login .panel,.register .panel{padding:30px 15px;}
+.login i,.register i{color:#999999;}
+.login .footer,.register .footer{padding:2em 0;}
+.login .footer,.register .footer,.login .footer a,.register .footer a{color:#ffffff;}
+/*首页*/
+.home .head{background:#3a3a3a url('../images/gw-bg.jpg') no-repeat fixed; background-size:cover; height:95px; width:100%;}
+.home .head .head_logo{background:url('../images/gw-logo.png') no-repeat; display:inline-block;width:420px; height:95px; margin-left:0 !important;}
+.home .head .btns{height:95px; line-height:95px;}
+.home .content .banner{background-image: url(../images/banner-bg.png); background-size: 990px 380px; background-position: center 15px; border-top: 1px solid #EEEEEE; border-bottom: 1px solid #EEEEEE; background-repeat: no-repeat; height:380px; background-color:#FFFFFF; min-width: 1014px; min-height: 180px;}
+.home .content .con{padding-top:20px;}
+.home .content h4{font-weight:bold; font-size:20px; padding-left:15px;}
+.home .content h6{font-size:14px; color:#428bca;}
+.home .content .con .panel-body .row{ margin:20px 0;}
+.home .content .con .panel-body .row>div{height:100px; overflow:hidden;}
+.home .content .con .panel-body .row .icon{height:100px; width:20%; float:left;}
+.home .content .con .panel-body .row .icon i{display:inline-block; width:44px; text-align:center; font-size:44px; margin:23px 0; color:#428bca;}
+.home .content .con .panel-body .row .icon img{width:50px; height:50px; margin-top:20px;}
+.home .content .con .panel-body .row p{color:#666;}
+.home .footer{height:50px; line-height:25px; margin-bottom:30px; color:#666;}
+.home .footer a{color:#666;}
+.home .footer a:hover{color:#428bca; text-decoration:none;}
+
+.navbar-inverse ul li i{display:inline-block; margin-right:5px;}
+.welcome-container .shortcut a{display:block;float:left;text-align:center;margin-right:1.2em;padding:8px 5px;width:7em;height:7em;overflow:hidden;color:#333;}
+.welcome-container .shortcut a:hover{text-decoration:none;background:#eee;border-radius:3px;padding:7px 4px;border:1px solid #d5d5d5;}
+.welcome-container .shortcut a i{display:block;font-size:3em;margin:.28em .2em;}
+.welcome-container .shortcut a img{display:block;height:3em;margin:.85em auto;}
+.welcome-container .shortcut a span{display:block;font-size:1em;overflow:hidden;white-space:nowrap;}
+.welcome-container .account img{width:6em;height:6em;}
+
+.nav.nav-tabs{margin-bottom:20px; border-color:#428bca;}
+.nav-tabs>li>a:hover{border-color:#eee #eee #428bca #eee;}
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus{color:#FFF; background-color:#428bca; border-color:#428bca;}
+.page-header{padding-bottom:0;}
+.page-header:first-child{margin-top:0;}
+.modal-dialog .file-browser{min-height:480px;line-height:0;color:#428bca;}
+.modal-dialog .file-browser .thumbnail{display:block;float:left;width:100px;height:130px;margin-right:25px;cursor:pointer;}
+.modal-dialog .file-browser .thumbnail:hover{border-color:#428bca;}
+.modal-dialog .file-browser span{display:block;height:2.5em;overflow:hidden;}
+.modal-dialog .file-browser em.close{position:relative;left:20px;top:-140px;}
+.modal-dialog .file-browser img{width:98px;}
+.modal-dialog .file-browser i{display:block;font-size:6em;padding:5px;}
+.modal-dialog .file-browser em{display:table-cell;vertical-align:middle;height:98px;}
+
+.gw-logo{background:url('../images/gw-logo.png') no-repeat;display:inline-block;width:420px;height:95px;margin-left:0 !important;}
+.gw-container .footer{font-size:1.1em;padding:2em 0;}
+.gw-container{background:#3a3a3a url('../images/gw-bg.jpg') no-repeat fixed; background-size:cover; -webkit-background-size:cover; -o-background-size:cover;}
+.gw-container .page-header{border:none; border-left:0.3em #333 solid; padding-left:1em;}
+.gw-container .tile{display:block; float:left; margin:0.4em;padding:.2em 1em .5em 1em; width:7em; text-align:center; background:#EEE; color:#333; text-decoration:none;}
+.gw-container .tile.tile-2x{width:10em;}
+.gw-container .tile.tile-3x{width:15em;}
+.gw-container .tile:hover{background:#7dacdd; color:#FFF;}
+.gw-container .tile > i{display:block; font-size:2em; margin:0.3em auto 0 auto;}
+.gw-container .tile > span{display:block;}
+
+.gw-container .navbar-toggle {border-color: #ddd;}
+.gw-container .navbar-toggle .icon-bar{background-color: #ccc;}
+.gw-container .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {background-color: #ddd;}
+.gw-container .navbar-nav.navbar-right:last-child {margin-right: 0;}
+.gw-container .navbar-nav .tile{background:#31b8ef; color:#FFF; box-shadow:0 2px 4px rgba(0, 0, 0, 0.05);}
+.gw-container .navbar-nav .tile:hover{background:#4ccafd;}
+.gw-container .navbar-nav .tile.active{background:#1e95c9;}
+
+.gw-container .well .breadcrumb{padding-left:0;padding-right:0;}
+.gw-container .breadcrumb{margin-bottom:0.5em; background:#F5F5F5;}
+.gw-container .breadcrumb a{color:#333;}
+.gw-container .footer, .gw-container .footer a{color:#fff;}
+
+.gw-container .well .account{margin:15px 0;}
+.gw-container .well .account .panel-heading a{display:inline-block; width:40px; height:40px; line-height:40px; color:#428bca; text-align:center; font-size:16px;}
+.gw-container .well .account .panel-heading .manage{color:#d9534f;}
+.gw-container .well .account .panel-body{padding:0px 15px;}
+.gw-container .well .account .panel-body li{padding:0;}
+.gw-container .well .account .panel i{display:inline-block; width:15px; height:14px;}
+
+.table-responsive.panel-body{overflow:auto;}
+.table{table-layout:fixed; min-width:900px;}
+.table>thead>tr>th, .table>tbody>tr>th, .table>tfoot>tr>th, .table>thead>tr>td, .table>tbody>tr>td, .table>tfoot>tr>td{vertical-align:middle;}
+.table>thead>tr>td, .table>tbody>tr>td, .table>tfoot>tr>td{white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+.table>thead>tr>th{border-top:none;}
+.table>thead>tr>th, .table>tbody>tr>th, .table>tfoot>tr>th{border-top:none;}
+@media screen and (max-width:767px){.tpl-calendar>div,.tpl-district-container>div{margin-bottom:10px;}}

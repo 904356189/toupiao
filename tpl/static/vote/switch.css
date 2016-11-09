@@ -1,0 +1,10 @@
+.list{padding:6px 4px; position:relative}   
+.fun_title{height:28px; line-height:28px}   
+.fun_title span{width:82px; height:25px; background:url(switch.gif) no-repeat;cursor:pointer; position:absolute; left:6px; top:4px}   
+.fun_title p{margin-left:95px;color:#F00;}
+.fun_title span.ad_on{background-position:0 -2px}   
+.fun_title span.ad_off{background-position:0 -38px}   
+.fun_title h3{font-size:14px; font-family:'microsoft yahei';}   
+.list p{line-height:20px}   
+.list p span{color:#f60}   
+.cur_select{background:#ffc}  

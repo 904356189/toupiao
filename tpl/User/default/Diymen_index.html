@@ -1,0 +1,194 @@
+<include file="Public:header"/>  
+<link rel="stylesheet" type="text/css" href="./tpl/User/default/common/css/cymain.css" />
+ <link rel="stylesheet" href="{imicms::RES}/css/diymen/tipswindown.css" type="text/css" media="all" />
+<script type="text/javascript" src="{imicms::RES}/css/diymen/tipswindown.js"></script>
+<link rel="stylesheet" type="text/css" href="{iMicms::RES}/css/bootstrap_min.css?2013-9-13-2" media="all" />
+<link rel="stylesheet" type="text/css" href="{iMicms::RES}/css/bootstrap_responsive_min.css?2013-9-13-2" media="all" />
+<link rel="stylesheet" type="text/css" href="{iMicms::RES}/css/sstyle.css?2013-9-13-2" media="all" />
+<link rel="stylesheet" type="text/css" href="{iMicms::RES}/css/todc_bootstrap.css?2013-9-13-2" media="all" />
+<link rel="stylesheet" type="text/css" href="{iMicms::RES}/css/themes.css?2013-9-13-2" media="all" />
+<link rel="stylesheet" type="text/css" href="{iMicms::RES}/css/inside.css?2013-9-13-2" media="all" />
+<div id="main">
+        <div class="container-fluid">
+
+            <div class="row-fluid">
+                <div class="span12">
+
+                    <div class="box">
+                        <div class="box-title">
+                            <div class="span8">
+                                <h3><i class="icon-table"></i>自定义菜单管理  </h3>
+                            </div>
+<div class="span2"><a class="btn btn-primary btn_submit  J_ajax_submit_btn" href="{iMicms::U('User/Vote/index')}">返回</a></div>
+                        </div>
+<div class="box-content">
+                            <div class="alert">
+                                <p>注意：1级菜单最多只能开启3个，2级子菜单最多开启5个!</p>
+                                <p>只有保存主菜单后才可以添加子菜单</p>
+                                <p>生成自定义菜单,必须在已经保存的基础上进行,临时勾选启用点击生成是无效的! 第一步必须先修改保存状态！第二步点击生成!</p>
+                                <p>当您为自定义菜单填写链接地址时请填写以"http://"开头，这样可以保证用户手机浏览的兼容性更好</p>
+                            </div>
+                            <div class="row-fluid">
+
+                                <div class="span8 control-group">
+								<a href="{iMicms::U('Diymen/class_add',array('token'=>$_SESSION['token']))}"   title="添加菜单" class="btn btn-primary btn_submit  J_ajax_submit_btn"><i class="icon-plus"></i>添加菜单</a>
+                                </div>
+
+                            </div>
+
+<script type="text/javascript">
+ $(document).ready(function() {
+	
+	$("#iframe1").click(function(){
+		tipsWindown("添加菜单","iframe:{imicms::U('Diymen/class_add')}","760","450","true","","true","leotheme");
+	});
+ });
+ </script>
+
+ <div class="cLineD">
+ 	<form enctype="multipart/form-data" action="" method="post"> 
+    AppId:<input type="text" size="20" tabindex="1" class="px" value="{imicms:$diymen.appid}" id="appid" name="appid">　 
+	AppSecret: <input type="text" size="20" tabindex="1" class="px" value="{imicms:$diymen.appsecret}" id="appsecret" name="appsecret">
+	<button class="btn btn-primary" value="true" name="appidsubmit" type="submit" style="margin-top:-10px" ><strong>保存</strong></button>
+	
+</form>
+         </div>
+
+ <div class="msgWrap form">
+       <form enctype="multipart/form-data" action="" method="post"><input type="hidden" value="" name="anchor">
+       
+		  
+    <table width="100%" cellspacing="0" cellpadding="0" border="0" class="ListProduct"> 
+<thead>
+<tr>
+	<th style=" width:60px;">显示顺序</th>
+	<th style=" width:220px;">主菜单名称</th>
+	<th style=" width:170px;">菜单类型</th>
+	<th>类型数值</th>
+	<th class="norightborder" style=" width:160px;">操作</th>
+</tr>
+</thead>
+   <tbody>
+  	<volist id="class" name="class">
+	<tr class="hover">
+        <td class="td25">
+			<span>{imicms:$class.sort}</span>
+		</td>
+        <td>
+          <div>
+			<span>{imicms:$class.title}</span>
+          </div>
+        </td>
+        <td>
+        	<span>
+        		
+	        	    <if condition="$class.keyword neq ''">
+		        		顶级菜单-【关键词回复菜单】
+		        	<elseif condition="$class.url neq ''"/>
+		        		顶级菜单-【url外链菜单】
+		        	<elseif condition="$class.wxsys neq ''"/>
+		        		顶级菜单-【微信扩展菜单】
+		        	<else/>
+		        		父级菜单
+		        	</if>
+        	</span>
+        </td>
+        <td>
+        	<span>
+			 		<if condition="$class.keyword neq ''">
+		        		{imicms:$class.keyword}
+		        	<elseif condition="$class.url neq ''"/>
+		        		{imicms:$class.url}
+		        	<elseif condition="$class.wxsys neq ''"/>
+		        		{imicms:$class.wxsys}
+		        	<else/>
+		        		无
+		        	</if>
+        	</span>
+        
+        </td>
+        <td>
+
+			<a href="{iMicms::U('Diymen/class_edit',array('id'=>$class['id']))}"   title="修改主菜单" class="btn btn-primary btn_submit  J_ajax_submit_btn">修改</a>
+			<a class="btn" href="{imicms::U('Diymen/class_del',array('id'=>$class['id']))}">删除</a>
+		</td>				
+      </tr>
+	  <volist id="class1" name="class['class']">
+	  <tr class="td29">
+			<td class="td25" colspan="1">
+				<span>{imicms:$class1.sort}</span>
+			</td>
+			<td colspan="1">
+			  <div class="board">
+				<span>{imicms:$class1.title}</span>
+			  </div>
+			</td>
+			
+			<td colspan="1">
+				<span>
+					<if condition="$class1.keyword neq ''">
+		        		关键词回复菜单
+		        	<elseif condition="$class1.url neq ''"/>
+		        		url外链菜单
+		        	<elseif condition="$class1.wxsys neq ''"/>
+		        		微信扩展菜单
+		        	</if>
+				</span>
+			</td>
+			 <td>
+			 	<span>
+			 	
+			 		<if condition="$class1.keyword neq ''">
+		        		{imicms:$class1.keyword}
+		        	<elseif condition="$class1.url neq ''"/>
+		        		{imicms:$class1.url}
+		        	<elseif condition="$class1.wxsys neq ''"/>
+		        		{imicms:$class1.wxsys}
+		        	</if>
+			 	
+			 	</span>
+			 
+			 </td>
+			<td colspan="1">
+			<a href="{iMicms::U('Diymen/class_edit',array('id'=>$class1['id']))}"   title="修改主菜单" class="btn btn-primary btn_submit  J_ajax_submit_btn">修改</a>
+			<a class="btn" href="{imicms::U('Diymen/class_del',array('id'=>$class1['id']))}">删除</a></td>				
+	 </tr>	
+	</volist>
+	</volist>
+	<tr class="hover">
+        <td class="td25" colspan="5">
+		<if condition="$class neq false">
+		<a class="btn btn-primary " href="{imicms::U('Diymen/class_send')}" title="">生成自定义菜单</a>
+		</if>
+		<span style="float:left;" id="cdul">
+		<style>
+			#cdul{
+				float:left;
+				color:red;
+			}
+		</style>
+		注：<br>
+		(使用前提是已经拥有了自定义菜单的用户才能够使用，)<br>
+		第一步:必须先填写【AppId】【 AppSecret】！<br>
+		第二步:添加菜单，<br>
+		第三步:点击生成!<br>
+		注意：1级菜单最多只能开启3个，2级子菜单最多开启5个<br>
+		官方说明：修改后，需要重新关注，或者最迟隔天才会看到修改后的效果！<br>
+		</span>
+		</td>				
+      </tr>
+	      	  
+    </tbody>
+</table>
+</form>
+       <p>
+
+       </p>
+       <div class="clear"></div>
+      </div>
+  </div>
+         </div>
+        </dd>
+</dl>
+<include file="Public:footer"/>  
+ 

@@ -1,0 +1,43 @@
+
+#login{width:1000px; margin:0 auto; padding-bottom:108px; overflow:hidden;}
+#login form{width:362px; float:right; clear:both; background:url(../images/bottom.png) left bottom no-repeat; padding:160px 0 25px;}
+#login form .login_form{width:362px; background:#FFF; overflow:hidden; padding-top:25px;}
+#login form .login_form .t{height:46px; background:url(../images/login_title.jpg) center top no-repeat;}
+#login form .login_form .form{width:362px; margin:20px auto;}
+#login form .login_form .login_msg{height:40px; line-height:40px; color:red; text-align:center; margin-top:8px; display:none;}
+#login form .login_form .rows{padding:16px 21px; overflow:hidden;}
+#login form .login_form .rows label{display:block; width:75px; height:32px; line-height:32px; font-weight:bold; color:#808080; text-align:right; float:left; _display:inline; overflow:hidden; position:relative; left:0; top:0; margin-left:10px;}
+#login form .login_form .rows span{display:block; _display:block; width:230px; float:right; overflow:hidden;}
+#login form .login_form .rows span input{width:192px; height:28px; line-height:28px; border:1px solid #ddd; padding:0 5px; margin:0; border-radius:5px;}
+#login form .login_form .submit{width:273px; margin:30px auto; margin-bottom:0px; height:49px;}
+#login form .login_form .submit input{margin:0; width:273px; height:49px; background:url(../images/login_btn.png) no-repeat; border:none;}
+#beian{position:fixed; bottom:0; width:100%; text-align:center; height:30px; line-height:30px;}
+#beian a{color:#333; text-decoration:none; font-size:12px;}
+
+#home .welcome{height:36px;}
+#home .welcome div{float:left; width:130px; height:30px; background:url(../images/account/welcome.png) left 0 no-repeat;}
+#home .welcome span{display:block; height:30px; line-height:36px; font-size:24px; color:#5F8E24;}
+#home .info{margin-top:10px; width:1000px;}
+#home .info .member{width:363px; height:149px; padding:15px; background:url(../images/account/member-info-bg.png); float:left;}
+#home .info .face{width:116px; height:116px; float:left;}
+#home .info .info_list{width:235px; float:left; overflow:hidden; margin-left:12px; margin-top:-9px;}
+#home .info .info_list li{height:32px; line-height:32px; overflow:hidden; color:#fff; white-space:nowrap; text-overflow:ellipsis; font-size:12px;}
+#home .info .info_list li img{vertical-align:middle; margin-right:8px; margin-left:3px;}
+#home .info .info_list li a{color:#fff;}
+#home .info .data{width:528px; float:left; overflow:hidden; margin-left:12px;}
+#home .info .data div{width:254px; height:81px; overflow:hidden; float:left; margin-right:20px;}
+#home .info .data div a{display:block; text-decoration:none; cursor:pointer;}
+#home .info .data .d0{background:url(../images/account/data-bg-0.png); margin-bottom:17px;}
+#home .info .data .d1{background:url(../images/account/data-bg-1.png); margin-right:0; margin-bottom:17px;}
+#home .info .data .d2{background:url(../images/account/data-bg-2.png);}
+#home .info .data .d3{background:url(../images/account/data-bg-3.png); margin-right:0;}
+#home .info .data h1, #home .info .data h2{float:left; height:81px; line-height:81px; text-align:center; color:#fff;}
+#home .info .data h1{width:85px; font-size:30px; margin-left:5px;}
+#home .info .data h2{width:164px; font-size:20px;}
+#home .list{margin-top:15px; clear:both;}
+#home .list div{padding-bottom:5px;}
+#home .list li{float:left; width:126px; height:100px; text-align:center;}
+#home .list li img{margin-bottom:3px;}
+#home .list li a{color:#444A4F; text-decoration:none; font-size:12px;}
+
+#profile .profile_msg{height:30px; line-height:30px; text-indent:16%; color:red; display:none;}

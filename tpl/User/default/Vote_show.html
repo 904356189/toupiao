@@ -1,0 +1,262 @@
+﻿<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>我是{iMicms:$data.id}号{iMicms:$data.item}正在参加{iMicms:$vote.title}活动呢，赶紧给我投一票吧</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no">
+	<script src="{iMicms::STATICS}/vote/wap/jquery.js"></script>
+	<script src="{iMicms::STATICS}/jquery-ui.js" type="text/javascript"></script>
+	<script src="{iMicms::STATICS}/vote/jquery.slides.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="{iMicms::STATICS}/jquery-ui.css" />
+    <link rel="stylesheet" type="text/css" href="{iMicms::STATICS}/jquery-ui.theme.css" />
+	<link rel="stylesheet" type="text/css" href="{iMicms::STATICS}/jquery-ui.structure.css" />
+	<link href="{iMicms::STATICS}/vote/showindex.css" rel="stylesheet" media>
+	<link href="{iMicms::STATICS}/vote/voteshow.css" rel="stylesheet" media>
+	<link href="{iMicms::STATICS}/vote/wap/css/style.css" rel="stylesheet"  media="all">
+		
+	 <style>
+	 .cc li{
+	   text-align:center;
+	 }
+	 .cc img{
+	 margin-right:auto;
+	 margin-left:auto;
+	 }
+	.zhanshib .xinfob{
+	text-align:left;
+	}
+	 </style>
+	</head>
+<body style="background-color:#fef0c5;"><img src="{iMicms:$data.startpicurl}" style="width:200px;height:200px;display: none">
+    <div id="home-slides">
+					<if condition="$guanggao neq ''">
+				<volist name="guanggao" id="ivo">
+							        <p><a href="javascript:;"><img style="width:100%;height:100%" src="{iMicms:$ivo.ggurl}" alt="" /></a></p>
+				</volist>
+				</if>
+
+   </div>
+   <div class="wrap" >
+	<div class="main_wrap">
+		<div class="news"></div>
+		<h3 style="background:#ff82ae;">选手详情</h3>
+		<div style="height:5px;"></div>
+		<div class="zhanshib" >
+			<ul class="cc">
+			<li><img style="" src="{iMicms:$data.startpicurl}"><p class="infob"><div class="xinfob"><b>选手姓名：</b>{iMicms:$data.item}<br><b>选手编号：</b>{iMicms:$data.id}<br><b>选手票数：</b><i class="vote_1">{iMicms:$data.vcount}</i><br><b>选手介绍：</b><i class="vote_1"><?php 
+	echo html_entity_decode(htmlspecialchars_decode($data['intro']));
+	?></i><br></div>  </p></li>
+			</ul>
+		</div>
+
+<div style="background:#d5fafc;padding-bottom:15px;">
+<hr style="border:0;background-color:#2ebbc5;height:1px;"> 
+
+        <div style="line-height:28px;margin:15px 15px 0 15px;font-size:14px;font-family:'Microsoft YaHei'; "> 请关注微信公众号"{iMicms:$gzh.gongzhong}" 
+		      <a href="{iMicms:$gzh.email}">  <input type="button" id="copyit" style="width:85px;text-align:center;margin-left:5px;height:28px;line-height:28px;border-radius:4px;font-family:'Microsoft YaHei';background:#2ebbc5;color:#fff;" value="立即关注"></a>
+
+		</div>
+		</br>
+		<div class="red" style="width:90%;height:30px;line-height:30px;border-radius:4px;margin:0 auto;text-align:center;background:#fecdbb;font-weight:bold;">给我投票 请在公众号内回复：{iMicms:$data.id}</div>
+
+
+</div>
+
+</div>
+
+		<h3 style="background:#2ebbc5;">活动介绍</h3>
+
+	
+
+
+
+		<div class="jiangxiang">
+						<?php 
+	echo html_entity_decode(htmlspecialchars_decode($vote['qtxinxi']));
+	?>
+		</div>
+	</div>
+
+<div style="height:20px;"><div id="gz_footer">版权所有 Copyright  {iMicms:$vote.title}</div></div>
+<!--<div id="gz_footer">版权所有 Copyright 2014-2018 {iMicms:$gzh.tel}版权所有</div>-->
+<script>
+	$(document).ready(function(){	
+	var wecha_id="{iMicms:$wecha_id}";
+	if(''==wecha_id||1==1){
+	$("#tishi").dialog(
+	 {
+	 modal: true,
+	 });
+	}
+	
+//huandeng
+   var slidesCount = $('#home-slides').children('p').length;
+    if(slidesCount > 1){
+    $('#home-slides').slidesjs({
+        width: 320,
+        height: 148,
+        navigation: false,
+        play: {
+            interval: 3000,
+            auto: true
+        },
+        callback: {
+            loaded: function(number) {
+                var slidesCount = $('#home-slides .slidesjs-control').children().size(),
+                    statusWidth = (parseFloat(1 / slidesCount) * 100) + '%';
+                $('#home-slides > .slidesjs-pagination > li').width(statusWidth);
+            }
+        }
+    });
+	}
+	else{
+		
+	
+	}
+});
+</script>
+<div id="gz_footer" style="display: none">
+
+		<div class="skin skin-line" style="display:none">
+		<?php
+        if($vote['enddate'] < time()){
+            if($vote_record == 1){ ?>
+                    您已投过票，投票项为: <p style="color: coral;"><volist name="hasitems" id="vo">
+                   {iMicms:$vo['item']},
+                    </volist></p>
+                   <br/> 活动已经过结束<br/>
+         <?php   }else{
+               echo "活动已经过结束";
+            }
+
+        }elseif($vote['statdate'] > time()){
+            echo "活动还没正式开始";
+        }else{
+        ?>
+         <input class="pxbtn" name="sub" id="sub" value="提交选票" type="hidden">
+        <?php
+        }
+       ?>
+         <br/><br/>
+		 </div>
+		<div id="mcover" onClick="">
+		<img src="{iMicms::STATICS}/vote/guide.png"></div>
+<!--		<div style="text-align:center;margin-top:30px;margin-bottom:20px;display:none"><a id="tishi" onClick="document.getElementById('mcover').style.display='block';">
+		<input type="button" id="copyit" style="width:100px;text-align:center;margin-left:auto;height:30px;line-height:28px;" value="分享给朋友">
+		</a></div>--></div>
+	<script type="text/javascript">
+//for 
+var img_url="{iMicms:$data.startpicurl}";
+var url = "{iMicms::C('site_url')}{iMicms::U('Vote/show',array('token'=>$token,'id'=>$mid,'tid'=>$tid))}";
+var content = "我是{iMicms:$data.id}号{iMicms:$data.item}正参加\"{iMicms:$vote.title}\"活动呢，赶紧给我投一票吧";
+var title = "我是{iMicms:$data.id}号{iMicms:$data.item}正在参加{iMicms:$vote.title}活动呢，赶紧给我投一票吧,";
+
+
+
+	   var imgUrl = "{iMicms:$data.startpicurl}";  //注意必须是绝对路径 
+       var lineLink = "{iMicms::C('site_url')}{iMicms::U('Vote/show',array('token'=>$token,'id'=>$mid,'tid'=>$tid))}";   //同样，必须是绝对路径
+       var descContent = "我是{iMicms:$data.id}号{iMicms:$data.item}正参加\"{iMicms:$vote.title}\"活动呢，赶紧给我投一票吧"; //分享给朋友或朋友圈时的文字简介
+       var shareTitle = "我是{iMicms:$data.id}号{iMicms:$data.item}正在参加{iMicms:$vote.title}活动呢，赶紧给我投一票吧";  //分享title
+       var appid = ''; //apiID，可留空
+        
+       function shareFriend() {
+           WeixinJSBridge.invoke('sendAppMessage',{
+               "appid": appid,
+               "img_url": imgUrl,
+               "img_width": "200",
+               "img_height": "200",
+               "link": lineLink,
+               "desc": descContent,
+               "title": shareTitle
+           }, function(res) {
+               //_report('send_msg', res.err_msg);
+           })
+       }
+       function shareTimeline() {
+           WeixinJSBridge.invoke('shareTimeline',{
+               "img_url": imgUrl,
+               "img_width": "200",
+               "img_height": "200",
+               "link": lineLink,
+               "desc": descContent,
+               "title": descContent
+           }, function(res) {
+                  //_report('timeline', res.err_msg);
+           });
+       }
+       function shareWeibo() {
+           WeixinJSBridge.invoke('shareWeibo',{
+               "content": descContent,
+               "url": lineLink,
+           }, function(res) {
+               //_report('weibo', res.err_msg);
+           });
+       }
+       // 当微信内置浏览器完成内部初始化后会触发WeixinJSBridgeReady事件。
+       document.addEventListener('WeixinJSBridgeReady', function onBridgeReady() {
+           // 发送给好友
+           WeixinJSBridge.on('menu:share:appmessage', function(argv){
+               shareFriend();
+           });
+           // 分享到朋友圈
+           WeixinJSBridge.on('menu:share:timeline', function(argv){
+               shareTimeline();
+           });
+           // 分享到微博
+           WeixinJSBridge.on('menu:share:weibo', function(argv){
+               shareWeibo();
+           });
+       }, false);
+</script>
+<script type="text/javascript">function lp(){
+	//document.getElementById('mcover').style.display='block';
+}
+    </script><!--[if gte IE 7]><style type="text/css">
+	body{box-shadow:0 0 5px 2px #E4E4E4;background:#fff;border-radius:3px 3px 3px 3px;padding:5px 0;margin-bottom:10px;}
+     body span{display:block;width:80%;height:20px;line-height:20px;margin:0 auto;margin-bottom:15px;margin-top:10px;
+				text-align:center;background-color:#F9CAB4;background-image: -moz-linear-gradient(center bottom , #ce9479 0%, #dbb29f 100%);
+				border-radius: 5px;box-shadow: 0 1px 0 #e5b097, 0 1px 2px rgba(9, 105, 181, 0.5);color: #FD605F;display: block;font-size: 18px;
+				font-weight:bold;padding: 10px 20px;text-align: center;text-decoration: none;text-shadow: 3px 3px rgba(225, 200, 189, 0.8);
+			}
+
+/* ????? */
+body .sm{padding:10px;}
+body .sm .f14{font-size:14px;}
+body .sm p{font-size:12px;color:#666;line-height:24px;}
+
+/* ???? */
+body p.name{padding:10px;font-size:20px;text-align:center}/*???????*/
+body p.name strong{color:#FD605F}
+body p.xuanyan{text-indent:28px;color:#444;padding:0 10px 10px ;}/*???????*/
+body p.pic {margin:0 auto;padding:10px;padding-bottom:0;text-align:center;}/*??????*/
+body p.pic img{width:100%;float:left;margin:0 auto;margin-bottom:10px;}
+body p.zhichi{text-align:center;line-height:30px;}/*????????*/
+body p.zhichi b{color:#CD181E}
+
+/* ??????? */
+body p.lp{text-indent:24px;padding:0 10px 10px ;}
+body p.lp img{width:auto;}
+
+body .search{width:75%;margin:0 auto;height:30px;padding:10px;text-align:center;margin-top:-20px;padding-bottom:20px;}
+body .search input[type="text"] {width:72%;height:28px;border:1px solid #ccc;-webkit-appearance:none;
+								-moz-appearance:none;-webkit-border-radius: 6em;-moz-border-radius: 3px;border-radius:3px 3px 3px 3px;text-indent:5px;}
+body .search input[type="submit"] {width:45px;height:30px;background:#ECECEC;cursor:pointer;-webkit-appearance:none;-moz-appearance:none;}
+/* ????б? */
+body.list{width:96%;overflow:hidden;}
+body.list ul{padding-left:4%;}
+body.list ul li{width:30%;margin-right:3%;margin-bottom:8px;float:left;text-align:center;font-size:12px;}
+body.list ul li img{width:100%}
+body.list ul li strong{font-size:14px;font-weight:bold;color:#EA5334}
+body.list ul li b{color:#F7376A}
+
+body img{width:100%;}
+body input{width:auto;margin:0 auto;}
+
+body.list ul li img{float:left;}
+body.list .come{width:100%;height:20px;line-height:24px;text-align:center;white-space:nowrap;text-overflow:ellipsis;
+overflow:hidden;-webkit-text-overflow:ellipsis;}
+</style><![endif]-->
+</body></html>

@@ -1,0 +1,78 @@
+<include file="Public:head"/>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="keywords" content="{iMicms::C('keyword')}" />
+<meta name="description" content="{iMicms::C('content')}" />   
+<link rel="stylesheet" type="text/css" href="{iMicms::RES}/css/vote/bootstrap_min.css?2013-9-13-2" media="all" />
+<link rel="stylesheet" type="text/css" href="{iMicms::RES}/css/vote/bootstrap_responsive_min.css?2013-9-13-2" media="all" />
+<link rel="stylesheet" type="text/css" href="{iMicms::RES}/css/vote/sstyle.css?2013-9-13-2" media="all" />
+<link rel="stylesheet" type="text/css" href="{iMicms::RES}/css/vote/todc_bootstrap_button.css?2013-9-13-2" media="all" />
+<link rel="stylesheet" type="text/css" href="{iMicms::RES}/css/vote/themes.css?2013-9-13-2" media="all" />
+<link rel="stylesheet" type="text/css" href="{iMicms::RES}/css/vote/daterangepicker.css?2013-9-13-2" media="all" />
+<link rel="stylesheet" type="text/css" href="{iMicms::RES}/css/vote/inside.css?2013-9-13-2" media="all" />
+<link rel="stylesheet" type="text/css" href="{iMicms::RES}/css/vote/chosen.css?2013-9-13-2" media="all" />
+<script type="text/javascript" src="{iMicms::RES}/js/jQuery.js?2013-9-13-2"></script>
+<script type="text/javascript" src="{iMicms::RES}/js/jquery_ui_widget_min.js?2013-9-13-2"></script>
+<script type="text/javascript" src="{iMicms::RES}/js/bootstrap_min.js?2013-9-13-2"></script>
+<script type="text/javascript" src="{iMicms::RES}/js/jquery_form_min.js?2013-9-13-2"></script>
+<script type="text/javascript" src="{iMicms::RES}/js/jquery_validate_min.js?2013-9-13-2"></script>
+<script type="text/javascript" src="{iMicms::RES}/js/jquery_validate_methods.js?2013-9-13-2"></script>
+<script type="text/javascript" src="{iMicms::RES}/js/jquery_form_wizard_min.js?2013-9-13-2"></script>
+<script type="text/javascript" src="{iMicms::RES}/js/daterangepicker.js?2013-9-13-2"></script>
+<script type="text/javascript" src="{iMicms::RES}/js/moment_min.js?2013-9-13-2"></script>
+<script type="text/javascript" src="{iMicms::RES}/js/inside.js?2013-9-13-2"></script>
+<title>{iMicms::C('site_name')}-{iMicms::C('site_title')}</title>
+ <style>
+.CC_table{ border-top:2px solid #abd2f3;  width:100%; line-height:26px; font-size:14px; border-collapse:collapse;}
+.CC_table th{background:#f5f5f5; border-bottom:1px dashed #ccc; padding:0 12px; color:#333;  font-weight:bold; }
+.CC_table td{ border-bottom:1px dashed #ccc; padding-left:6px;height:50px;}
+ </style>
+
+<div class="box">
+<div class="box-title">
+                            <div class="span10">
+                                <h3>修改关键字 <span class="FAQ">修改关键字回复内容</span></h3>
+                            </div>
+                            <div class="span2"><a class="btn btn-primary btn_submit  J_ajax_submit_btn" href="Javascript:window.history.go(-1)">返回</a></div>
+                        </div>
+         <div class="zdhuifu">
+                  <form method="post"  action="{imicms::U('Areply/edkeyword')}">
+                   <input type="hidden" name="id" value="{iMicms:$key.id}">
+   <table class="CC_table" border="0" cellspacing="0" cellpadding="0" width="100%" >
+              <tbody>
+				
+                  <tr><td>关键字</td><td>回复内容</td></tr>
+                  	<tr>
+                	<td ><input type="text" name="keyword" value="{iMicms:$key.keyword}"></td>
+                	<td><textarea class="px" style="width:600px; height:40px; margin:5px 0"  id="Hfcontent" name="content">
+{iMicms:$key.content}
+</textarea></td>
+                </tr>
+				 <tr>
+                 	<td colspan="2"  align="center"><button type="submit" name="button" class="btn btn-primary btn_submit  J_ajax_submit_btn">修改</button></td>
+                 	</tr> 
+				</tbody>
+				</table>
+ 
+		
+      </div>
+        </div>
+
+        <div class="clr"></div>
+      </div>
+    </div>
+  </div>
+  <script>
+$(document).ready( function(){ 
+$('.checkall').click(function(){
+
+$('.checkitem').each(function(){
+$(this).attr('checked',$('.checkall').attr('checked'));
+});
+});
+
+});
+  </script>
+  <!--底部-->
+  	</div>
+<include file="Public:footer"/>	

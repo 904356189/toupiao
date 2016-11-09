@@ -1,0 +1,220 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+ <title>TipsWindown Demo By [Await]</title>
+ <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+ <meta http-equiv="Content-Language" content="zh-CN" />
+ <meta name="Keywords" content="" />
+ <meta name="Description" content="" />
+ <link rel="stylesheet" href="tipswindown.css" type="text/css" media="all" />
+ <script type="text/javascript" src="../jq.js"></script>
+ <script type="text/javascript" src="tipswindown.js"></script>
+ <style type="text/css">
+	 body {
+		font: 12px 'Microsoft Yahei',arial,SimSun,sans-serif;
+		margin: 0 auto;
+		padding: 0px;
+		text-align: center;
+		color: #555;
+		background: #fff;
+	}
+	h1,h2,h3,h4,h5,h6,div,p,ul,ol,dl,dd,dt,abbr,form,input,img { margin: 0; padding: 0; }
+	img { border: none; }
+
+	h1 { width: 100%; text-align: center;}
+
+	a { color: #096FB7; text-decoration: none; }
+	a:hover { text-decoration: underline; }
+
+	#container { margin: 0 auto; margin-top: 20px; padding: 20px; width: 600px; text-align: left; border: 20px solid #DDD; }
+	h3{ margin: 10px 0;}
+	ol li { list-style: ; margin: 20px 0 0 50px; }
+	blockquote { width: 500px; margin: 10px 0; padding: 10px; border: 2px dashed #F8B3D0; background-color: #FFF5FA;}
+ </style>
+
+ <script type="text/javascript">
+ $(document).ready(function() {
+	$("#text1").click(function() {
+		tipsWindown("标题","text:提示信息内容","250","150","true","","true","text")
+	});
+	$("#text2").click(function() {
+		tipsWindown("标题","text:我不能拖动，而且还没遮罩背景","250","150","false","","false","text")
+	});
+	$("#text3").click(function() {
+		tipsWindown("标题","text:我不能拖动，但3秒钟后我会自动消失","250","150","false","3000","true","text")
+	});
+
+	$("#id1").click(function() {
+		tipsWindown("标题","id:testID","350","150","true","","true","id")
+	});
+
+	$("#img1").click(function() {
+	    tipsWindown("图片", "img:http://www.code-design.cn/imgdesign/20090625/2009625152158343.jpg", "500", "230", "true", "", "true", "img")
+	});
+
+	$("#url1").click(function(){
+		tipsWindown("标题","url:get?test.html","250","150","true","","true","text");
+	});
+
+	$("#iframe1").click(function(){
+		tipsWindown("标题","iframe:http://www.code-design.cn","950","527","true","","true","leotheme");
+	});
+ });
+ </script>
+</head>
+
+<body>
+<div id="container">
+  <h1>TipsWindown 1.0</h1>
+
+  <h3>关于插件：</h3>
+  <p>一个基于jQuery的弹出层。支持拖拽，支持内容为文字，图片，URL等!至于兼容性。在IE6下，弹出对像无法绝对固定。其他应该没啥大问题；</p>
+
+  <h3>应用演示：</h3>
+    <ol>
+		<li>
+		弹出文本信息提示： <br />
+		<blockquote>tipsWindown("提示","text:提示信息内容","250","150","true","","true","msg")</blockquote>
+
+		<button id="text1">点击我弹出提示</button>
+		</li>
+
+		<li>
+		弹出页面中的某个ID的html： <br />
+		<blockquote>tipsWindown("标题","id:testID","300","200","true","","true","id")</blockquote>
+
+		<button id="id1">点击我弹出提示</button>
+		<div id="testID" style="display: none">
+			<p>我是测试ID里的内容</p> <br />
+			我换行了...
+		</div>
+		</li>
+
+		<li>
+		弹出图片： <br />
+		<blockquote>tipsWindown("图片","img:图片路径","250","150","true","","true","img")</blockquote>
+
+		<button id="img1">点击我弹出提示</button>
+		</li>
+
+		<li>
+		get加载一个.html文件（也可以是.php/.asp?id=4之类的）： <br />
+		<blockquote>tipsWindown("标题","url:get?test.html","250","150","true","","true","text"); </blockquote>
+
+		<button id="url1">点击我弹出提示</button>
+		</li>
+
+		<li>
+		加载一个页面到框架显示：<br /> 
+		<blockquote>tipsWindown("标题","iframe:http://leotheme.cn","900","580","true","","true","leotheme"); </blockquote>
+
+		<button id="iframe1">点击我弹出提示</button>
+		</li>
+
+		<li>
+		弹出一个不能拖动且没有遮罩背景的文本信息层： <br />
+		<blockquote>tipsWindown("提示","text:提示信息内容","250","150","false","","false","msg")</blockquote>
+
+		<button id="text2">点击我弹出提示</button>
+		</li>
+
+		<li>
+		弹出一个不能拖动，三秒钟自动关闭的层： <br />
+		<blockquote>tipsWindown("提示","text:提示信息内容","250","150","false","3000","true","msg")</blockquote>
+
+		<button id="text3">点击我弹出提示</button>
+		</li>
+  </ol>
+
+
+  <h3>参数说明：</h3>
+  <table width="0" border="1" cellpadding="5" cellspacing="0">
+    <tr>
+      <th scope="col">顺序</th>
+      <th scope="col">参数</th>
+
+      <th scope="col">功能</th>
+      <th colspan="2" scope="col">备注</th>
+    </tr>
+    <tr>
+      <th scope="row">1</th>
+      <th scope="row">title</th>
+      <td>弹出层的标题</td>
+
+      <td colspan="2">必填，纯文本</td>
+    </tr>
+    <tr>
+      <th rowspan="5" scope="row">2</th>
+      <th rowspan="5" scope="row">content</th>
+      <td rowspan="5">弹出层的内容</td>
+      <td>text</td>
+
+      <td>文本内容</td>
+    </tr>
+    <tr>
+      <td>id</td>
+      <td>页面里某id的子标签</td>
+    </tr>
+    <tr>
+
+      <td>img</td>
+      <td>图片</td>
+    </tr>
+    <tr>
+      <td>url</td>
+      <td>get或post某一页面里的html，该页面要求只包含body的子标签</td>
+    </tr>
+    <tr>
+      <td>iframe</td>
+      <td>目标地址在框架显示</td>
+    </tr>
+
+    <tr>
+      <th scope="row">3</th>
+      <th scope="row">width</th>
+      <td>弹出层的宽</td>
+      <td colspan="2">必填，比如“200”。（不需要带px）</td>
+    </tr>
+    <tr>
+
+      <th scope="row">4</th>
+      <th scope="row">height</th>
+      <td>弹出层的高</td>
+      <td colspan="2">同 width</td>
+    </tr>
+    <tr>
+      <th scope="row">5</th>
+
+      <th scope="row">drag</th>
+      <td>是否可拖动</td>
+      <td colspan="2">必填，可选参数（true,false）</td>
+    </tr>
+    <tr>
+      <th scope="row">6</th>
+      <th scope="row">time</th>
+      <td>自动消失时间</td>
+      <td colspan="2">可不填，默认不自动关闭；参数可为空(&quot;&quot;)</td>
+    </tr>
+    <tr>
+      <th scope="row">7</th>
+      <th scope="row">showbg</th>
+      <td>是否显示遮罩层</td>
+      <td colspan="2">可不填，默认不显示（此项如填了，它前面的time也必须要填）</td>
+    </tr>
+    <tr>
+      <th scope="row">8</th>
+      <th scope="row">cssName</th>
+      <td>弹出层附加样式名</td>
+      <td colspan="2">可不填</td>
+    </tr>
+  </table>
+  
+
+</div>
+<br />
+
+</body>
+
+</html>
+

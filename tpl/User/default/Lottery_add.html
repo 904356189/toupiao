@@ -1,0 +1,276 @@
+<include file="Public:head"/>
+<script src="/tpl/static/artDialog/jquery.artDialog.js?skin=default"></script>
+<script src="/tpl/static/artDialog/plugins/iframeTools.js"></script>
+<script src="{iMicms::RES}/js/date/WdatePicker.js"></script>
+ <form class="form" method="post"   action=""  target="_top" enctype="multipart/form-data" >
+        <div class="content">
+<!--活动开始-->
+<div class="cLineB">
+    <h4>编辑幸运大转盘活动开始内容</h4><a href="{iMicms::U('User/Lottery/index')}" class="right btn btn-primary btn_submit  J_ajax_submit_btn" style="margin-top:-27px">返回</a>
+</div>
+<div class="msgWrap bgfc">
+<TABLE class="userinfoArea" style=" margin:0;" border="0" cellSpacing="0" cellPadding="0" width="100%"><TBODY>
+<TR>
+  <th valign="top"><span class="red">*</span>关键词：</th>
+  <TD>
+	<input type="hidden" class="px" value="1" name="type" style="width:400px" >
+	<input type="input" class="px" id="keyword" value="<if condition="$vo['keyword'] eq ''">大转盘<else/>{iMicms:$vo.keyword}</if>" name="keyword" style="width:400px" ><br />
+  	<span class="red">只能写一个关键词</span>，用户输入此关键词将会触发此活动。
+  </TD>
+  <TD rowspan="7" valign="top">
+	  <div style="margin-left:20px">
+		<img id="pic1_src" src="<if condition="$vo['starpicurl'] eq ''">{iMicms::C('site_url')}/tpl/static/guajiang/images/activity-lottery-start.jpg<else/>{iMicms:$vo.starpicurl}</if>" width="373px" >
+		<br />
+		<input class="px"  name="starpicurl" value="<if condition="$vo['starpicurl'] eq ''">{iMicms::C('site_url')}/tpl/static/guajiang/images/activity-lottery-start.jpg<else/>{iMicms:$vo.starpicurl}</if>" id="pic1" style="width:363px;"  />
+		<br />
+		  <script src="/tpl/static/upyun.js"></script><a href="###" onclick="upyunPicUpload('pic1',700,420,'{iMicms:$token}')" class="a_upload">上传</a> <a href="###" onclick="viewImg('pic1')">预览</a>&nbsp;活动开始图片
+	  </div>
+  </TD>
+</TR>
+<TR>
+  <th valign="top"><span class="red">*</span>活动名称：</th>
+  <TD>
+	<input type="input" class="px" id="title" value="<if condition="$vo['title'] eq ''">幸运大转盘活动开始了<else/>{iMicms:$vo.title}</if>" name="title" style="width:400px" />
+  	<br />
+  	请不要多于50字!
+  </TD>
+  <TR>
+  	<th valign="top"><span class="red">*</span>兑奖信息：</th>
+  	<td>
+		<input type="input" class="px" id="txt" value="<if condition="$vo['txt'] eq ''">兑奖请联系我们，电话138********<else/>{iMicms:$vo.txt}</if>" name="txt" style="width:400px" />
+  		<br />请不要多于100字! 这个设定但用户输入兑奖时候的显示信息!
+	</td>
+  </TR>
+ <TR>
+  	<th valign="top"><span class="red">*</span>中奖提示：</th>
+  	<td><textarea class="px" id="sttxt"  name="sttxt" style="width:400px"  >{iMicms:$vo.sttxt}</textarea> 中奖后,提示信息
+  		 </td>
+</TR>
+<TR>
+	<th><span class="red">*</span>活动时间：</th>
+	<td><input type="input" class="px" id="statdate" value="<if condition="$vo['statdate'] neq ''">{iMicms:$vo.statdate|date="Y-m-d",###}</if>" onClick="WdatePicker()" name="statdate" />
+		到
+		<input type="input" class="px" id="enddate" value="<if condition="$vo['enddate'] neq ''">{iMicms:$vo.enddate|date="Y-m-d",###}</if>" name="enddate"  onClick="WdatePicker()"  />
+	</td>
+</TR>
+<TR>
+<th valign="top">活动说明：</th>
+<td><textarea  class="px" id="info" name="info"  style="width:400px; height:125px" ><if condition="$vo['info'] eq ''">亲，请点击进入大转盘抽奖活动页面，祝您好运哦！<else/>{iMicms:$vo.info}</if></textarea><br />换行请输入
+ &lt;br&gt;
+ </td>
+</TR>
+<TR>
+<th><span class="red">*</span>重复抽奖回复：</th>
+<td><input type="input" class="px" id="aginfo" value="<if condition="$vo['aginfo'] eq ''">亲，继续努力哦！<else/>{iMicms:$vo.aginfo}</if>" name="aginfo" style="width:400px" />备注：
+如果设置只允许抽一次奖的，请写：你已经玩过了，下次再来。
+
+如果设置可多次抽奖，请写：亲，继续努力哦！</td>
+</TR>
+<TR>
+<th><span class="red">*</span>引导关注素材链接：</th>
+<td><input type="input" class="px" id="ydgzurl" value="{iMicms:$vo.ydgzurl}" name="ydgzurl" style="width:400px" />备注：
+未关注公众号的点抽奖时自动跳转到此引导关注素材上，请到你的公众号后台素材管理里添加一个关注素材，把关注素材链接复制到这里。</td>
+</TR>
+<TR>
+<th><span class="red">*</span>分享时的标题：</th>
+<td><input type="input" class="px" id="fxbt" value="{iMicms:$vo.fxbt}" name="fxbt" style="width:400px" />备注：
+分享到朋友圈或发送给朋友时的标题。</td>
+</TR>
+<TR>
+<th><span class="red">*</span>分享时的摘要：</th>
+<td><input type="input" class="px" id="fxzy" value="{iMicms:$vo.fxzy}" name="fxzy" style="width:400px" />备注：
+分享给朋友时的摘要。</td>
+</TR>
+</TBODY>
+</TABLE>
+  </div>
+
+<!--活动结束-->
+<div class="cLineB">
+          	<h4>活动结束内容</h4></div>
+<div class="msgWrap bgfc">
+
+  	<table class="userinfoArea" style=" margin: 0;" border="0" cellspacing="0" cellpadding="0" width="100%">
+  		<tbody>
+  			<tr>
+  				<th valign="top"><span class="red">*</span>活动结束公告主题：</th>
+  				<td><input type="input" class="px" id="endtite" value="<if condition="$vo['endtite'] eq ''">幸运大转盘活动已经结束了<else/>{iMicms:$vo.endtite}</if>" name="endtite" style="width:400px" />
+  					<br />
+  					请不要多于50字! </td>
+  				<td rowspan="4" valign="top"><div style="margin-left:20px"><img  id="pic2_src" src="<if condition="$vo['endpicurl'] eq ''">{iMicms::C('site_url')}/tpl/static/guajiang/images/activity-lottery-end.jpg<else/>{iMicms:$vo.endpicurl}</if>"  width="373px"/> <br />
+  					<input class="px" id="pic2"  name="endpicurl" value="<if condition="$vo['endpicurl'] eq ''">{iMicms::C('site_url')}/tpl/static/guajiang/images/activity-lottery-end.jpg<else/>{iMicms:$vo.endpicurl}</if>"  style="width:363px;"  />
+  					<br />
+  					  <script src="/tpl/static/upyun.js"></script><a href="###" onclick="upyunPicUpload('pic2',700,420,'{iMicms:$token}')" class="a_upload">上传</a> <a href="###" onclick="viewImg('pic2')">预览</a>&nbsp; 活动结束图片网址 </div></td>
+  				</tr>
+  			<tr>
+  				<th valign="top">活动结束说明：</th>
+  				<td valign="top"><textarea  class="px" id="endinfo" name="endinfo"  style="width:400px; height:125px" ><if condition="$vo['endinfo'] eq ''">亲，活动已经结束，请继续关注我们的后续活动哦。<else/>{iMicms:$vo.endinfo}</if></textarea><br />换行请输入
+ &lt;br&gt;
+  				  </td>
+  				</tr>
+  			</tbody>
+  		</table>
+  </div>
+
+
+<!--奖项设置-->
+<div class="cLineB">
+          	<h4>奖项设置</h4></div>
+<div class="msgWrap bgfc">
+
+<TABLE class="userinfoArea" style=" margin: 0;" border="0" cellSpacing="0" cellPadding="0" width="100%">
+<TBODY>
+<TR>
+<th valign="top"><span class="red">*</span>一等奖奖品设置：</th>
+<td><input type="input" class="px" id="fist"  name="fist" value="{iMicms:$vo.fist}"  style="width:250px"/>
+请不要多于50字! </td>
+  <TD rowspan="9" valign="top">&nbsp;</TD>
+</TR>
+<TR>
+<th valign="top"><span class="red">*</span>一等奖奖品数量：</th>
+<td><input type="input" class="px" id="fistnums" name="fistnums"      value="{iMicms:$vo.fistnums}" style="width:60px" />
+  <span class="red">如果是100%中奖,请把一等奖的奖品数量[ 1000就代表前1000人都中奖 ]填写多点</span></td>
+</TR>
+<TR>
+<th valign="top">二等奖奖品设置：</th>
+<td><input type="input" class="px" id="second" name="second"     value="{iMicms:$vo.second}"  style="width:250px"/>
+请不要多于50字! </td>
+</TR>
+<TR>
+<th valign="top">二等奖奖品数量：</th>
+<td><input type="input" class="px" id="secondnums" name="secondnums"   value="{iMicms:$vo.secondnums}" style="width:60px" />
+</td>
+</TR>
+<TR>
+<th valign="top">三等奖奖品设置：</th>
+<td><input type="input" class="px" id="third" name="third"   value="{iMicms:$vo.third}" style="width:250px" />
+请不要多于50字! </td>
+</TR>
+<TR>
+<th valign="top">三等奖奖品数量：</th>
+<td><input type="input" class="px" id="thirdnums" name="thirdnums"     value="{iMicms:$vo.thirdnums}" style="width:60px" />
+</td>
+</TR>
+<TR>
+<th valign="top">四等奖奖品设置：</th>
+<td><input type="input" class="px" id="four"  name="four" value="{iMicms:$vo.four}"  style="width:250px"/>
+请不要多于50字! </td>
+  <TD rowspan="9" valign="top">&nbsp;</TD>
+</TR>
+<TR>
+<th valign="top">四等奖奖品数量：</th>
+<td><input type="input" class="px" id="fournums" name="fournums"      value="{iMicms:$vo.fournums}" style="width:60px" />
+ </td>
+</TR>
+<TR>
+<th valign="top">五等奖奖品设置：</th>
+<td><input type="input" class="px" id="five"  name="five" value="{iMicms:$vo.five}"  style="width:250px"/>
+请不要多于50字! </td>
+  <TD rowspan="9" valign="top">&nbsp;</TD>
+</TR>
+<TR>
+<th valign="top">五等奖奖品数量：</th>
+<td><input type="input" class="px" id="fivenums" name="fivenums"      value="{iMicms:$vo.fivenums}" style="width:60px" />
+ </td>
+</TR>
+<TR>
+<th valign="top">六等奖奖品设置：</th>
+<td><input type="input" class="px" id="six"  name="six" value="{iMicms:$vo.six}"  style="width:250px"/>
+请不要多于50字! </td>
+  <TD rowspan="9" valign="top">&nbsp;</TD>
+</TR>
+<TR>
+<th valign="top">六等奖奖品数量：</th>
+<td><input type="input" class="px" id="sixnums" name="sixnums"      value="{iMicms:$vo.sixnums}" style="width:60px" />
+ </td>
+</TR>
+
+  </tbody>
+ <tbody>
+<TR>
+<th valign="top"><span class="red">*</span>预计活动的人数：</th>
+<td><input type="input" class="px" id="allpeople" name="allpeople"   value="{iMicms:$vo.allpeople}" style="width:150px"/>  预估活动人数直接影响抽奖概率：中奖概率 = 奖品总数/(预估活动人数*每人抽奖次数) 如果要确保任何时候都100%中奖建议设置为1人参加!<span class='red'>如果要确保任何时候都100%中奖建议设置为1人参加!并且奖项只设置一等奖.</span></td>
+  </TR>
+                                <TR>
+<th valign="top"><span class="red">*</span>每人最多允许抽奖次数：</th>
+<td><input type="input" class="px" id="canrqnums" name="canrqnums"   value="{iMicms:$vo.canrqnums}" style="width:150px"/>
+必须是数字,整个活动每个微信号最多允许抽奖的总次数</td>
+ </TR>
+    <!-- <TR>
+<th valign="top"><span class="red">*</span>每人最多允许中奖次数：</th>
+<td><input type="input" class="px" id="canrqnums" name="maxgetprizenum"   value="{iMicms:$vo.maxgetprizenum}" style="width:150px"/>
+必须是数字,整个活动每个微信号最多允许中奖的总次数</td>
+ </TR> -->
+ <tr>
+ <th ><span class="red">*</span>参与方式</th>
+                	<td><input type="radio" class="px" <eq name="vo.cyfs" value="1"> checked </eq> name="cyfs" onclick="javascript:document.getElementById('mtc').style.display ='';document.getElementById('jfc').style.display ='none';" value="1">　每天限制次数
+					 &nbsp&nbsp&nbsp&nbsp	<input type="radio" class="px" <eq name="vo.cyfs" value="2"> checked </eq> name="cyfs" onclick="javascript:document.getElementById('jfc').style.display ='';document.getElementById('mtc').style.display ='none';" value="2">　积分购买次数</td>
+                </tr>
+
+ <tr id="mtc" <eq name="vo.cyfs" value="2">style="display:none;"</eq>>
+<th valign="top"><span class="red"></span>每天最多抽奖次数：</th>
+<td><input class="px" id="daynums" name="daynums" style="width:150px" value="{iMicms:$vo.daynums}" type="input">
+必须小于总抽奖次数！ 0 为不限制 抽完总数就不能抽了! 可以抽奖天数 = 总数/每天抽奖次数!</td>
+</tr>
+ <tr id="jfc" <eq name="vo.cyfs" value="1">style="display:none;"</eq>>
+<th valign="top"><span class="red"></span>抽奖一次需要积分数：</th>
+<td><input class="px" id="decjf" name="decjf" style="width:150px" value="{iMicms:$vo.decjf}" type="input">
+抽奖一次扣除此用户多少积分，积分可以通过投票才获得。 </td>
+</tr>
+<tr style="display:none">
+<th valign="top">SN码生成设置：</th>
+<td>
+    <input class="radio" type="radio" checked name="snimport" value="0">自动生成
+    <input class="radio" type="radio" name="snimport" value="1">手动生成(SN码管理)
+</td>
+</tr>
+<tr>
+<th valign="top"><span class="red">*</span>兑奖密码：</th>
+<td><input class="px" id="parssword" name="parssword" value="{iMicms:$vo.parssword}" style="width:150px" type="input">
+消费确认密码长度小于15位</td>
+                                        </tr>
+                                                                       <tr>
+<th valign="top">SN码重命名为：</th>
+<td><input class="px" id="renamesn" name="renamesn" value="<if condition="$vo.renamesn">{iMicms:$vo.renamesn}<else/>SN码</if>" style="width:150px" type="input"> 例如：CND码,充值密码,SN码 这个主意用于修改SN码的名称，不懂请别修改</td>
+                                        </tr>
+                                         <tr>
+<th valign="top">手机号重命名：</th>
+<td><input class="px" id="renametel" name="renametel" value="<if condition="$vo.renametel">{iMicms:$vo.renametel}<else/>手机号</if>" style="width:150px" type="input"> 例如：QQ号,微信号,手机号等其他联系方式，不懂请别修改</td>
+                                        </tr>
+<TR>
+	<th valign="top">抽奖页面是否显示奖品数量：</th>
+	<td><input class="radio" type="radio" name="displayjpnums" value="1"  <if condition="$vo['displayjpnums'] eq 1" >checked</if> > 显示  <input class="radio" type="radio" name="displayjpnums" value="0"  <if condition="$vo['displayjpnums'] eq 0" >checked</if>> 不显</td>
+</TR>
+<!-- <TR>
+	<th valign="top">非关注用户：</th>
+	<td><input class="radio" type="radio" name="guanzhu" value="1"  <if condition="$vo['guanzhu'] eq 1" >checked</if> > 关注  <input class="radio" type="radio" name="guanzhu" value="0"  <if condition="$vo['guanzhu'] eq 0" >checked</if>> 注册 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;（非关注用户参加活动的处理方式）
+</td>
+</TR>
+<TR>
+	<th valign="top">无粉丝信息：</th>
+	<td><input class="radio" type="radio" name="needreg" value="1"  <if condition="$vo['needreg'] eq 1" >checked</if> > 注册  <input class="radio" type="radio" name="needreg" value="0"  <if condition="$vo['needreg'] eq 0" >checked</if>> 不注册 &nbsp;&nbsp;&nbsp;（没有粉丝信息参加活动的处理方式）</td>
+</TR> -->
+<TR>
+<th>&nbsp;</th>
+<td><button type="submit" class="btnGreen" >保存</button>　<a href=""  class="btnGray vm">取消</a></td>
+</TBODY>
+</TABLE>
+
+
+
+
+  </div>
+
+
+        </div>
+</form>
+
+        <div class="clr"></div>
+      </div>
+    </div>
+  </div>
+
+<!--底部-->
+  	</div>
+
+<include file="Public:footer"/>

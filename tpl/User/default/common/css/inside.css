@@ -1,0 +1,449 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+}
+
+.red {
+    color: #f00;
+}
+
+.margin-top10 {
+    margin-top: 10px;
+}
+.mp3{
+      max-width:330px;
+       float:left;
+}
+.margin-bm10 {
+    margin-bottom: 10px;
+}
+.fileupload-loading .fileupload-new,.fileupload-loading .fileupload-preview,.fileupload-loading .fileupload-exists,.fileupload-loading .btn-file,.fileupload-new .fileupload-loading,.fileupload-exists .fileupload-loading{ 
+     display:none;
+}
+.fileupload-loading .fileupload-loading{
+     display:block;
+}
+.fileupload-loading {
+    background: url("../img/loading.gif") no-repeat center;
+    width:100px;
+}
+.fileupload-preview{
+    max-height:90px;
+}
+.fileupload-preview img{
+     margin-left:5px;
+}
+#fallr-overlay {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: #fff;
+    height: 100%;
+    width: 100%;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    filter: alpha(opacity=50);
+    opacity: 0.5;
+}
+
+#fallr-wrapper,
+#fallr-wrapper * {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 19px;
+    color: #555;
+    vertical-align: baseline;
+    -webkit-font-smoothing: antialiased;
+}
+
+#fallr-wrapper {
+    position: fixed;
+    overflow: hidden;
+    background-color: #fff;
+    border: 1px solid #999;
+    border: 1px solid rgba(0,0,0,0.3);
+    *border: 1px solid #999;
+    outline: 0;
+    -webkit-box-shadow: 0 3px 7px rgba(0,0,0,0.3);
+    -moz-box-shadow: 0 3px 7px rgba(0,0,0,0.3);
+    box-shadow: 0 3px 7px rgba(0,0,0,0.3);
+    -webkit-background-clip: padding-box;
+    -moz-background-clip: padding-box;
+    background-clip: padding-box;
+}
+
+#fallr-icon {
+    position: absolute;
+    top: 35px;
+    left: 20px;
+    height: 64px;
+    width: 64px;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+}
+
+#fallr {
+    position: relative;
+    padding: 50px;
+    padding: 40px 20px 20px 72px;
+}
+
+
+
+#fallr-buttons {
+    position: relative;
+    bottom: 0;
+    right: 0;
+    margin: 0 15px 15px 15px;
+    clear: both;
+    display: block;
+    text-align: right;
+}
+
+/*  Github button style
+    http://nicolasgallagher.com/lab/css3-github-buttons/ 
+*/
+
+#fallr-wrapper .fallr-button,
+#fallr button,
+#fallr input[type="submit"] {
+    position: relative;
+    padding: 4px 12px;
+    color: #333;
+    white-space: nowrap;
+    font-weight: bold;
+    font-size: 13px;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-background-clip: padding;
+    -moz-background-clip: padding;
+    background-clip: padding;
+    cursor: default;
+    background-color: #f3f3f3;
+    background-repeat: repeat-x;
+    border: 1px solid #dcdcdc;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    margin-right: 5px;
+    background-image: linear-gradient(to bottom, #f5f5f5, #f1f1f1);
+    margin-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+    #fallr-wrapper .fallr-button:hover,
+    #fallr-wrapper .fallr-button:focus,
+    #fallr button:hover,
+    #fallr button:focus,
+    #fallr input[type="submit"]:hover,
+    #fallr input[type="submit"]:focus {
+        -webkit-text-shadow: none;
+        text-shadow: none;
+        border-color: #c6c6c6;
+        -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+        -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+        background-color: #f5f5f5;
+        background-repeat: repeat-x;
+        background-position: 0 0;
+        -webkit-transition: none;
+        -moz-transition: none;
+        -o-transition: none;
+        transition: none;
+        text-decoration: none;
+        background-image: linear-gradient(to bottom, #f8f8f8, #f1f1f1);
+    }
+
+    #fallr-wrapper .fallr-button.fallr-button-danger {
+        border: 1px solid #b12d26;
+        color: #ffffff;
+        background-color: #d24634;
+        background-image: -moz-linear-gradient(top, #dd4b39, #c13e2c);
+        background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#dd4b39), to(#c13e2c));
+        background-image: -webkit-linear-gradient(top, #dd4b39, #c13e2c);
+        background-image: -o-linear-gradient(top, #dd4b39, #c13e2c);
+        background-image: linear-gradient(to bottom, #dd4b39, #c13e2c);
+        background-repeat: repeat-x;
+        background-color: #c13e2c;
+        background-color: #c13e2c \9;
+    }
+
+        #fallr-wrapper .fallr-button.fallr-button-danger:hover,
+        #fallr-wrapper .fallr-button.fallr-button-danger:focus {
+            border: 1px solid #b12d26;
+            color: #ffffff;
+            background-color: #d24634;
+            background-image: -moz-linear-gradient(top, #dd4b39, #c13e2c);
+            background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#dd4b39), to(#c13e2c));
+            background-image: -webkit-linear-gradient(top, #dd4b39, #c13e2c);
+            background-image: -o-linear-gradient(top, #dd4b39, #c13e2c);
+            background-image: linear-gradient(to bottom, #dd4b39, #c13e2c);
+            background-repeat: repeat-x;
+            background-color: #c13e2c;
+            background-color: #c13e2c \9;
+        }
+
+#fallr abbr {
+    border-bottom: 1px dotted #333;
+}
+
+#fallr h1,
+#fallr h2,
+#fallr h3,
+#fallr h4,
+#fallr h5,
+#fallr h6,
+#fallr p,
+#fallr form,
+#fallr input,
+#fallr label {
+    margin-bottom: 10px;
+}
+
+#fallr h2 {
+    font-size: 18px;
+}
+
+#fallr h3 {
+    font-size: 30px;
+    line-height: 45px;
+}
+
+#fallr h4 {
+    font-size: 25px;
+    line-height: 37px;
+}
+
+#fallr h5 {
+    font-size: 20px;
+    line-height: 30px;
+}
+
+#fallr input[type="text"],
+#fallr input[type="password"],
+#fallr textarea {
+    background: #fff;
+    border: solid 1px #999;
+    color: #777;
+    padding: 5px;
+    width: 97%;
+    box-shadow: inset #bbb 0px 0px 5px;
+    -moz-box-shadow: inset #bbb 0px 0px 5px;
+    -webkit-box-shadow: inset #bbb 0px 0px 5px;
+    transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    -webkit-transition: all .3s linear;
+}
+
+    #fallr input[type="text"]:focus,
+    #fallr input[type="password"]:focus,
+    #fallr textarea:focus {
+        box-shadow: inset #7bbdfe 0px 0px 7px;
+        -moz-box-shadow: inset #7bbdfe 0px 0px 7px;
+        -webkit-box-shadow: inset #7bbdfe 0px 0px 7px;
+        transition: all .3s linear;
+        -moz-transition: all .3s linear;
+        -webkit-transition: all .3s linear;
+    }
+
+#fallr ol li,
+#fallr ul li,
+#fallr blockquote,
+#fallr q {
+    margin-left: 20px;
+}
+
+#fallr table {
+    border: 1px solid #ddd;
+    border-collapse: collapse;
+    border-spacing: 0;
+    line-height: 1.35em;
+    width: 100%;
+}
+
+#fallr th,
+#fallr td {
+    padding: 10px;
+}
+
+#fallr th {
+    background-color: #cecece;
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ececec), to(#cecece));
+    background-image: -moz-linear-gradient(#ececec, #cecece);
+    background-image: -o-linear-gradient(#ececec, #cecece);
+    background-image: linear-gradient(#ececec, #cecece);
+}
+
+/* custom icons */
+
+.icon-msg-calendar {
+    background: url('../img/calendar.png');
+}
+
+.icon-msg-chat {
+    background: url('../img/chat.png');
+}
+
+.icon-msg-check {
+    background: url('../img/check.png');
+}
+
+.icon-msg-config {
+    background: url('../img/wrench.png');
+}
+
+.icon-msg-error {
+    background: url('../img/error.png');
+}
+
+.icon-msg-pen {
+    background: url('../img/pen.png');
+}
+
+.icon-msg-help {
+    background: url('../img/help.png');
+}
+
+.icon-msg-info {
+    background: url('../img/info.png');
+}
+
+.icon-msg-lamp {
+    background: url('../img/lamp.png');
+}
+
+.icon-msg-mail {
+    background: url('../img/mail.png');
+}
+
+.icon-msg-photo {
+    background: url('../img/camera.png');
+}
+
+.icon-msg-secure {
+    background: url('../img/unlock.png');
+}
+
+.icon-msg-trash {
+    background: url('../img/trash.png');
+}
+
+.icon-msg-user {
+    background: url('../img/user.png');
+}
+
+.icon-msg-up {
+    background: url('../img/up.png');
+}
+
+.icon-msg-down {
+    background: url('../img/down.png');
+}
+
+.icon-msg-left {
+    background: url('../img/left.png');
+}
+
+.icon-msg-right {
+    background: url('../img/right.png');
+}
+
+.icon-msg-at {
+    background: url('../img/at.png');
+}
+
+.icon-msg-bar {
+    background: url('../img/bars.png');
+}
+
+.icon-msg-book {
+    background: url('../img/book.png');
+}
+
+.icon-msg-chart {
+    background: url('../img/chart.png');
+}
+
+.icon-msg-clock {
+    background: url('../img/clock.png');
+}
+
+.icon-msg-gear {
+    background: url('../img/cog.png');
+}
+
+.icon-msg-document {
+    background: url('../img/document.png');
+}
+
+.icon-msg-folder {
+    background: url('../img/folder.png');
+}
+
+.icon-msg-heart {
+    background: url('../img/heart.png');
+}
+
+.icon-msg-home {
+    background: url('../img/home.png');
+}
+
+.icon-msg-key {
+    background: url('../img/key.png');
+}
+
+.icon-msg-magnifier {
+    background: url('../img/magnifier.png');
+}
+
+.icon-msg-pin {
+    background: url('../img/pin.png');
+}
+
+.icon-msg-minus {
+    background: url('../img/minus.png');
+}
+
+.icon-msg-window {
+    background: url('../img/window.png');
+}
+
+.icon-msg-plus {
+    background: url('../img/plus.png');
+}
+
+.icon-msg-reload {
+    background: url('../img/reload.png');
+}
+
+.icon-msg-quote {
+    background: url('../img/quote.png');
+}
+
+.icon-msg-star {
+    background: url('../img/star.png');
+}
+
+.icon-msg-tag {
+    background: url('../img/tag.png');
+}
+/*提示结束*/
+
+
+.error {
+    color: #b94a48!important;
+    border-color: #b94a48!important;
+}
+
+    .error:focus {
+        border-color: #953b39!important;
+    }

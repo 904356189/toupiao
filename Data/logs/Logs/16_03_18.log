@@ -1,0 +1,811 @@
+[ 2016-03-18T06:31:24+08:00 ] 66.249.64.87 /index.php
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001811s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001885s ]
+NOTIC: [2048] Declaration of IndexAction::show() should be compatible with that of Action::show() E:\wwwroot\qingapp\web\toupiao\31cms\Lib\Action\Home\IndexAction.class.php 第 4 行.
+NOTIC: [2] Cannot use a scalar value as an array E:\wwwroot\qingapp\web\toupiao\31cms\_Core\Lib\Core\Action.class.php 第 209 行.
+SQL: SHOW COLUMNS FROM `tp_agent` [ RunTime:0.005100s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://0.weiapp.cc' ) LIMIT 1   [ RunTime:0.000206s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.028213s ]
+INFO: [ view_template ] --END-- [ RunTime:0.003374s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.031644s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017728s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.049419s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.054634s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.056479s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.057930s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.010731s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.060264s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002569s ]
+
+[ 2016-03-18T09:49:12+08:00 ] ERR: (ThinkException) 非法操作:show
+[ 2016-03-18T09:49:12+08:00 ] 110.184.82.159 /index.php?g=Wap&m=Vote&a=show&token=vjcbgt1414375209&wecha_id=oBNrss2Fh21P5yCJfNypxxTJrEU0&id=296&tid=23&sgssz=mp.weixin.qq.com&from=groupmessage&isappinstalled=0
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001244s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001326s ]
+NOTIC: [2] Cannot use a scalar value as an array E:\wwwroot\qingapp\web\toupiao\31cms\_Core\Lib\Core\Action.class.php 第 209 行.
+SQL: SHOW COLUMNS FROM `tp_agent` [ RunTime:0.002006s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://0.weiapp.cc' ) LIMIT 1   [ RunTime:0.000171s ]
+NOTIC: [8] Undefined index:  wxd_openid E:\wwwroot\qingapp\web\toupiao\31cms\Lib\Action\Wap\VoteAction.class.php 第 1869 行.
+NOTIC: [8] Undefined index:  class E:\wwwroot\qingapp\web\toupiao\31cms\_Core\Lib\Core\ThinkException.class.php 第 63 行.
+NOTIC: [8] Undefined index:  type E:\wwwroot\qingapp\web\toupiao\31cms\_Core\Lib\Core\ThinkException.class.php 第 63 行.
+NOTIC: [8] Undefined index:  args E:\wwwroot\qingapp\web\toupiao\31cms\_Core\Lib\Core\ThinkException.class.php 第 64 行.
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed E:\wwwroot\qingapp\web\toupiao\31cms\_Core\Lib\Core\ThinkException.class.php 第 64 行.
+NOTIC: [8] Undefined index:  file E:\wwwroot\qingapp\web\toupiao\31cms\_Core\Lib\Core\ThinkException.class.php 第 62 行.
+NOTIC: [8] Undefined index:  line E:\wwwroot\qingapp\web\toupiao\31cms\_Core\Lib\Core\ThinkException.class.php 第 62 行.
+NOTIC: [4096] Object of class VoteAction could not be converted to string E:\wwwroot\qingapp\web\toupiao\31cms\_Core\Lib\Core\ThinkException.class.php 第 64 行.
+NOTIC: [8] Array to string conversion E:\wwwroot\qingapp\web\toupiao\31cms\_Core\Lib\Core\ThinkException.class.php 第 64 行.
+NOTIC: [8] Undefined index:  class E:\wwwroot\qingapp\web\toupiao\31cms\_Core\Lib\Core\ThinkException.class.php 第 63 行.
+NOTIC: [8] Undefined index:  type E:\wwwroot\qingapp\web\toupiao\31cms\_Core\Lib\Core\ThinkException.class.php 第 63 行.
+NOTIC: [8] Undefined index:  class E:\wwwroot\qingapp\web\toupiao\31cms\_Core\Lib\Core\ThinkException.class.php 第 63 行.
+NOTIC: [8] Undefined index:  type E:\wwwroot\qingapp\web\toupiao\31cms\_Core\Lib\Core\ThinkException.class.php 第 63 行.
+
+[ 2016-03-18T10:16:29+08:00 ] 183.134.31.135 /index.php
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001177s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001249s ]
+NOTIC: [2048] Declaration of IndexAction::show() should be compatible with that of Action::show() E:\wwwroot\qingapp\web\toupiao\31cms\Lib\Action\Home\IndexAction.class.php 第 4 行.
+NOTIC: [2] Cannot use a scalar value as an array E:\wwwroot\qingapp\web\toupiao\31cms\_Core\Lib\Core\Action.class.php 第 209 行.
+SQL: SHOW COLUMNS FROM `tp_agent` [ RunTime:0.002119s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://0.weiapp.cc' ) LIMIT 1   [ RunTime:0.000179s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.018805s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001706s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.020545s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011036s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.031628s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.032671s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.033800s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.034733s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004246s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.035938s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001544s ]
+
+[ 2016-03-18T10:16:29+08:00 ] 180.153.201.158 /index.php
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001228s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001312s ]
+NOTIC: [2048] Declaration of IndexAction::show() should be compatible with that of Action::show() E:\wwwroot\qingapp\web\toupiao\31cms\Lib\Action\Home\IndexAction.class.php 第 4 行.
+NOTIC: [2] Cannot use a scalar value as an array E:\wwwroot\qingapp\web\toupiao\31cms\_Core\Lib\Core\Action.class.php 第 209 行.
+SQL: SHOW COLUMNS FROM `tp_agent` [ RunTime:0.001628s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://0.weiapp.cc' ) LIMIT 1   [ RunTime:0.000175s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.018116s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001663s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.019821s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011136s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.031007s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.032063s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.033164s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.034104s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004246s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.035316s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001371s ]
+
+[ 2016-03-18T10:16:40+08:00 ] 183.134.31.135 /index.php?m=Users&a=checklogin
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001165s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001235s ]
+NOTIC: [2] Cannot use a scalar value as an array E:\wwwroot\qingapp\web\toupiao\31cms\_Core\Lib\Core\Action.class.php 第 209 行.
+SQL: SHOW COLUMNS FROM `tp_agent` [ RunTime:0.002687s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://0.weiapp.cc' ) LIMIT 1   [ RunTime:0.000218s ]
+SQL: SHOW COLUMNS FROM `tp_users` [ RunTime:0.002585s ]
+SQL: SELECT * FROM `tp_users` WHERE ( `username` = 'admin' ) LIMIT 1   [ RunTime:0.000272s ]
+SQL: SHOW COLUMNS FROM `tp_token_open` [ RunTime:0.002510s ]
+SQL: SELECT `token` FROM `tp_token_open` WHERE ( `uid` = 1 ) LIMIT 1   [ RunTime:0.000147s ]
+SQL: SHOW COLUMNS FROM `tp_user_group` [ RunTime:0.001437s ]
+SQL: SELECT * FROM `tp_user_group` WHERE ( `id` = 7 ) LIMIT 1   [ RunTime:0.000267s ]
+SQL: UPDATE `tp_users` SET `lasttime`=1458267400,`lastloginmonth`=3,`lastip`='183.134.31.135' WHERE ( `id` = 1 ) [ RunTime:0.000179s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.031680s ]
+INFO: [ view_template ] --END-- [ RunTime:0.010195s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.041981s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017373s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.059413s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.061109s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.062279s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.063970s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006417s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.065933s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002056s ]
+
+[ 2016-03-18T10:16:41+08:00 ] 180.153.201.158 /index.php?g=User&m=Vote&a=index
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001220s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001289s ]
+NOTIC: [2] Cannot use a scalar value as an array E:\wwwroot\qingapp\web\toupiao\31cms\_Core\Lib\Core\Action.class.php 第 209 行.
+SQL: SHOW COLUMNS FROM `tp_agent` [ RunTime:0.002491s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://0.weiapp.cc' ) LIMIT 1   [ RunTime:0.000162s ]
+SQL: SHOW COLUMNS FROM `tp_user_group` [ RunTime:0.001486s ]
+SQL: SELECT * FROM `tp_user_group` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000476s ]
+SQL: SHOW COLUMNS FROM `tp_users` [ RunTime:0.002928s ]
+NOTIC: [8] Undefined index:  uid E:\wwwroot\qingapp\web\toupiao\31cms\Lib\Action\UserAction.class.php 第 30 行.
+SQL: SELECT * FROM `tp_users` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000312s ]
+NOTIC: [8] Undefined index:  uid E:\wwwroot\qingapp\web\toupiao\31cms\Lib\Action\UserAction.class.php 第 38 行.
+SQL: SELECT * FROM `tp_users` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000352s ]
+SQL: SHOW COLUMNS FROM `tp_wxuser` [ RunTime:0.002546s ]
+SQL: SELECT `wxname`,`weixin`,`wxid`,`headerpic` FROM `tp_wxuser` WHERE ( `token` = null ) AND ( `uid` = null ) LIMIT 1   [ RunTime:0.000981s ]
+SQL: SHOW COLUMNS FROM `tp_token_open` [ RunTime:0.007641s ]
+SQL: SELECT `queryname` FROM `tp_token_open` WHERE ( `token` = null ) LIMIT 1   [ RunTime:0.000911s ]
+
+[ 2016-03-18T10:16:41+08:00 ] 183.134.31.135 /index.php?g=User&m=Vote&a=index
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001191s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001263s ]
+NOTIC: [2] Cannot use a scalar value as an array E:\wwwroot\qingapp\web\toupiao\31cms\_Core\Lib\Core\Action.class.php 第 209 行.
+SQL: SHOW COLUMNS FROM `tp_agent` [ RunTime:0.001640s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://0.weiapp.cc' ) LIMIT 1   [ RunTime:0.000243s ]
+SQL: SHOW COLUMNS FROM `tp_user_group` [ RunTime:0.001169s ]
+SQL: SELECT * FROM `tp_user_group` WHERE ( `id` = 7 ) LIMIT 1   [ RunTime:0.000246s ]
+SQL: SHOW COLUMNS FROM `tp_users` [ RunTime:0.002282s ]
+SQL: SELECT * FROM `tp_users` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000265s ]
+SQL: SELECT * FROM `tp_users` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000244s ]
+SQL: SHOW COLUMNS FROM `tp_wxuser` [ RunTime:0.002034s ]
+SQL: SELECT `wxname`,`weixin`,`wxid`,`headerpic` FROM `tp_wxuser` WHERE ( `token` = 'Eioa5C5oj3S32qhH' ) AND ( `uid` = 1 ) LIMIT 1   [ RunTime:0.000221s ]
+SQL: SHOW COLUMNS FROM `tp_token_open` [ RunTime:0.001233s ]
+SQL: SELECT `queryname` FROM `tp_token_open` WHERE ( `token` = 'Eioa5C5oj3S32qhH' ) LIMIT 1   [ RunTime:0.000360s ]
+SQL: SELECT `gid`,`activitynum`,`sum` FROM `tp_users` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000233s ]
+SQL: SELECT * FROM `tp_user_group` WHERE ( `id` = 7 ) LIMIT 1   [ RunTime:0.000213s ]
+SQL: SHOW COLUMNS FROM `tp_vote` [ RunTime:0.003050s ]
+SQL: SELECT * FROM `tp_vote` WHERE ( `token` = 'Eioa5C5oj3S32qhH' ) ORDER BY id DESC  [ RunTime:0.000695s ]
+SQL: SHOW COLUMNS FROM `tp_vote_item` [ RunTime:0.002759s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_vote_item` WHERE ( `vid` = 16 ) AND ( `status` > 0 ) LIMIT 1   [ RunTime:0.000569s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_vote_item` WHERE ( `vid` = 15 ) AND ( `status` > 0 ) LIMIT 1   [ RunTime:0.000281s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_vote_item` WHERE ( `vid` = 14 ) AND ( `status` > 0 ) LIMIT 1   [ RunTime:0.000237s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_vote_item` WHERE ( `vid` = 13 ) AND ( `status` > 0 ) LIMIT 1   [ RunTime:0.000206s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_vote_item` WHERE ( `vid` = 12 ) AND ( `status` > 0 ) LIMIT 1   [ RunTime:0.000206s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_vote_item` WHERE ( `vid` = 11 ) AND ( `status` > 0 ) LIMIT 1   [ RunTime:0.000206s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_vote_item` WHERE ( `vid` = 9 ) AND ( `status` > 0 ) LIMIT 1   [ RunTime:0.000203s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_vote` WHERE ( `token` = 'Eioa5C5oj3S32qhH' ) LIMIT 1   [ RunTime:0.000164s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.050770s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002719s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: ok E:\wwwroot\qingapp\web\toupiao\Data\logs\Cache\User\f70321ef24e437eb7147c67ab8f0460a.php 第 165 行.
+NOTIC: [8] Undefined index:  id E:\wwwroot\qingapp\web\toupiao\Data\logs\Cache\User\f70321ef24e437eb7147c67ab8f0460a.php 第 180 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-0.053612s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025184s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.078772s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.080087s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.081235s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.082163s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004678s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.083533s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001304s ]
+
+[ 2016-03-18T10:16:41+08:00 ] 180.153.201.158 /index.php?g=Home&m=Index&a=index
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001185s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001257s ]
+NOTIC: [2048] Declaration of IndexAction::show() should be compatible with that of Action::show() E:\wwwroot\qingapp\web\toupiao\31cms\Lib\Action\Home\IndexAction.class.php 第 4 行.
+NOTIC: [2] Cannot use a scalar value as an array E:\wwwroot\qingapp\web\toupiao\31cms\_Core\Lib\Core\Action.class.php 第 209 行.
+SQL: SHOW COLUMNS FROM `tp_agent` [ RunTime:0.001701s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://0.weiapp.cc' ) LIMIT 1   [ RunTime:0.000172s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.017584s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001810s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.019451s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010938s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.030432s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.031459s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.032520s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.033430s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004110s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.034600s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001429s ]
+
+[ 2016-03-18T10:16:54+08:00 ] 101.226.66.175 /index.php?g=Wap&m=Vote&a=index&token=Eioa5C5oj3S32qhH&id=16
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001194s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001268s ]
+NOTIC: [2] Cannot use a scalar value as an array E:\wwwroot\qingapp\web\toupiao\31cms\_Core\Lib\Core\Action.class.php 第 209 行.
+SQL: SHOW COLUMNS FROM `tp_agent` [ RunTime:0.001637s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://0.weiapp.cc' ) LIMIT 1   [ RunTime:0.000195s ]
+NOTIC: [8] Undefined index:  wxd_openid E:\wwwroot\qingapp\web\toupiao\31cms\Lib\Action\Wap\VoteAction.class.php 第 1869 行.
+NOTIC: [8] Undefined index:  isappinstalled E:\wwwroot\qingapp\web\toupiao\31cms\Lib\Action\Wap\VoteAction.class.php 第 38 行.
+NOTIC: [8] Undefined index:  from E:\wwwroot\qingapp\web\toupiao\31cms\Lib\Action\Wap\VoteAction.class.php 第 40 行.
+SQL: SHOW COLUMNS FROM `tp_vote` [ RunTime:0.001735s ]
+SQL: SELECT * FROM `tp_vote` WHERE ( `token` = 'Eioa5C5oj3S32qhH' ) AND ( `id` = 16 ) LIMIT 1   [ RunTime:0.000266s ]
+SQL: SHOW COLUMNS FROM `tp_token_open` [ RunTime:0.001225s ]
+SQL: SELECT `uid` FROM `tp_token_open` WHERE ( `token` = 'Eioa5C5oj3S32qhH' ) LIMIT 1   [ RunTime:0.000263s ]
+SQL: SHOW COLUMNS FROM `tp_users` [ RunTime:0.002623s ]
+SQL: SELECT * FROM `tp_users` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000268s ]
+SQL: UPDATE `tp_vote` SET `check`=9 WHERE ( `token` = 'Eioa5C5oj3S32qhH' ) AND ( `id` = 16 ) [ RunTime:0.000190s ]
+NOTIC: [8] Undefined index:  wxd_openid E:\wwwroot\qingapp\web\toupiao\31cms\Lib\Action\Wap\VoteAction.class.php 第 125 行.
+SQL: SHOW COLUMNS FROM `tp_vote_item` [ RunTime:0.001524s ]
+SQL: SELECT SUM(vcount) AS tp_sum FROM `tp_vote_item` WHERE vid=16 LIMIT 1   [ RunTime:0.000433s ]
+SQL: SELECT SUM(dcount) AS tp_sum FROM `tp_vote_item` WHERE vid=16 LIMIT 1   [ RunTime:0.000204s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_vote_item` WHERE ( `vid` = 16 ) AND ( `status` > '0' ) LIMIT 1   [ RunTime:0.000216s ]
+NOTIC: [8] Undefined index:  page E:\wwwroot\qingapp\web\toupiao\31cms\Lib\Action\Wap\VoteAction.class.php 第 165 行.
+SQL: SELECT * FROM `tp_vote_item` WHERE ( `vid` = 16 ) AND ( `status` > '0' )  [ RunTime:0.000249s ]
+SQL: SELECT * FROM `tp_vote_item` WHERE ( `vid` = 16 ) AND ( `status` > '0' ) ORDER BY `rank` asc,`id` desc LIMIT 0,10   [ RunTime:0.000266s ]
+SQL: SHOW COLUMNS FROM `tp_guanggao` [ RunTime:0.001015s ]
+SQL: SELECT * FROM `tp_guanggao` WHERE vid=16 ORDER BY id desc  [ RunTime:0.000332s ]
+SQL: SHOW COLUMNS FROM `tp_diymen_set` [ RunTime:0.001223s ]
+SQL: SELECT * FROM `tp_diymen_set` WHERE ( `token` = 'Eioa5C5oj3S32qhH' ) LIMIT 1   [ RunTime:0.000230s ]
+SQL: SELECT * FROM `tp_diymen_set` WHERE ( `id` = 3 ) LIMIT 1   [ RunTime:0.000219s ]
+SQL: SELECT * FROM `tp_diymen_set` WHERE ( `id` = 3 ) LIMIT 1   [ RunTime:0.000188s ]
+SQL: UPDATE `tp_diymen_set` SET `expire_access`=1458274414,`access_token`='t-WbDdyo4fjAyI4GHLvZkIM9P8mr0MZ66UDCfKnUeEzQBWVpnR1qyU7d43tjE1DbeIRHSBQiN4GdxT2Fvow-cmJX3OqyPgUQukU1sdczA2UGRZeTgCTttQPA_afHQ_WRSUVjAFAMOP' WHERE ( `id` = 3 ) [ RunTime:0.000205s ]
+SQL: UPDATE `tp_diymen_set` SET `expire_jsapi`=1458274414,`jsapi_ticket`='sM4AOVdWfPE4DxkXGEs8VCJ9H0Sps-p2cW05QI3LckusP90eWiNZWiazNBT1yxr5NVd1F5Xe5OXnbQLDszVO2Q' WHERE ( `id` = 3 ) [ RunTime:0.000447s ]
+NOTIC: [8] Undefined variable: IIIII11IIIll E:\wwwroot\qingapp\web\toupiao\31cms\Lib\Action\Wap\VoteAction.class.php 第 217 行.
+NOTIC: [8] Undefined variable: IIIII11IIIl1 E:\wwwroot\qingapp\web\toupiao\31cms\Lib\Action\Wap\VoteAction.class.php 第 223 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.323383s ]
+INFO: [ view_template ] --END-- [ RunTime:0.003418s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant statdate - assumed 'statdate' E:\wwwroot\qingapp\web\toupiao\Data\logs\Cache\Wap\ac7b54a5f6ff18a7a700bb4afd040872.php 第 502 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-0.326844s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035755s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.362653s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.363858s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.365055s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.366015s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004560s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.367285s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001339s ]
+
+[ 2016-03-18T10:16:54+08:00 ] 183.134.31.135 /index.php?g=Wap&m=Vote&a=index&token=Eioa5C5oj3S32qhH&id=16
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001379s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001489s ]
+NOTIC: [2] Cannot use a scalar value as an array E:\wwwroot\qingapp\web\toupiao\31cms\_Core\Lib\Core\Action.class.php 第 209 行.
+SQL: SHOW COLUMNS FROM `tp_agent` [ RunTime:0.001962s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://0.weiapp.cc' ) LIMIT 1   [ RunTime:0.000186s ]
+NOTIC: [8] Undefined index:  wxd_openid E:\wwwroot\qingapp\web\toupiao\31cms\Lib\Action\Wap\VoteAction.class.php 第 1869 行.
+NOTIC: [8] Undefined index:  isappinstalled E:\wwwroot\qingapp\web\toupiao\31cms\Lib\Action\Wap\VoteAction.class.php 第 38 行.
+NOTIC: [8] Undefined index:  from E:\wwwroot\qingapp\web\toupiao\31cms\Lib\Action\Wap\VoteAction.class.php 第 40 行.
+SQL: SHOW COLUMNS FROM `tp_vote` [ RunTime:0.002020s ]
+SQL: SELECT * FROM `tp_vote` WHERE ( `token` = 'Eioa5C5oj3S32qhH' ) AND ( `id` = 16 ) LIMIT 1   [ RunTime:0.000289s ]
+SQL: SHOW COLUMNS FROM `tp_token_open` [ RunTime:0.001393s ]
+SQL: SELECT `uid` FROM `tp_token_open` WHERE ( `token` = 'Eioa5C5oj3S32qhH' ) LIMIT 1   [ RunTime:0.000419s ]
+SQL: SHOW COLUMNS FROM `tp_users` [ RunTime:0.002923s ]
+SQL: SELECT * FROM `tp_users` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000330s ]
+SQL: UPDATE `tp_vote` SET `check`=8 WHERE ( `token` = 'Eioa5C5oj3S32qhH' ) AND ( `id` = 16 ) [ RunTime:0.000225s ]
+NOTIC: [8] Undefined index:  wxd_openid E:\wwwroot\qingapp\web\toupiao\31cms\Lib\Action\Wap\VoteAction.class.php 第 125 行.
+SQL: SHOW COLUMNS FROM `tp_vote_item` [ RunTime:0.001584s ]
+SQL: SELECT SUM(vcount) AS tp_sum FROM `tp_vote_item` WHERE vid=16 LIMIT 1   [ RunTime:0.000334s ]
+SQL: SELECT SUM(dcount) AS tp_sum FROM `tp_vote_item` WHERE vid=16 LIMIT 1   [ RunTime:0.000222s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_vote_item` WHERE ( `vid` = 16 ) AND ( `status` > '0' ) LIMIT 1   [ RunTime:0.000235s ]
+NOTIC: [8] Undefined index:  page E:\wwwroot\qingapp\web\toupiao\31cms\Lib\Action\Wap\VoteAction.class.php 第 165 行.
+SQL: SELECT * FROM `tp_vote_item` WHERE ( `vid` = 16 ) AND ( `status` > '0' )  [ RunTime:0.000292s ]
+SQL: SELECT * FROM `tp_vote_item` WHERE ( `vid` = 16 ) AND ( `status` > '0' ) ORDER BY `rank` asc,`id` desc LIMIT 0,10   [ RunTime:0.000316s ]
+SQL: SHOW COLUMNS FROM `tp_guanggao` [ RunTime:0.001459s ]
+SQL: SELECT * FROM `tp_guanggao` WHERE vid=16 ORDER BY id desc  [ RunTime:0.000319s ]
+SQL: SHOW COLUMNS FROM `tp_diymen_set` [ RunTime:0.001981s ]
+SQL: SELECT * FROM `tp_diymen_set` WHERE ( `token` = 'Eioa5C5oj3S32qhH' ) LIMIT 1   [ RunTime:0.000335s ]
+SQL: SELECT * FROM `tp_diymen_set` WHERE ( `id` = 3 ) LIMIT 1   [ RunTime:0.000153s ]
+SQL: SELECT * FROM `tp_diymen_set` WHERE ( `id` = 3 ) LIMIT 1   [ RunTime:0.000196s ]
+SQL: UPDATE `tp_diymen_set` SET `expire_access`=1458274414,`access_token`='t-WbDdyo4fjAyI4GHLvZkIM9P8mr0MZ66UDCfKnUeEzBfQYRIT0m5B3VYTsAz9PsaRSVi_va1weeRoxQpT2LsAC5thdnRmCzBr_Xuy4eywFaHlifZ3LitA846er0dTLsKLLjAFAXYY' WHERE ( `id` = 3 ) [ RunTime:0.000213s ]
+SQL: UPDATE `tp_diymen_set` SET `expire_jsapi`=1458274414,`jsapi_ticket`='sM4AOVdWfPE4DxkXGEs8VCJ9H0Sps-p2cW05QI3LckusP90eWiNZWiazNBT1yxr5NVd1F5Xe5OXnbQLDszVO2Q' WHERE ( `id` = 3 ) [ RunTime:0.000237s ]
+NOTIC: [8] Undefined variable: IIIII11IIIll E:\wwwroot\qingapp\web\toupiao\31cms\Lib\Action\Wap\VoteAction.class.php 第 217 行.
+NOTIC: [8] Undefined variable: IIIII11IIIl1 E:\wwwroot\qingapp\web\toupiao\31cms\Lib\Action\Wap\VoteAction.class.php 第 223 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.339485s ]
+INFO: [ view_template ] --END-- [ RunTime:0.003404s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant statdate - assumed 'statdate' E:\wwwroot\qingapp\web\toupiao\Data\logs\Cache\Wap\ac7b54a5f6ff18a7a700bb4afd040872.php 第 502 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-0.342983s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.042593s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.385646s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.387646s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.390362s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.391326s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007466s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.393222s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001903s ]
+
+[ 2016-03-18T10:16:59+08:00 ] 183.134.31.135 /index.php?g=User&m=Vote&a=index
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002031s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002145s ]
+NOTIC: [2] Cannot use a scalar value as an array E:\wwwroot\qingapp\web\toupiao\31cms\_Core\Lib\Core\Action.class.php 第 209 行.
+SQL: SHOW COLUMNS FROM `tp_agent` [ RunTime:0.001784s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://0.weiapp.cc' ) LIMIT 1   [ RunTime:0.000199s ]
+SQL: SHOW COLUMNS FROM `tp_user_group` [ RunTime:0.001581s ]
+SQL: SELECT * FROM `tp_user_group` WHERE ( `id` = 7 ) LIMIT 1   [ RunTime:0.000259s ]
+SQL: SHOW COLUMNS FROM `tp_users` [ RunTime:0.002828s ]
+SQL: SELECT * FROM `tp_users` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000341s ]
+SQL: SELECT * FROM `tp_users` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000257s ]
+SQL: SHOW COLUMNS FROM `tp_wxuser` [ RunTime:0.002136s ]
+SQL: SELECT `wxname`,`weixin`,`wxid`,`headerpic` FROM `tp_wxuser` WHERE ( `token` = 'Eioa5C5oj3S32qhH' ) AND ( `uid` = 1 ) LIMIT 1   [ RunTime:0.000196s ]
+SQL: SHOW COLUMNS FROM `tp_token_open` [ RunTime:0.001187s ]
+SQL: SELECT `queryname` FROM `tp_token_open` WHERE ( `token` = 'Eioa5C5oj3S32qhH' ) LIMIT 1   [ RunTime:0.000858s ]
+SQL: SELECT `gid`,`activitynum`,`sum` FROM `tp_users` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000226s ]
+SQL: SELECT * FROM `tp_user_group` WHERE ( `id` = 7 ) LIMIT 1   [ RunTime:0.000169s ]
+SQL: SHOW COLUMNS FROM `tp_vote` [ RunTime:0.002091s ]
+SQL: SELECT * FROM `tp_vote` WHERE ( `token` = 'Eioa5C5oj3S32qhH' ) ORDER BY id DESC  [ RunTime:0.000475s ]
+SQL: SHOW COLUMNS FROM `tp_vote_item` [ RunTime:0.001437s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_vote_item` WHERE ( `vid` = 16 ) AND ( `status` > 0 ) LIMIT 1   [ RunTime:0.000244s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_vote_item` WHERE ( `vid` = 15 ) AND ( `status` > 0 ) LIMIT 1   [ RunTime:0.000248s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_vote_item` WHERE ( `vid` = 14 ) AND ( `status` > 0 ) LIMIT 1   [ RunTime:0.000208s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_vote_item` WHERE ( `vid` = 13 ) AND ( `status` > 0 ) LIMIT 1   [ RunTime:0.000220s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_vote_item` WHERE ( `vid` = 12 ) AND ( `status` > 0 ) LIMIT 1   [ RunTime:0.000207s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_vote_item` WHERE ( `vid` = 11 ) AND ( `status` > 0 ) LIMIT 1   [ RunTime:0.000221s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_vote_item` WHERE ( `vid` = 9 ) AND ( `status` > 0 ) LIMIT 1   [ RunTime:0.000218s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_vote` WHERE ( `token` = 'Eioa5C5oj3S32qhH' ) LIMIT 1   [ RunTime:0.000164s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.050776s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002009s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: ok E:\wwwroot\qingapp\web\toupiao\Data\logs\Cache\User\f70321ef24e437eb7147c67ab8f0460a.php 第 165 行.
+NOTIC: [8] Undefined index:  id E:\wwwroot\qingapp\web\toupiao\Data\logs\Cache\User\f70321ef24e437eb7147c67ab8f0460a.php 第 180 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-0.052903s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024107s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.076992s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.078240s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.079414s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.080359s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004535s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.081594s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001270s ]
+
+[ 2016-03-18T10:17:00+08:00 ] 183.134.31.135 /index.php?g=User&m=Vote&a=edit&type=img&id=15
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001485s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001591s ]
+NOTIC: [2] Cannot use a scalar value as an array E:\wwwroot\qingapp\web\toupiao\31cms\_Core\Lib\Core\Action.class.php 第 209 行.
+SQL: SHOW COLUMNS FROM `tp_agent` [ RunTime:0.001658s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://0.weiapp.cc' ) LIMIT 1   [ RunTime:0.000177s ]
+SQL: SHOW COLUMNS FROM `tp_user_group` [ RunTime:0.001412s ]
+SQL: SELECT * FROM `tp_user_group` WHERE ( `id` = 7 ) LIMIT 1   [ RunTime:0.000286s ]
+SQL: SHOW COLUMNS FROM `tp_users` [ RunTime:0.002892s ]
+SQL: SELECT * FROM `tp_users` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000321s ]
+SQL: SELECT * FROM `tp_users` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000307s ]
+SQL: SHOW COLUMNS FROM `tp_wxuser` [ RunTime:0.002804s ]
+SQL: SELECT `wxname`,`weixin`,`wxid`,`headerpic` FROM `tp_wxuser` WHERE ( `token` = 'Eioa5C5oj3S32qhH' ) AND ( `uid` = 1 ) LIMIT 1   [ RunTime:0.000261s ]
+SQL: SHOW COLUMNS FROM `tp_token_open` [ RunTime:0.001286s ]
+SQL: SELECT `queryname` FROM `tp_token_open` WHERE ( `token` = 'Eioa5C5oj3S32qhH' ) LIMIT 1   [ RunTime:0.000222s ]
+SQL: SHOW COLUMNS FROM `tp_vote` [ RunTime:0.002239s ]
+SQL: SELECT * FROM `tp_vote` WHERE ( `id` = 15 ) AND ( `token` = 'Eioa5C5oj3S32qhH' ) LIMIT 1   [ RunTime:0.000357s ]
+SQL: SELECT * FROM `tp_vote` WHERE ( `id` = 15 ) AND ( `token` = 'Eioa5C5oj3S32qhH' ) LIMIT 1   [ RunTime:0.000250s ]
+SQL: SHOW COLUMNS FROM `tp_vote_item` [ RunTime:0.001859s ]
+SQL: SELECT * FROM `tp_vote_item` WHERE ( `vid` = 15 ) AND ( `status` = 1 ) ORDER BY rank DESC  [ RunTime:0.000791s ]
+SQL: SHOW COLUMNS FROM `tp_guanggao` [ RunTime:0.001916s ]
+SQL: SELECT * FROM `tp_guanggao` WHERE ( `vid` = 15 )  [ RunTime:0.000400s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.047843s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002855s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index:  picurl_guanggao E:\wwwroot\qingapp\web\toupiao\Data\logs\Cache\User\06910c565e1450d396eed27237367a2f.php 第 217 行.
+NOTIC: [8] Undefined index:  picurl_guanggao E:\wwwroot\qingapp\web\toupiao\Data\logs\Cache\User\06910c565e1450d396eed27237367a2f.php 第 344 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-0.050727s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040396s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.091174s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.092935s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.095064s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.096530s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007287s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.098580s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001999s ]
+
+[ 2016-03-18T10:17:01+08:00 ] 14.16.248.174 /index.php
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001223s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001294s ]
+NOTIC: [2048] Declaration of IndexAction::show() should be compatible with that of Action::show() E:\wwwroot\qingapp\web\toupiao\31cms\Lib\Action\Home\IndexAction.class.php 第 4 行.
+NOTIC: [2] Cannot use a scalar value as an array E:\wwwroot\qingapp\web\toupiao\31cms\_Core\Lib\Core\Action.class.php 第 209 行.
+SQL: SHOW COLUMNS FROM `tp_agent` [ RunTime:0.001713s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://0.weiapp.cc' ) LIMIT 1   [ RunTime:0.000167s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.018616s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001683s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.020343s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011335s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.031727s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.032999s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.034741s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.036125s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006037s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.037870s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001768s ]
+
+[ 2016-03-18T10:17:01+08:00 ] 101.226.66.21 /index.php?g=User&m=Vote&a=edit&type=img&id=15
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001212s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001288s ]
+NOTIC: [2] Cannot use a scalar value as an array E:\wwwroot\qingapp\web\toupiao\31cms\_Core\Lib\Core\Action.class.php 第 209 行.
+SQL: SHOW COLUMNS FROM `tp_agent` [ RunTime:0.001987s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://0.weiapp.cc' ) LIMIT 1   [ RunTime:0.000221s ]
+SQL: SHOW COLUMNS FROM `tp_user_group` [ RunTime:0.001334s ]
+SQL: SELECT * FROM `tp_user_group` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000235s ]
+SQL: SHOW COLUMNS FROM `tp_users` [ RunTime:0.002407s ]
+NOTIC: [8] Undefined index:  uid E:\wwwroot\qingapp\web\toupiao\31cms\Lib\Action\UserAction.class.php 第 30 行.
+SQL: SELECT * FROM `tp_users` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000303s ]
+NOTIC: [8] Undefined index:  uid E:\wwwroot\qingapp\web\toupiao\31cms\Lib\Action\UserAction.class.php 第 38 行.
+SQL: SELECT * FROM `tp_users` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000281s ]
+SQL: SHOW COLUMNS FROM `tp_wxuser` [ RunTime:0.001729s ]
+SQL: SELECT `wxname`,`weixin`,`wxid`,`headerpic` FROM `tp_wxuser` WHERE ( `token` = null ) AND ( `uid` = null ) LIMIT 1   [ RunTime:0.000149s ]
+SQL: SHOW COLUMNS FROM `tp_token_open` [ RunTime:0.001626s ]
+SQL: SELECT `queryname` FROM `tp_token_open` WHERE ( `token` = null ) LIMIT 1   [ RunTime:0.000392s ]
+
+[ 2016-03-18T10:17:01+08:00 ] 101.226.66.21 /index.php?g=Home&m=Index&a=index
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001232s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001308s ]
+NOTIC: [2048] Declaration of IndexAction::show() should be compatible with that of Action::show() E:\wwwroot\qingapp\web\toupiao\31cms\Lib\Action\Home\IndexAction.class.php 第 4 行.
+NOTIC: [2] Cannot use a scalar value as an array E:\wwwroot\qingapp\web\toupiao\31cms\_Core\Lib\Core\Action.class.php 第 209 行.
+SQL: SHOW COLUMNS FROM `tp_agent` [ RunTime:0.001820s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://0.weiapp.cc' ) LIMIT 1   [ RunTime:0.000188s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.018192s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001672s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.019907s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011497s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.031452s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.032501s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.033592s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.034522s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004206s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.035718s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001354s ]
+
+[ 2016-03-18T10:17:02+08:00 ] 183.134.31.135 /index.php?g=User&m=Vote&a=index
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001198s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001271s ]
+NOTIC: [2] Cannot use a scalar value as an array E:\wwwroot\qingapp\web\toupiao\31cms\_Core\Lib\Core\Action.class.php 第 209 行.
+SQL: SHOW COLUMNS FROM `tp_agent` [ RunTime:0.002280s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://0.weiapp.cc' ) LIMIT 1   [ RunTime:0.000259s ]
+SQL: SHOW COLUMNS FROM `tp_user_group` [ RunTime:0.001596s ]
+SQL: SELECT * FROM `tp_user_group` WHERE ( `id` = 7 ) LIMIT 1   [ RunTime:0.000434s ]
+SQL: SHOW COLUMNS FROM `tp_users` [ RunTime:0.003474s ]
+SQL: SELECT * FROM `tp_users` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000457s ]
+SQL: SELECT * FROM `tp_users` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000335s ]
+SQL: SHOW COLUMNS FROM `tp_wxuser` [ RunTime:0.002661s ]
+SQL: SELECT `wxname`,`weixin`,`wxid`,`headerpic` FROM `tp_wxuser` WHERE ( `token` = 'Eioa5C5oj3S32qhH' ) AND ( `uid` = 1 ) LIMIT 1   [ RunTime:0.000217s ]
+SQL: SHOW COLUMNS FROM `tp_token_open` [ RunTime:0.001475s ]
+SQL: SELECT `queryname` FROM `tp_token_open` WHERE ( `token` = 'Eioa5C5oj3S32qhH' ) LIMIT 1   [ RunTime:0.000479s ]
+SQL: SELECT `gid`,`activitynum`,`sum` FROM `tp_users` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000165s ]
+SQL: SELECT * FROM `tp_user_group` WHERE ( `id` = 7 ) LIMIT 1   [ RunTime:0.000171s ]
+SQL: SHOW COLUMNS FROM `tp_vote` [ RunTime:0.002209s ]
+SQL: SELECT * FROM `tp_vote` WHERE ( `token` = 'Eioa5C5oj3S32qhH' ) ORDER BY id DESC  [ RunTime:0.000630s ]
+SQL: SHOW COLUMNS FROM `tp_vote_item` [ RunTime:0.001829s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_vote_item` WHERE ( `vid` = 16 ) AND ( `status` > 0 ) LIMIT 1   [ RunTime:0.000443s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_vote_item` WHERE ( `vid` = 15 ) AND ( `status` > 0 ) LIMIT 1   [ RunTime:0.000284s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_vote_item` WHERE ( `vid` = 14 ) AND ( `status` > 0 ) LIMIT 1   [ RunTime:0.000348s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_vote_item` WHERE ( `vid` = 13 ) AND ( `status` > 0 ) LIMIT 1   [ RunTime:0.000291s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_vote_item` WHERE ( `vid` = 12 ) AND ( `status` > 0 ) LIMIT 1   [ RunTime:0.000283s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_vote_item` WHERE ( `vid` = 11 ) AND ( `status` > 0 ) LIMIT 1   [ RunTime:0.000282s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_vote_item` WHERE ( `vid` = 9 ) AND ( `status` > 0 ) LIMIT 1   [ RunTime:0.000282s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_vote` WHERE ( `token` = 'Eioa5C5oj3S32qhH' ) LIMIT 1   [ RunTime:0.000205s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.050840s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001541s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: ok E:\wwwroot\qingapp\web\toupiao\Data\logs\Cache\User\f70321ef24e437eb7147c67ab8f0460a.php 第 165 行.
+NOTIC: [8] Undefined index:  id E:\wwwroot\qingapp\web\toupiao\Data\logs\Cache\User\f70321ef24e437eb7147c67ab8f0460a.php 第 180 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-0.052499s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021629s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.074105s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.075327s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.076497s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.077436s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004717s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.078904s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001507s ]
+
+[ 2016-03-18T10:17:08+08:00 ] 14.16.248.174 /index.php?m=Users&a=checklogin
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001192s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001264s ]
+NOTIC: [2] Cannot use a scalar value as an array E:\wwwroot\qingapp\web\toupiao\31cms\_Core\Lib\Core\Action.class.php 第 209 行.
+SQL: SHOW COLUMNS FROM `tp_agent` [ RunTime:0.001869s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://0.weiapp.cc' ) LIMIT 1   [ RunTime:0.000170s ]
+SQL: SHOW COLUMNS FROM `tp_users` [ RunTime:0.002614s ]
+SQL: SELECT * FROM `tp_users` WHERE ( `username` = 'admin' ) LIMIT 1   [ RunTime:0.000270s ]
+SQL: SHOW COLUMNS FROM `tp_token_open` [ RunTime:0.001340s ]
+SQL: SELECT `token` FROM `tp_token_open` WHERE ( `uid` = 1 ) LIMIT 1   [ RunTime:0.000274s ]
+SQL: SHOW COLUMNS FROM `tp_user_group` [ RunTime:0.002302s ]
+SQL: SELECT * FROM `tp_user_group` WHERE ( `id` = 7 ) LIMIT 1   [ RunTime:0.000246s ]
+SQL: UPDATE `tp_users` SET `lasttime`=1458267428,`lastloginmonth`=3,`lastip`='14.16.248.174' WHERE ( `id` = 1 ) [ RunTime:0.000182s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.029381s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001558s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.030982s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011309s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.042366s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.043801s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.045241s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.046418s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005187s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.047607s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001262s ]
+
+[ 2016-03-18T10:17:09+08:00 ] 14.16.248.174 /index.php?g=User&m=Vote&a=index
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001186s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001257s ]
+NOTIC: [2] Cannot use a scalar value as an array E:\wwwroot\qingapp\web\toupiao\31cms\_Core\Lib\Core\Action.class.php 第 209 行.
+SQL: SHOW COLUMNS FROM `tp_agent` [ RunTime:0.001702s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://0.weiapp.cc' ) LIMIT 1   [ RunTime:0.000177s ]
+SQL: SHOW COLUMNS FROM `tp_user_group` [ RunTime:0.001165s ]
+SQL: SELECT * FROM `tp_user_group` WHERE ( `id` = 7 ) LIMIT 1   [ RunTime:0.000262s ]
+SQL: SHOW COLUMNS FROM `tp_users` [ RunTime:0.002289s ]
+SQL: SELECT * FROM `tp_users` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000261s ]
+SQL: SELECT * FROM `tp_users` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000240s ]
+SQL: SHOW COLUMNS FROM `tp_wxuser` [ RunTime:0.001977s ]
+SQL: SELECT `wxname`,`weixin`,`wxid`,`headerpic` FROM `tp_wxuser` WHERE ( `token` = 'Eioa5C5oj3S32qhH' ) AND ( `uid` = 1 ) LIMIT 1   [ RunTime:0.000277s ]
+SQL: SHOW COLUMNS FROM `tp_token_open` [ RunTime:0.001113s ]
+SQL: SELECT `queryname` FROM `tp_token_open` WHERE ( `token` = 'Eioa5C5oj3S32qhH' ) LIMIT 1   [ RunTime:0.000283s ]
+SQL: SELECT `gid`,`activitynum`,`sum` FROM `tp_users` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000277s ]
+SQL: SELECT * FROM `tp_user_group` WHERE ( `id` = 7 ) LIMIT 1   [ RunTime:0.000146s ]
+SQL: SHOW COLUMNS FROM `tp_vote` [ RunTime:0.001943s ]
+SQL: SELECT * FROM `tp_vote` WHERE ( `token` = 'Eioa5C5oj3S32qhH' ) ORDER BY id DESC  [ RunTime:0.000425s ]
+SQL: SHOW COLUMNS FROM `tp_vote_item` [ RunTime:0.001441s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_vote_item` WHERE ( `vid` = 16 ) AND ( `status` > 0 ) LIMIT 1   [ RunTime:0.000256s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_vote_item` WHERE ( `vid` = 15 ) AND ( `status` > 0 ) LIMIT 1   [ RunTime:0.000203s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_vote_item` WHERE ( `vid` = 14 ) AND ( `status` > 0 ) LIMIT 1   [ RunTime:0.000202s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_vote_item` WHERE ( `vid` = 13 ) AND ( `status` > 0 ) LIMIT 1   [ RunTime:0.000203s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_vote_item` WHERE ( `vid` = 12 ) AND ( `status` > 0 ) LIMIT 1   [ RunTime:0.000201s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_vote_item` WHERE ( `vid` = 11 ) AND ( `status` > 0 ) LIMIT 1   [ RunTime:0.000202s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_vote_item` WHERE ( `vid` = 9 ) AND ( `status` > 0 ) LIMIT 1   [ RunTime:0.000202s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_vote` WHERE ( `token` = 'Eioa5C5oj3S32qhH' ) LIMIT 1   [ RunTime:0.000153s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.041692s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001569s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: ok E:\wwwroot\qingapp\web\toupiao\Data\logs\Cache\User\f70321ef24e437eb7147c67ab8f0460a.php 第 165 行.
+NOTIC: [8] Undefined index:  id E:\wwwroot\qingapp\web\toupiao\Data\logs\Cache\User\f70321ef24e437eb7147c67ab8f0460a.php 第 180 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-0.043378s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022652s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.066012s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.067347s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.068535s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.069485s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004652s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.070736s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001269s ]
+
+[ 2016-03-18T10:17:10+08:00 ] 183.134.31.135 /index.php?g=Wap&m=Vote&a=index&token=Eioa5C5oj3S32qhH&id=16
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001199s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001276s ]
+NOTIC: [2] Cannot use a scalar value as an array E:\wwwroot\qingapp\web\toupiao\31cms\_Core\Lib\Core\Action.class.php 第 209 行.
+SQL: SHOW COLUMNS FROM `tp_agent` [ RunTime:0.001701s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://0.weiapp.cc' ) LIMIT 1   [ RunTime:0.000171s ]
+NOTIC: [8] Undefined index:  wxd_openid E:\wwwroot\qingapp\web\toupiao\31cms\Lib\Action\Wap\VoteAction.class.php 第 1869 行.
+NOTIC: [8] Undefined index:  isappinstalled E:\wwwroot\qingapp\web\toupiao\31cms\Lib\Action\Wap\VoteAction.class.php 第 38 行.
+NOTIC: [8] Undefined index:  from E:\wwwroot\qingapp\web\toupiao\31cms\Lib\Action\Wap\VoteAction.class.php 第 40 行.
+SQL: SHOW COLUMNS FROM `tp_vote` [ RunTime:0.001855s ]
+SQL: SELECT * FROM `tp_vote` WHERE ( `token` = 'Eioa5C5oj3S32qhH' ) AND ( `id` = 16 ) LIMIT 1   [ RunTime:0.000272s ]
+SQL: SHOW COLUMNS FROM `tp_token_open` [ RunTime:0.001287s ]
+SQL: SELECT `uid` FROM `tp_token_open` WHERE ( `token` = 'Eioa5C5oj3S32qhH' ) LIMIT 1   [ RunTime:0.000494s ]
+SQL: SHOW COLUMNS FROM `tp_users` [ RunTime:0.002461s ]
+SQL: SELECT * FROM `tp_users` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000270s ]
+SQL: UPDATE `tp_vote` SET `check`=10 WHERE ( `token` = 'Eioa5C5oj3S32qhH' ) AND ( `id` = 16 ) [ RunTime:0.000204s ]
+NOTIC: [8] Undefined index:  wxd_openid E:\wwwroot\qingapp\web\toupiao\31cms\Lib\Action\Wap\VoteAction.class.php 第 125 行.
+SQL: SHOW COLUMNS FROM `tp_vote_item` [ RunTime:0.001245s ]
+SQL: SELECT SUM(vcount) AS tp_sum FROM `tp_vote_item` WHERE vid=16 LIMIT 1   [ RunTime:0.000340s ]
+SQL: SELECT SUM(dcount) AS tp_sum FROM `tp_vote_item` WHERE vid=16 LIMIT 1   [ RunTime:0.000203s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_vote_item` WHERE ( `vid` = 16 ) AND ( `status` > '0' ) LIMIT 1   [ RunTime:0.000215s ]
+NOTIC: [8] Undefined index:  page E:\wwwroot\qingapp\web\toupiao\31cms\Lib\Action\Wap\VoteAction.class.php 第 165 行.
+SQL: SELECT * FROM `tp_vote_item` WHERE ( `vid` = 16 ) AND ( `status` > '0' )  [ RunTime:0.000260s ]
+SQL: SELECT * FROM `tp_vote_item` WHERE ( `vid` = 16 ) AND ( `status` > '0' ) ORDER BY `rank` asc,`id` desc LIMIT 0,10   [ RunTime:0.000276s ]
+SQL: SHOW COLUMNS FROM `tp_guanggao` [ RunTime:0.001446s ]
+SQL: SELECT * FROM `tp_guanggao` WHERE vid=16 ORDER BY id desc  [ RunTime:0.000459s ]
+SQL: SHOW COLUMNS FROM `tp_diymen_set` [ RunTime:0.001409s ]
+SQL: SELECT * FROM `tp_diymen_set` WHERE ( `token` = 'Eioa5C5oj3S32qhH' ) LIMIT 1   [ RunTime:0.000193s ]
+SQL: SELECT * FROM `tp_diymen_set` WHERE ( `id` = 3 ) LIMIT 1   [ RunTime:0.000225s ]
+NOTIC: [8] Undefined variable: IIIII11IIIll E:\wwwroot\qingapp\web\toupiao\31cms\Lib\Action\Wap\VoteAction.class.php 第 217 行.
+NOTIC: [8] Undefined variable: IIIII11IIIl1 E:\wwwroot\qingapp\web\toupiao\31cms\Lib\Action\Wap\VoteAction.class.php 第 223 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.044078s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002803s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant statdate - assumed 'statdate' E:\wwwroot\qingapp\web\toupiao\Data\logs\Cache\Wap\ac7b54a5f6ff18a7a700bb4afd040872.php 第 502 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-0.046957s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.039111s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.086180s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.088042s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.089208s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.090142s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005135s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.091385s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001254s ]
+
+[ 2016-03-18T10:17:10+08:00 ] 180.153.206.13 /index.php?g=User&m=Vote&a=edit&type=img&id=15
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001177s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001250s ]
+NOTIC: [2] Cannot use a scalar value as an array E:\wwwroot\qingapp\web\toupiao\31cms\_Core\Lib\Core\Action.class.php 第 209 行.
+SQL: SHOW COLUMNS FROM `tp_agent` [ RunTime:0.001715s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://0.weiapp.cc' ) LIMIT 1   [ RunTime:0.000172s ]
+SQL: SHOW COLUMNS FROM `tp_user_group` [ RunTime:0.001357s ]
+SQL: SELECT * FROM `tp_user_group` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000174s ]
+SQL: SHOW COLUMNS FROM `tp_users` [ RunTime:0.002402s ]
+NOTIC: [8] Undefined index:  uid E:\wwwroot\qingapp\web\toupiao\31cms\Lib\Action\UserAction.class.php 第 30 行.
+SQL: SELECT * FROM `tp_users` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000282s ]
+NOTIC: [8] Undefined index:  uid E:\wwwroot\qingapp\web\toupiao\31cms\Lib\Action\UserAction.class.php 第 38 行.
+SQL: SELECT * FROM `tp_users` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000229s ]
+SQL: SHOW COLUMNS FROM `tp_wxuser` [ RunTime:0.001604s ]
+SQL: SELECT `wxname`,`weixin`,`wxid`,`headerpic` FROM `tp_wxuser` WHERE ( `token` = null ) AND ( `uid` = null ) LIMIT 1   [ RunTime:0.000133s ]
+SQL: SHOW COLUMNS FROM `tp_token_open` [ RunTime:0.001062s ]
+SQL: SELECT `queryname` FROM `tp_token_open` WHERE ( `token` = null ) LIMIT 1   [ RunTime:0.000250s ]
+
+[ 2016-03-18T10:17:10+08:00 ] 180.153.206.13 /index.php?g=Home&m=Index&a=index
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001197s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001273s ]
+NOTIC: [2048] Declaration of IndexAction::show() should be compatible with that of Action::show() E:\wwwroot\qingapp\web\toupiao\31cms\Lib\Action\Home\IndexAction.class.php 第 4 行.
+NOTIC: [2] Cannot use a scalar value as an array E:\wwwroot\qingapp\web\toupiao\31cms\_Core\Lib\Core\Action.class.php 第 209 行.
+SQL: SHOW COLUMNS FROM `tp_agent` [ RunTime:0.001681s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://0.weiapp.cc' ) LIMIT 1   [ RunTime:0.000164s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.018409s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001698s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.020151s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011211s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.031408s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.032438s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.033522s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.034544s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004303s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.035771s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001430s ]
+
+[ 2016-03-18T10:17:17+08:00 ] 183.134.31.135 /index.php?g=Wap&m=Vote&a=index&token=Eioa5C5oj3S32qhH&id=16
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001199s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001273s ]
+NOTIC: [2] Cannot use a scalar value as an array E:\wwwroot\qingapp\web\toupiao\31cms\_Core\Lib\Core\Action.class.php 第 209 行.
+SQL: SHOW COLUMNS FROM `tp_agent` [ RunTime:0.001613s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://0.weiapp.cc' ) LIMIT 1   [ RunTime:0.000718s ]
+NOTIC: [8] Undefined index:  wxd_openid E:\wwwroot\qingapp\web\toupiao\31cms\Lib\Action\Wap\VoteAction.class.php 第 1869 行.
+NOTIC: [8] Undefined index:  isappinstalled E:\wwwroot\qingapp\web\toupiao\31cms\Lib\Action\Wap\VoteAction.class.php 第 38 行.
+NOTIC: [8] Undefined index:  from E:\wwwroot\qingapp\web\toupiao\31cms\Lib\Action\Wap\VoteAction.class.php 第 40 行.
+SQL: SHOW COLUMNS FROM `tp_vote` [ RunTime:0.001808s ]
+SQL: SELECT * FROM `tp_vote` WHERE ( `token` = 'Eioa5C5oj3S32qhH' ) AND ( `id` = 16 ) LIMIT 1   [ RunTime:0.000263s ]
+SQL: SHOW COLUMNS FROM `tp_token_open` [ RunTime:0.001127s ]
+SQL: SELECT `uid` FROM `tp_token_open` WHERE ( `token` = 'Eioa5C5oj3S32qhH' ) LIMIT 1   [ RunTime:0.001355s ]
+SQL: SHOW COLUMNS FROM `tp_users` [ RunTime:0.002516s ]
+SQL: SELECT * FROM `tp_users` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000279s ]
+SQL: UPDATE `tp_vote` SET `check`=11 WHERE ( `token` = 'Eioa5C5oj3S32qhH' ) AND ( `id` = 16 ) [ RunTime:0.000198s ]
+NOTIC: [8] Undefined index:  wxd_openid E:\wwwroot\qingapp\web\toupiao\31cms\Lib\Action\Wap\VoteAction.class.php 第 125 行.
+SQL: SHOW COLUMNS FROM `tp_vote_item` [ RunTime:0.001209s ]
+SQL: SELECT SUM(vcount) AS tp_sum FROM `tp_vote_item` WHERE vid=16 LIMIT 1   [ RunTime:0.000784s ]
+SQL: SELECT SUM(dcount) AS tp_sum FROM `tp_vote_item` WHERE vid=16 LIMIT 1   [ RunTime:0.000257s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_vote_item` WHERE ( `vid` = 16 ) AND ( `status` > '0' ) LIMIT 1   [ RunTime:0.000439s ]
+NOTIC: [8] Undefined index:  page E:\wwwroot\qingapp\web\toupiao\31cms\Lib\Action\Wap\VoteAction.class.php 第 165 行.
+SQL: SELECT * FROM `tp_vote_item` WHERE ( `vid` = 16 ) AND ( `status` > '0' )  [ RunTime:0.000244s ]
+SQL: SELECT * FROM `tp_vote_item` WHERE ( `vid` = 16 ) AND ( `status` > '0' ) ORDER BY `rank` asc,`id` desc LIMIT 0,10   [ RunTime:0.000274s ]
+SQL: SHOW COLUMNS FROM `tp_guanggao` [ RunTime:0.001045s ]
+SQL: SELECT * FROM `tp_guanggao` WHERE vid=16 ORDER BY id desc  [ RunTime:0.000350s ]
+SQL: SHOW COLUMNS FROM `tp_diymen_set` [ RunTime:0.001117s ]
+SQL: SELECT * FROM `tp_diymen_set` WHERE ( `token` = 'Eioa5C5oj3S32qhH' ) LIMIT 1   [ RunTime:0.000283s ]
+SQL: SELECT * FROM `tp_diymen_set` WHERE ( `id` = 3 ) LIMIT 1   [ RunTime:0.000201s ]
+NOTIC: [8] Undefined variable: IIIII11IIIll E:\wwwroot\qingapp\web\toupiao\31cms\Lib\Action\Wap\VoteAction.class.php 第 217 行.
+NOTIC: [8] Undefined variable: IIIII11IIIl1 E:\wwwroot\qingapp\web\toupiao\31cms\Lib\Action\Wap\VoteAction.class.php 第 223 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.043109s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001783s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant statdate - assumed 'statdate' E:\wwwroot\qingapp\web\toupiao\Data\logs\Cache\Wap\ac7b54a5f6ff18a7a700bb4afd040872.php 第 502 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-0.044937s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029956s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.074948s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.076252s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.077423s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.078364s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004593s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.079613s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001271s ]
+
+[ 2016-03-18T10:17:31+08:00 ] 183.134.31.135 /index.php?g=Wap&m=Vote&a=index&token=Eioa5C5oj3S32qhH&id=16
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001192s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001266s ]
+NOTIC: [2] Cannot use a scalar value as an array E:\wwwroot\qingapp\web\toupiao\31cms\_Core\Lib\Core\Action.class.php 第 209 行.
+SQL: SHOW COLUMNS FROM `tp_agent` [ RunTime:0.001953s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://0.weiapp.cc' ) LIMIT 1   [ RunTime:0.000173s ]
+NOTIC: [8] Undefined index:  wxd_openid E:\wwwroot\qingapp\web\toupiao\31cms\Lib\Action\Wap\VoteAction.class.php 第 1869 行.
+NOTIC: [8] Undefined index:  isappinstalled E:\wwwroot\qingapp\web\toupiao\31cms\Lib\Action\Wap\VoteAction.class.php 第 38 行.
+NOTIC: [8] Undefined index:  from E:\wwwroot\qingapp\web\toupiao\31cms\Lib\Action\Wap\VoteAction.class.php 第 40 行.
+SQL: SHOW COLUMNS FROM `tp_vote` [ RunTime:0.001903s ]
+SQL: SELECT * FROM `tp_vote` WHERE ( `token` = 'Eioa5C5oj3S32qhH' ) AND ( `id` = 16 ) LIMIT 1   [ RunTime:0.000258s ]
+SQL: SHOW COLUMNS FROM `tp_token_open` [ RunTime:0.001635s ]
+SQL: SELECT `uid` FROM `tp_token_open` WHERE ( `token` = 'Eioa5C5oj3S32qhH' ) LIMIT 1   [ RunTime:0.000229s ]
+SQL: SHOW COLUMNS FROM `tp_users` [ RunTime:0.004358s ]
+SQL: SELECT * FROM `tp_users` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000386s ]
+SQL: UPDATE `tp_vote` SET `check`=12 WHERE ( `token` = 'Eioa5C5oj3S32qhH' ) AND ( `id` = 16 ) [ RunTime:0.000252s ]
+NOTIC: [8] Undefined index:  wxd_openid E:\wwwroot\qingapp\web\toupiao\31cms\Lib\Action\Wap\VoteAction.class.php 第 125 行.
+SQL: SHOW COLUMNS FROM `tp_vote_item` [ RunTime:0.001780s ]
+SQL: SELECT SUM(vcount) AS tp_sum FROM `tp_vote_item` WHERE vid=16 LIMIT 1   [ RunTime:0.000342s ]
+SQL: SELECT SUM(dcount) AS tp_sum FROM `tp_vote_item` WHERE vid=16 LIMIT 1   [ RunTime:0.000200s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_vote_item` WHERE ( `vid` = 16 ) AND ( `status` > '0' ) LIMIT 1   [ RunTime:0.000211s ]
+NOTIC: [8] Undefined index:  page E:\wwwroot\qingapp\web\toupiao\31cms\Lib\Action\Wap\VoteAction.class.php 第 165 行.
+SQL: SELECT * FROM `tp_vote_item` WHERE ( `vid` = 16 ) AND ( `status` > '0' )  [ RunTime:0.000241s ]
+SQL: SELECT * FROM `tp_vote_item` WHERE ( `vid` = 16 ) AND ( `status` > '0' ) ORDER BY `rank` asc,`id` desc LIMIT 0,10   [ RunTime:0.000271s ]
+SQL: SHOW COLUMNS FROM `tp_guanggao` [ RunTime:0.001338s ]
+SQL: SELECT * FROM `tp_guanggao` WHERE vid=16 ORDER BY id desc  [ RunTime:0.000335s ]
+SQL: SHOW COLUMNS FROM `tp_diymen_set` [ RunTime:0.001483s ]
+SQL: SELECT * FROM `tp_diymen_set` WHERE ( `token` = 'Eioa5C5oj3S32qhH' ) LIMIT 1   [ RunTime:0.000256s ]
+SQL: SELECT * FROM `tp_diymen_set` WHERE ( `id` = 3 ) LIMIT 1   [ RunTime:0.000147s ]
+NOTIC: [8] Undefined variable: IIIII11IIIll E:\wwwroot\qingapp\web\toupiao\31cms\Lib\Action\Wap\VoteAction.class.php 第 217 行.
+NOTIC: [8] Undefined variable: IIIII11IIIl1 E:\wwwroot\qingapp\web\toupiao\31cms\Lib\Action\Wap\VoteAction.class.php 第 223 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.044307s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001796s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant statdate - assumed 'statdate' E:\wwwroot\qingapp\web\toupiao\Data\logs\Cache\Wap\ac7b54a5f6ff18a7a700bb4afd040872.php 第 502 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-0.046141s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035661s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.081857s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.083061s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.084205s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.085137s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004448s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.086382s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001387s ]
+
+[ 2016-03-18T10:20:03+08:00 ] 183.134.31.135 /index.php
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001192s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001265s ]
+NOTIC: [2048] Declaration of IndexAction::show() should be compatible with that of Action::show() E:\wwwroot\qingapp\web\toupiao\31cms\Lib\Action\Home\IndexAction.class.php 第 4 行.
+NOTIC: [2] Cannot use a scalar value as an array E:\wwwroot\qingapp\web\toupiao\31cms\_Core\Lib\Core\Action.class.php 第 209 行.
+SQL: SHOW COLUMNS FROM `tp_agent` [ RunTime:0.002713s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://0.weiapp.cc' ) LIMIT 1   [ RunTime:0.000282s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.019318s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001709s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.021071s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010944s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.032058s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.033141s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.034249s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.035179s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004250s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.036373s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001342s ]
+

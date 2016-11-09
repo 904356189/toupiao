@@ -1,0 +1,93 @@
+<include file="header" />
+
+<include file="Public:header" />
+
+<div id="content">
+	
+	<div class="container">
+		
+		<div class="row">
+			
+			<include file="Public:left" />
+				
+			<div class="span9">
+
+				<div class="widget widget-table">
+										
+					<div class="widget-header">
+						<i class="icon-th-list"></i>
+						<h3>用户管理 >> 用户中心 >> 用户列表</h3>
+					</div> <!-- /widget-header -->
+					
+				
+					<div class="widget-content">
+						<!--<include file="common:public" />-->
+			            <table class="table table-striped table-bordered" style="margin-top:10px;" id="set_table">
+
+						<tr bgcolor="#FFFFFF"> 
+					      <td colspan="10">	<a class="btn" href="{iMicms::U('Index/qtuseradd')}"> 添加新用户</a></td>
+					    </tr>
+
+						  <tr>
+							<td width="70">ID</td>
+							<td width="150">用户名称</td>
+							<td width="150">用户token</td>
+							
+							<td width="150">用户活动名称</td>
+							<td width="150">用户可创建活动数</td>
+						
+							
+							<td width="100">最后登录IP</td>
+							<td width="100">最后登录时间</td>
+							<td width="100">到期时间</td>
+				
+							
+							<td width="70">用户状态</td>
+							<td width="150">管理操作</td>
+						  </tr>
+						    <volist name="list" id="vo">
+								<tr>
+									<td align='center'>{iMicms:$vo.id}</td>
+									<td >{iMicms:$vo.username}</td>
+										<td >{iMicms:$vo.token}</td>
+									<td >{iMicms:$vo.tel}</td>
+									<td>{iMicms:$vo.sum}</td>
+
+								
+
+									
+									<td align='center'>{iMicms:$vo.lastip}</td>
+									
+									<td align='center'><php>echo date('Y-m-d H:i:s', $vo['lasttime'])</php></td>
+									<td align='center'><php>echo date('Y-m-d H:i:s', $vo['overtime'])</php></td>
+									<td align='center'><eq name="vo.status" value="1"><font color="red">√</font><else/><font color="blue">×</font></eq> 
+									</td>
+									<td align='center'>
+										<a href="{iMicms::U('Index/qtuseredit',array('id'=>$vo['id'],'token'=>$vo['token']))}">修改</a>|
+										<a href="javascript:void(0)" onclick="return drop_confirm('确定删除 {iMicms:$vo.username} 用户吗?','{iMicms::U('Index/qtuserdel',array('id'=>$vo['id'],'token'=>$vo['token']))}');">删除</a>
+									</td>
+								</tr>
+						    </volist>
+							
+					     <tr bgcolor="#FFFFFF"> 
+					      <td colspan="10"><div class="listpage">{iMicms:$page}</div></td>
+					    </tr>
+			            </table>				
+					
+					</div> <!-- /widget-content -->
+					
+				</div> <!-- /widget -->
+			
+			</div> <!-- /span9 -->
+			
+			
+		</div> <!-- /row -->
+		
+	</div> <!-- /container -->
+	
+</div> <!-- /content -->
+					
+	
+<include file="Public:footer" />
+
+<include file="footer" />

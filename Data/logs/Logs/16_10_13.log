@@ -1,0 +1,736 @@
+[ 2016-10-13T11:12:22+08:00 ] 0.0.0.0 /weixintoupiaoyuanma/
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2048] Declaration of IndexAction::show() should be compatible with that of Action::show() D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\Lib\Action\Home\IndexAction.class.php 第 4 行.
+NOTIC: [8] Undefined index: 1 D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\_Core\Lib\Core\Action.class.php 第 209 行.
+NOTIC: [2] Cannot use a scalar value as an array D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\_Core\Lib\Core\Action.class.php 第 209 行.
+SQL: SHOW COLUMNS FROM `tp_agent` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://localhost' ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-1.034059s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-1.035059s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006001s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-1.041060s ]
+INFO: Run TokenBuild Behavior [ RunTime:-1.042060s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-1.043060s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-1.043060s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-1.044060s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-10-13T11:12:28+08:00 ] 0.0.0.0 /weixintoupiaoyuanma/index.php?m=Users&a=checklogin
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: 1 D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\_Core\Lib\Core\Action.class.php 第 209 行.
+NOTIC: [2] Cannot use a scalar value as an array D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\_Core\Lib\Core\Action.class.php 第 209 行.
+SQL: SHOW COLUMNS FROM `tp_agent` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://localhost' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tp_users` [ RunTime:0.005001s ]
+SQL: SELECT * FROM `tp_users` WHERE ( `username` = 'admin' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_token_open` [ RunTime:0.003000s ]
+SQL: SELECT `token` FROM `tp_token_open` WHERE ( `uid` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_user_group` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `tp_user_group` WHERE ( `id` = 7 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: UPDATE `tp_users` SET `lasttime`=1476328348,`lastloginmonth`=10,`lastip`='0.0.0.0' WHERE ( `id` = 1 ) [ RunTime:0.000000s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-1.058060s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-1.058060s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008001s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-1.066061s ]
+INFO: Run TokenBuild Behavior [ RunTime:-1.066061s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-1.066061s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-1.067061s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-1.067061s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-10-13T11:12:30+08:00 ] 0.0.0.0 /weixintoupiaoyuanma/index.php?g=User&m=Vote&a=index
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: 1 D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\_Core\Lib\Core\Action.class.php 第 209 行.
+NOTIC: [2] Cannot use a scalar value as an array D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\_Core\Lib\Core\Action.class.php 第 209 行.
+SQL: SHOW COLUMNS FROM `tp_agent` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://localhost' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_user_group` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `tp_user_group` WHERE ( `id` = 7 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tp_users` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `tp_users` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_users` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_wxuser` [ RunTime:0.006001s ]
+SQL: SELECT `wxname`,`weixin`,`wxid`,`headerpic` FROM `tp_wxuser` WHERE ( `token` = 'Eioa5C5oj3S32qhH' ) AND ( `uid` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_token_open` [ RunTime:0.002000s ]
+SQL: SELECT `queryname` FROM `tp_token_open` WHERE ( `token` = 'Eioa5C5oj3S32qhH' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `gid`,`activitynum`,`sum` FROM `tp_users` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_user_group` WHERE ( `id` = 7 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_vote` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `tp_vote` WHERE ( `token` = 'Eioa5C5oj3S32qhH' ) ORDER BY id DESC  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_vote_item` [ RunTime:0.003000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_vote_item` WHERE ( `vid` = 19 ) AND ( `status` > 0 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_vote_item` WHERE ( `vid` = 18 ) AND ( `status` > 0 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_vote_item` WHERE ( `vid` = 16 ) AND ( `status` > 0 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_vote_item` WHERE ( `vid` = 15 ) AND ( `status` > 0 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_vote_item` WHERE ( `vid` = 14 ) AND ( `status` > 0 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_vote_item` WHERE ( `vid` = 13 ) AND ( `status` > 0 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_vote_item` WHERE ( `vid` = 12 ) AND ( `status` > 0 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_vote_item` WHERE ( `vid` = 11 ) AND ( `status` > 0 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_vote` WHERE ( `token` = 'Eioa5C5oj3S32qhH' ) LIMIT 1   [ RunTime:0.001000s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-1.060060s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: ok D:\phpStudy\WWW\weixintoupiaoyuanma\Data\logs\Cache\User\f70321ef24e437eb7147c67ab8f0460a.php 第 165 行.
+NOTIC: [8] Undefined index: id D:\phpStudy\WWW\weixintoupiaoyuanma\Data\logs\Cache\User\f70321ef24e437eb7147c67ab8f0460a.php 第 180 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-1.061060s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-1.071061s ]
+INFO: Run TokenBuild Behavior [ RunTime:-1.072061s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-1.072061s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-1.072061s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-1.073061s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-10-13T11:12:30+08:00 ] ERR: (ThinkException) 无法加载模块:tpl
+[ 2016-10-13T11:12:31+08:00 ] ERR: (ThinkException) 无法加载模块:tpl
+[ 2016-10-13T11:12:42+08:00 ] 0.0.0.0 /weixintoupiaoyuanma/index.php?g=Wap&m=Vote&a=index&token=Eioa5C5oj3S32qhH&id=19
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: 1 D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\_Core\Lib\Core\Action.class.php 第 209 行.
+NOTIC: [2] Cannot use a scalar value as an array D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\_Core\Lib\Core\Action.class.php 第 209 行.
+SQL: SHOW COLUMNS FROM `tp_agent` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://localhost' ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: wxd_openid D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\Lib\Action\Wap\VoteAction.class.php 第 1870 行.
+NOTIC: [8] Undefined index: isappinstalled D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\Lib\Action\Wap\VoteAction.class.php 第 38 行.
+NOTIC: [8] Undefined index: from D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\Lib\Action\Wap\VoteAction.class.php 第 40 行.
+SQL: SHOW COLUMNS FROM `tp_vote` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `tp_vote` WHERE ( `token` = 'Eioa5C5oj3S32qhH' ) AND ( `id` = 19 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_token_open` [ RunTime:0.002000s ]
+SQL: SELECT `uid` FROM `tp_token_open` WHERE ( `token` = 'Eioa5C5oj3S32qhH' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tp_users` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `tp_users` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: UPDATE `tp_vote` SET `check`=25 WHERE ( `token` = 'Eioa5C5oj3S32qhH' ) AND ( `id` = 19 ) [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: wxd_openid D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\Lib\Action\Wap\VoteAction.class.php 第 125 行.
+SQL: SHOW COLUMNS FROM `tp_vote_item` [ RunTime:0.002000s ]
+SQL: SELECT SUM(vcount) AS tp_sum FROM `tp_vote_item` WHERE vid=19 LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT SUM(dcount) AS tp_sum FROM `tp_vote_item` WHERE vid=19 LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_vote_item` WHERE ( `vid` = 19 ) AND ( `status` > '0' ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: page D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\Lib\Action\Wap\VoteAction.class.php 第 165 行.
+SQL: SELECT * FROM `tp_vote_item` WHERE ( `vid` = 19 ) AND ( `status` > '0' )  [ RunTime:0.000000s ]
+NOTIC: [8192] Function ereg() is deprecated D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\Lib\ORG\Ppage.class.php 第 53 行.
+NOTIC: [8192] Function ereg() is deprecated D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\Lib\ORG\Ppage.class.php 第 53 行.
+SQL: SELECT * FROM `tp_vote_item` WHERE ( `vid` = 19 ) AND ( `status` > '0' ) ORDER BY `rank` asc,`id` desc LIMIT 0,10   [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `tp_guanggao` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `tp_guanggao` WHERE vid=19 ORDER BY id desc  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_diymen_set` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `tp_diymen_set` WHERE ( `token` = 'Eioa5C5oj3S32qhH' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `tp_diymen_set` WHERE ( `id` = 3 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_diymen_set` WHERE ( `id` = 3 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined property: stdClass::$access_token D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\Lib\ORG\Jssdk.class.php 第 72 行.
+NOTIC: [8] Undefined property: stdClass::$ticket D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\Lib\ORG\Jssdk.class.php 第 53 行.
+NOTIC: [8] Undefined variable: IIIII11IIIll D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\Lib\Action\Wap\VoteAction.class.php 第 217 行.
+NOTIC: [8] Undefined variable: IIIII11IIIl1 D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\Lib\Action\Wap\VoteAction.class.php 第 223 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-1.345077s ]
+INFO: [ view_template ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant statdate - assumed 'statdate' D:\phpStudy\WWW\weixintoupiaoyuanma\Data\logs\Cache\Wap\ac7b54a5f6ff18a7a700bb4afd040872.php 第 604 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-1.348077s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015001s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-1.363078s ]
+INFO: Run TokenBuild Behavior [ RunTime:-1.363078s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-1.364078s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-1.364078s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-1.364078s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-10-13T11:15:02+08:00 ] 0.0.0.0 /weixintoupiaoyuanma/index.php?g=Wap&m=Vote&a=signup&token=Eioa5C5oj3S32qhH&id=19
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: 1 D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\_Core\Lib\Core\Action.class.php 第 209 行.
+NOTIC: [2] Cannot use a scalar value as an array D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\_Core\Lib\Core\Action.class.php 第 209 行.
+SQL: SHOW COLUMNS FROM `tp_agent` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://localhost' ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: wxd_openid D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\Lib\Action\Wap\VoteAction.class.php 第 1870 行.
+SQL: SHOW COLUMNS FROM `tp_vote` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `tp_vote` WHERE ( `token` = 'Eioa5C5oj3S32qhH' ) AND ( `id` = 19 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tp_token_open` [ RunTime:0.002000s ]
+SQL: SELECT `uid` FROM `tp_token_open` WHERE ( `token` = 'Eioa5C5oj3S32qhH' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_users` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `tp_users` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: wxd_openid D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\Lib\Action\Wap\VoteAction.class.php 第 1130 行.
+SQL: SHOW COLUMNS FROM `tp_vote_item` [ RunTime:0.003000s ]
+SQL: SELECT SUM(vcount) AS tp_sum FROM `tp_vote_item` WHERE vid=19 LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT SUM(dcount) AS tp_sum FROM `tp_vote_item` WHERE vid=19 LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_vote_item` WHERE ( `vid` = 19 ) AND ( `status` > '0' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_guanggao` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `tp_guanggao` WHERE vid=19 ORDER BY id desc  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_diymen_set` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `tp_diymen_set` WHERE ( `token` = 'Eioa5C5oj3S32qhH' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_diymen_set` WHERE ( `id` = 3 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_diymen_set` WHERE ( `id` = 3 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined property: stdClass::$access_token D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\Lib\ORG\Jssdk.class.php 第 72 行.
+NOTIC: [8] Undefined property: stdClass::$ticket D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\Lib\ORG\Jssdk.class.php 第 53 行.
+NOTIC: [8] Undefined variable: IIIII11IIll1 D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\Lib\Action\Wap\VoteAction.class.php 第 1212 行.
+NOTIC: [8] Undefined variable: IIIII11IIIlI D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\Lib\Action\Wap\VoteAction.class.php 第 1216 行.
+NOTIC: [8] Undefined variable: IIIII11IIIll D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\Lib\Action\Wap\VoteAction.class.php 第 1224 行.
+NOTIC: [8] Undefined variable: IIIII11IIIl1 D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\Lib\Action\Wap\VoteAction.class.php 第 1230 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-1.323075s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001001s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: wfbmsm D:\phpStudy\WWW\weixintoupiaoyuanma\Data\logs\Cache\Wap\15e59b328cd4b789fad3b803162c1e74.php 第 117 行.
+NOTIC: [8] Undefined index: dbdhurl D:\phpStudy\WWW\weixintoupiaoyuanma\Data\logs\Cache\Wap\15e59b328cd4b789fad3b803162c1e74.php 第 306 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-1.324076s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013000s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-1.337076s ]
+INFO: Run TokenBuild Behavior [ RunTime:-1.337076s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-1.337076s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-1.338076s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-1.338076s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-10-13T11:16:15+08:00 ] 0.0.0.0 /weixintoupiaoyuanma/index.php?g=Wap&m=Vote&a=signup&token=Eioa5C5oj3S32qhH&id=19
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: 1 D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\_Core\Lib\Core\Action.class.php 第 209 行.
+NOTIC: [2] Cannot use a scalar value as an array D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\_Core\Lib\Core\Action.class.php 第 209 行.
+SQL: SHOW COLUMNS FROM `tp_agent` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://localhost' ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: wxd_openid D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\Lib\Action\Wap\VoteAction.class.php 第 1870 行.
+SQL: SHOW COLUMNS FROM `tp_vote` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_vote` WHERE ( `token` = 'Eioa5C5oj3S32qhH' ) AND ( `id` = 19 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_token_open` [ RunTime:0.000000s ]
+SQL: SELECT `uid` FROM `tp_token_open` WHERE ( `token` = 'Eioa5C5oj3S32qhH' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_users` [ RunTime:0.010000s ]
+SQL: SELECT * FROM `tp_users` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: wxd_openid D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\Lib\Action\Wap\VoteAction.class.php 第 1130 行.
+SQL: SHOW COLUMNS FROM `tp_vote_item` [ RunTime:0.000000s ]
+SQL: SELECT SUM(vcount) AS tp_sum FROM `tp_vote_item` WHERE vid=19 LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT SUM(dcount) AS tp_sum FROM `tp_vote_item` WHERE vid=19 LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_vote_item` WHERE ( `vid` = 19 ) AND ( `status` > '0' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_guanggao` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_guanggao` WHERE vid=19 ORDER BY id desc  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_diymen_set` [ RunTime:0.010000s ]
+SQL: SELECT * FROM `tp_diymen_set` WHERE ( `token` = 'Eioa5C5oj3S32qhH' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_diymen_set` WHERE ( `id` = 3 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_diymen_set` WHERE ( `id` = 3 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined property: stdClass::$access_token D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\Lib\ORG\Jssdk.class.php 第 72 行.
+NOTIC: [8] Undefined property: stdClass::$ticket D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\Lib\ORG\Jssdk.class.php 第 53 行.
+NOTIC: [8] Undefined variable: IIIII11IIll1 D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\Lib\Action\Wap\VoteAction.class.php 第 1212 行.
+NOTIC: [8] Undefined variable: IIIII11IIIlI D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\Lib\Action\Wap\VoteAction.class.php 第 1216 行.
+NOTIC: [8] Undefined variable: IIIII11IIIll D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\Lib\Action\Wap\VoteAction.class.php 第 1224 行.
+NOTIC: [8] Undefined variable: IIIII11IIIl1 D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\Lib\Action\Wap\VoteAction.class.php 第 1230 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-1.340002s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: wfbmsm D:\phpStudy\WWW\weixintoupiaoyuanma\Data\logs\Cache\Wap\15e59b328cd4b789fad3b803162c1e74.php 第 117 行.
+NOTIC: [8] Undefined index: dbdhurl D:\phpStudy\WWW\weixintoupiaoyuanma\Data\logs\Cache\Wap\15e59b328cd4b789fad3b803162c1e74.php 第 299 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-1.340002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-1.340002s ]
+INFO: Run TokenBuild Behavior [ RunTime:-1.350002s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-1.350002s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-1.350002s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-1.350002s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-10-13T11:16:48+08:00 ] 0.0.0.0 /weixintoupiaoyuanma/index.php?g=Wap&m=Vote&a=signup&token=Eioa5C5oj3S32qhH&id=19
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: 1 D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\_Core\Lib\Core\Action.class.php 第 209 行.
+NOTIC: [2] Cannot use a scalar value as an array D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\_Core\Lib\Core\Action.class.php 第 209 行.
+SQL: SHOW COLUMNS FROM `tp_agent` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://localhost' ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: wxd_openid D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\Lib\Action\Wap\VoteAction.class.php 第 1870 行.
+SQL: SHOW COLUMNS FROM `tp_vote` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_vote` WHERE ( `token` = 'Eioa5C5oj3S32qhH' ) AND ( `id` = 19 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_token_open` [ RunTime:0.000000s ]
+SQL: SELECT `uid` FROM `tp_token_open` WHERE ( `token` = 'Eioa5C5oj3S32qhH' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_users` [ RunTime:0.010000s ]
+SQL: SELECT * FROM `tp_users` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: wxd_openid D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\Lib\Action\Wap\VoteAction.class.php 第 915 行.
+
+[ 2016-10-13T11:17:32+08:00 ] 0.0.0.0 /weixintoupiaoyuanma/index.php?g=Wap&m=Vote&a=signup&token=Eioa5C5oj3S32qhH&id=19
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: 1 D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\_Core\Lib\Core\Action.class.php 第 209 行.
+NOTIC: [2] Cannot use a scalar value as an array D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\_Core\Lib\Core\Action.class.php 第 209 行.
+SQL: SHOW COLUMNS FROM `tp_agent` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://localhost' ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: wxd_openid D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\Lib\Action\Wap\VoteAction.class.php 第 1870 行.
+SQL: SHOW COLUMNS FROM `tp_vote` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_vote` WHERE ( `token` = 'Eioa5C5oj3S32qhH' ) AND ( `id` = 19 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_token_open` [ RunTime:0.000000s ]
+SQL: SELECT `uid` FROM `tp_token_open` WHERE ( `token` = 'Eioa5C5oj3S32qhH' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_users` [ RunTime:0.010000s ]
+SQL: SELECT * FROM `tp_users` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: wxd_openid D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\Lib\Action\Wap\VoteAction.class.php 第 915 行.
+
+[ 2016-10-13T11:17:36+08:00 ] 0.0.0.0 /weixintoupiaoyuanma/index.php?g=Wap&m=Vote&a=signup&token=Eioa5C5oj3S32qhH&id=19
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: 1 D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\_Core\Lib\Core\Action.class.php 第 209 行.
+NOTIC: [2] Cannot use a scalar value as an array D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\_Core\Lib\Core\Action.class.php 第 209 行.
+SQL: SHOW COLUMNS FROM `tp_agent` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://localhost' ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: wxd_openid D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\Lib\Action\Wap\VoteAction.class.php 第 1870 行.
+SQL: SHOW COLUMNS FROM `tp_vote` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_vote` WHERE ( `token` = 'Eioa5C5oj3S32qhH' ) AND ( `id` = 19 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_token_open` [ RunTime:0.000000s ]
+SQL: SELECT `uid` FROM `tp_token_open` WHERE ( `token` = 'Eioa5C5oj3S32qhH' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_users` [ RunTime:0.010000s ]
+SQL: SELECT * FROM `tp_users` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: wxd_openid D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\Lib\Action\Wap\VoteAction.class.php 第 1130 行.
+SQL: SHOW COLUMNS FROM `tp_vote_item` [ RunTime:0.000000s ]
+SQL: SELECT SUM(vcount) AS tp_sum FROM `tp_vote_item` WHERE vid=19 LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT SUM(dcount) AS tp_sum FROM `tp_vote_item` WHERE vid=19 LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_vote_item` WHERE ( `vid` = 19 ) AND ( `status` > '0' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_guanggao` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_guanggao` WHERE vid=19 ORDER BY id desc  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_diymen_set` [ RunTime:0.010000s ]
+SQL: SELECT * FROM `tp_diymen_set` WHERE ( `token` = 'Eioa5C5oj3S32qhH' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_diymen_set` WHERE ( `id` = 3 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_diymen_set` WHERE ( `id` = 3 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined property: stdClass::$access_token D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\Lib\ORG\Jssdk.class.php 第 72 行.
+NOTIC: [8] Undefined property: stdClass::$ticket D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\Lib\ORG\Jssdk.class.php 第 53 行.
+NOTIC: [8] Undefined variable: IIIII11IIll1 D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\Lib\Action\Wap\VoteAction.class.php 第 1212 行.
+NOTIC: [8] Undefined variable: IIIII11IIIlI D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\Lib\Action\Wap\VoteAction.class.php 第 1216 行.
+NOTIC: [8] Undefined variable: IIIII11IIIll D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\Lib\Action\Wap\VoteAction.class.php 第 1224 行.
+NOTIC: [8] Undefined variable: IIIII11IIIl1 D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\Lib\Action\Wap\VoteAction.class.php 第 1230 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-1.340002s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: wfbmsm D:\phpStudy\WWW\weixintoupiaoyuanma\Data\logs\Cache\Wap\15e59b328cd4b789fad3b803162c1e74.php 第 117 行.
+NOTIC: [8] Undefined index: dbdhurl D:\phpStudy\WWW\weixintoupiaoyuanma\Data\logs\Cache\Wap\15e59b328cd4b789fad3b803162c1e74.php 第 299 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-1.340002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-1.350002s ]
+INFO: Run TokenBuild Behavior [ RunTime:-1.350002s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-1.350002s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-1.350002s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-1.350002s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-10-13T11:22:39+08:00 ] 0.0.0.0 /weixintoupiaoyuanma/index.php?g=Wap&m=Vote&a=signup&token=Eioa5C5oj3S32qhH&id=19
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: 1 D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\_Core\Lib\Core\Action.class.php 第 209 行.
+NOTIC: [2] Cannot use a scalar value as an array D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\_Core\Lib\Core\Action.class.php 第 209 行.
+SQL: SHOW COLUMNS FROM `tp_agent` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://localhost' ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: wxd_openid D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\Lib\Action\Wap\VoteAction.class.php 第 1870 行.
+SQL: SHOW COLUMNS FROM `tp_vote` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_vote` WHERE ( `token` = 'Eioa5C5oj3S32qhH' ) AND ( `id` = 19 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_token_open` [ RunTime:0.000000s ]
+SQL: SELECT `uid` FROM `tp_token_open` WHERE ( `token` = 'Eioa5C5oj3S32qhH' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_users` [ RunTime:0.010000s ]
+SQL: SELECT * FROM `tp_users` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: wxd_openid D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\Lib\Action\Wap\VoteAction.class.php 第 915 行.
+
+[ 2016-10-13T11:22:56+08:00 ] 0.0.0.0 /weixintoupiaoyuanma/index.php?g=Wap&m=Vote&a=signup&token=Eioa5C5oj3S32qhH&id=19
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: 1 D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\_Core\Lib\Core\Action.class.php 第 209 行.
+NOTIC: [2] Cannot use a scalar value as an array D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\_Core\Lib\Core\Action.class.php 第 209 行.
+SQL: SHOW COLUMNS FROM `tp_agent` [ RunTime:0.003001s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://localhost' ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: wxd_openid D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\Lib\Action\Wap\VoteAction.class.php 第 1870 行.
+SQL: SHOW COLUMNS FROM `tp_vote` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `tp_vote` WHERE ( `token` = 'Eioa5C5oj3S32qhH' ) AND ( `id` = 19 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_token_open` [ RunTime:0.002000s ]
+SQL: SELECT `uid` FROM `tp_token_open` WHERE ( `token` = 'Eioa5C5oj3S32qhH' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_users` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `tp_users` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: wxd_openid D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\Lib\Action\Wap\VoteAction.class.php 第 915 行.
+
+[ 2016-10-13T11:25:31+08:00 ] 0.0.0.0 /weixintoupiaoyuanma/index.php?g=Wap&m=Vote&a=index&token=Eioa5C5oj3S32qhH&id=19
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: 1 D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\_Core\Lib\Core\Action.class.php 第 209 行.
+NOTIC: [2] Cannot use a scalar value as an array D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\_Core\Lib\Core\Action.class.php 第 209 行.
+SQL: SHOW COLUMNS FROM `tp_agent` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://localhost' ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: wxd_openid D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\Lib\Action\Wap\VoteAction.class.php 第 1870 行.
+NOTIC: [8] Undefined index: isappinstalled D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\Lib\Action\Wap\VoteAction.class.php 第 38 行.
+NOTIC: [8] Undefined index: from D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\Lib\Action\Wap\VoteAction.class.php 第 40 行.
+SQL: SHOW COLUMNS FROM `tp_vote` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `tp_vote` WHERE ( `token` = 'Eioa5C5oj3S32qhH' ) AND ( `id` = 19 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tp_token_open` [ RunTime:0.002000s ]
+SQL: SELECT `uid` FROM `tp_token_open` WHERE ( `token` = 'Eioa5C5oj3S32qhH' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_users` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `tp_users` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: UPDATE `tp_vote` SET `check`=26 WHERE ( `token` = 'Eioa5C5oj3S32qhH' ) AND ( `id` = 19 ) [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: wxd_openid D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\Lib\Action\Wap\VoteAction.class.php 第 125 行.
+SQL: SHOW COLUMNS FROM `tp_vote_item` [ RunTime:0.002000s ]
+SQL: SELECT SUM(vcount) AS tp_sum FROM `tp_vote_item` WHERE vid=19 LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT SUM(dcount) AS tp_sum FROM `tp_vote_item` WHERE vid=19 LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_vote_item` WHERE ( `vid` = 19 ) AND ( `status` > '0' ) LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: page D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\Lib\Action\Wap\VoteAction.class.php 第 165 行.
+SQL: SELECT * FROM `tp_vote_item` WHERE ( `vid` = 19 ) AND ( `status` > '0' )  [ RunTime:0.001000s ]
+NOTIC: [8192] Function ereg() is deprecated D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\Lib\ORG\Ppage.class.php 第 53 行.
+NOTIC: [8192] Function ereg() is deprecated D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\Lib\ORG\Ppage.class.php 第 53 行.
+SQL: SELECT * FROM `tp_vote_item` WHERE ( `vid` = 19 ) AND ( `status` > '0' ) ORDER BY `rank` asc,`id` desc LIMIT 0,10   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_guanggao` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `tp_guanggao` WHERE vid=19 ORDER BY id desc  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_diymen_set` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `tp_diymen_set` WHERE ( `token` = 'Eioa5C5oj3S32qhH' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_diymen_set` WHERE ( `id` = 3 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_diymen_set` WHERE ( `id` = 3 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined property: stdClass::$access_token D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\Lib\ORG\Jssdk.class.php 第 72 行.
+NOTIC: [8] Undefined property: stdClass::$ticket D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\Lib\ORG\Jssdk.class.php 第 53 行.
+NOTIC: [8] Undefined variable: IIIII11IIIll D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\Lib\Action\Wap\VoteAction.class.php 第 217 行.
+NOTIC: [8] Undefined variable: IIIII11IIIl1 D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\Lib\Action\Wap\VoteAction.class.php 第 223 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-1.359077s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant statdate - assumed 'statdate' D:\phpStudy\WWW\weixintoupiaoyuanma\Data\logs\Cache\Wap\ac7b54a5f6ff18a7a700bb4afd040872.php 第 604 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-1.360077s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-1.374078s ]
+INFO: Run TokenBuild Behavior [ RunTime:-1.374078s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-1.374078s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-1.375078s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-1.375078s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-10-13T11:25:39+08:00 ] 0.0.0.0 /weixintoupiaoyuanma/index.php?g=Wap&m=Vote&a=rank&token=Eioa5C5oj3S32qhH&id=19
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: 1 D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\_Core\Lib\Core\Action.class.php 第 209 行.
+NOTIC: [2] Cannot use a scalar value as an array D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\_Core\Lib\Core\Action.class.php 第 209 行.
+SQL: SHOW COLUMNS FROM `tp_agent` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://localhost' ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: wxd_openid D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\Lib\Action\Wap\VoteAction.class.php 第 1870 行.
+SQL: SHOW COLUMNS FROM `tp_vote` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `tp_vote` WHERE ( `token` = 'Eioa5C5oj3S32qhH' ) AND ( `id` = 19 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_token_open` [ RunTime:0.002000s ]
+SQL: SELECT `uid` FROM `tp_token_open` WHERE ( `token` = 'Eioa5C5oj3S32qhH' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_users` [ RunTime:0.003001s ]
+SQL: SELECT * FROM `tp_users` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: UPDATE `tp_vote` SET `check`=27 WHERE ( `token` = 'Eioa5C5oj3S32qhH' ) AND ( `id` = 19 ) [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: wxd_openid D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\Lib\Action\Wap\VoteAction.class.php 第 273 行.
+SQL: SHOW COLUMNS FROM `tp_vote_item` [ RunTime:0.002000s ]
+SQL: SELECT SUM(vcount) AS tp_sum FROM `tp_vote_item` WHERE vid=19 LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT SUM(dcount) AS tp_sum FROM `tp_vote_item` WHERE vid=19 LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_vote_item` WHERE ( `vid` = 19 ) AND ( `status` > '0' ) LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: page D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\Lib\Action\Wap\VoteAction.class.php 第 313 行.
+SQL: SELECT * FROM `tp_vote_item` WHERE ( `vid` = 19 ) AND ( `status` > '0' )  [ RunTime:0.000000s ]
+NOTIC: [8192] Function ereg() is deprecated D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\Lib\ORG\Ppage.class.php 第 53 行.
+NOTIC: [8192] Function ereg() is deprecated D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\Lib\ORG\Ppage.class.php 第 53 行.
+SQL: SELECT * FROM `tp_vote_item` WHERE ( `vid` = 19 ) AND ( `status` > '0' ) ORDER BY `vcount` desc LIMIT 0,10   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_guanggao` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `tp_guanggao` WHERE vid=19 ORDER BY id desc  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_diymen_set` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `tp_diymen_set` WHERE ( `token` = 'Eioa5C5oj3S32qhH' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_diymen_set` WHERE ( `id` = 3 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_diymen_set` WHERE ( `id` = 3 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined property: stdClass::$access_token D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\Lib\ORG\Jssdk.class.php 第 72 行.
+NOTIC: [8] Undefined property: stdClass::$ticket D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\Lib\ORG\Jssdk.class.php 第 53 行.
+NOTIC: [8] Undefined variable: IIIII11IIIll D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\Lib\Action\Wap\VoteAction.class.php 第 365 行.
+NOTIC: [8] Undefined variable: IIIII11IIIl1 D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\Lib\Action\Wap\VoteAction.class.php 第 371 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-1.345077s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant statdate - assumed 'statdate' D:\phpStudy\WWW\weixintoupiaoyuanma\Data\logs\Cache\Wap\6f0113e196832389cccc9591b0df6d10.php 第 451 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-1.346077s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-1.359078s ]
+INFO: Run TokenBuild Behavior [ RunTime:-1.359078s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-1.360078s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-1.360078s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-1.360078s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-10-13T11:25:45+08:00 ] 0.0.0.0 /weixintoupiaoyuanma/index.php?g=Wap&m=Vote&a=ticket
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: 1 D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\_Core\Lib\Core\Action.class.php 第 209 行.
+NOTIC: [2] Cannot use a scalar value as an array D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\_Core\Lib\Core\Action.class.php 第 209 行.
+SQL: SHOW COLUMNS FROM `tp_agent` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://localhost' ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: wxd_openid D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\Lib\Action\Wap\VoteAction.class.php 第 1870 行.
+NOTIC: [8] Undefined index: wxd_openid D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\Lib\Action\Wap\VoteAction.class.php 第 515 行.
+
+[ 2016-10-13T11:27:04+08:00 ] 0.0.0.0 /weixintoupiaoyuanma/index.php?g=Wap&m=Vote&a=index&token=Eioa5C5oj3S32qhH&id=19
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: 1 D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\_Core\Lib\Core\Action.class.php 第 209 行.
+NOTIC: [2] Cannot use a scalar value as an array D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\_Core\Lib\Core\Action.class.php 第 209 行.
+SQL: SHOW COLUMNS FROM `tp_agent` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://localhost' ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: wxd_openid D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\Lib\Action\Wap\VoteAction.class.php 第 1870 行.
+NOTIC: [8] Undefined index: isappinstalled D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\Lib\Action\Wap\VoteAction.class.php 第 38 行.
+NOTIC: [8] Undefined index: from D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\Lib\Action\Wap\VoteAction.class.php 第 40 行.
+SQL: SHOW COLUMNS FROM `tp_vote` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `tp_vote` WHERE ( `token` = 'Eioa5C5oj3S32qhH' ) AND ( `id` = 19 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tp_token_open` [ RunTime:0.002000s ]
+SQL: SELECT `uid` FROM `tp_token_open` WHERE ( `token` = 'Eioa5C5oj3S32qhH' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_users` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `tp_users` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: UPDATE `tp_vote` SET `check`=28 WHERE ( `token` = 'Eioa5C5oj3S32qhH' ) AND ( `id` = 19 ) [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: wxd_openid D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\Lib\Action\Wap\VoteAction.class.php 第 125 行.
+SQL: SHOW COLUMNS FROM `tp_vote_item` [ RunTime:0.002000s ]
+SQL: SELECT SUM(vcount) AS tp_sum FROM `tp_vote_item` WHERE vid=19 LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT SUM(dcount) AS tp_sum FROM `tp_vote_item` WHERE vid=19 LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_vote_item` WHERE ( `vid` = 19 ) AND ( `status` > '0' ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: page D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\Lib\Action\Wap\VoteAction.class.php 第 165 行.
+SQL: SELECT * FROM `tp_vote_item` WHERE ( `vid` = 19 ) AND ( `status` > '0' )  [ RunTime:0.001000s ]
+NOTIC: [8192] Function ereg() is deprecated D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\Lib\ORG\Ppage.class.php 第 53 行.
+NOTIC: [8192] Function ereg() is deprecated D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\Lib\ORG\Ppage.class.php 第 53 行.
+SQL: SELECT * FROM `tp_vote_item` WHERE ( `vid` = 19 ) AND ( `status` > '0' ) ORDER BY `rank` asc,`id` desc LIMIT 0,10   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_guanggao` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `tp_guanggao` WHERE vid=19 ORDER BY id desc  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_diymen_set` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `tp_diymen_set` WHERE ( `token` = 'Eioa5C5oj3S32qhH' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_diymen_set` WHERE ( `id` = 3 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_diymen_set` WHERE ( `id` = 3 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined property: stdClass::$access_token D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\Lib\ORG\Jssdk.class.php 第 72 行.
+NOTIC: [8] Undefined property: stdClass::$ticket D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\Lib\ORG\Jssdk.class.php 第 53 行.
+NOTIC: [8] Undefined variable: IIIII11IIIll D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\Lib\Action\Wap\VoteAction.class.php 第 217 行.
+NOTIC: [8] Undefined variable: IIIII11IIIl1 D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\Lib\Action\Wap\VoteAction.class.php 第 223 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-1.330076s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant statdate - assumed 'statdate' D:\phpStudy\WWW\weixintoupiaoyuanma\Data\logs\Cache\Wap\ac7b54a5f6ff18a7a700bb4afd040872.php 第 604 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-1.330076s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013000s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-1.343076s ]
+INFO: Run TokenBuild Behavior [ RunTime:-1.344077s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-1.344077s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-1.344077s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002001s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-1.345077s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-10-13T11:27:08+08:00 ] 0.0.0.0 /weixintoupiaoyuanma/index.php?g=Wap&m=Vote&a=ticket
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: 1 D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\_Core\Lib\Core\Action.class.php 第 209 行.
+NOTIC: [2] Cannot use a scalar value as an array D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\_Core\Lib\Core\Action.class.php 第 209 行.
+SQL: SHOW COLUMNS FROM `tp_agent` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://localhost' ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: wxd_openid D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\Lib\Action\Wap\VoteAction.class.php 第 1870 行.
+NOTIC: [8] Undefined index: wxd_openid D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\Lib\Action\Wap\VoteAction.class.php 第 515 行.
+
+[ 2016-10-13T11:27:11+08:00 ] 0.0.0.0 /weixintoupiaoyuanma/index.php?g=Wap&m=Vote&a=index&token=Eioa5C5oj3S32qhH&id=19
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: 1 D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\_Core\Lib\Core\Action.class.php 第 209 行.
+NOTIC: [2] Cannot use a scalar value as an array D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\_Core\Lib\Core\Action.class.php 第 209 行.
+SQL: SHOW COLUMNS FROM `tp_agent` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://localhost' ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: wxd_openid D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\Lib\Action\Wap\VoteAction.class.php 第 1870 行.
+NOTIC: [8] Undefined index: isappinstalled D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\Lib\Action\Wap\VoteAction.class.php 第 38 行.
+NOTIC: [8] Undefined index: from D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\Lib\Action\Wap\VoteAction.class.php 第 40 行.
+SQL: SHOW COLUMNS FROM `tp_vote` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `tp_vote` WHERE ( `token` = 'Eioa5C5oj3S32qhH' ) AND ( `id` = 19 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tp_token_open` [ RunTime:0.002000s ]
+SQL: SELECT `uid` FROM `tp_token_open` WHERE ( `token` = 'Eioa5C5oj3S32qhH' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_users` [ RunTime:0.003001s ]
+SQL: SELECT * FROM `tp_users` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: UPDATE `tp_vote` SET `check`=29 WHERE ( `token` = 'Eioa5C5oj3S32qhH' ) AND ( `id` = 19 ) [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: wxd_openid D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\Lib\Action\Wap\VoteAction.class.php 第 125 行.
+SQL: SHOW COLUMNS FROM `tp_vote_item` [ RunTime:0.003000s ]
+SQL: SELECT SUM(vcount) AS tp_sum FROM `tp_vote_item` WHERE vid=19 LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT SUM(dcount) AS tp_sum FROM `tp_vote_item` WHERE vid=19 LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_vote_item` WHERE ( `vid` = 19 ) AND ( `status` > '0' ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: page D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\Lib\Action\Wap\VoteAction.class.php 第 165 行.
+SQL: SELECT * FROM `tp_vote_item` WHERE ( `vid` = 19 ) AND ( `status` > '0' )  [ RunTime:0.000000s ]
+NOTIC: [8192] Function ereg() is deprecated D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\Lib\ORG\Ppage.class.php 第 53 行.
+NOTIC: [8192] Function ereg() is deprecated D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\Lib\ORG\Ppage.class.php 第 53 行.
+SQL: SELECT * FROM `tp_vote_item` WHERE ( `vid` = 19 ) AND ( `status` > '0' ) ORDER BY `rank` asc,`id` desc LIMIT 0,10   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_guanggao` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `tp_guanggao` WHERE vid=19 ORDER BY id desc  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_diymen_set` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `tp_diymen_set` WHERE ( `token` = 'Eioa5C5oj3S32qhH' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `tp_diymen_set` WHERE ( `id` = 3 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_diymen_set` WHERE ( `id` = 3 ) LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [8] Undefined property: stdClass::$access_token D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\Lib\ORG\Jssdk.class.php 第 72 行.
+NOTIC: [8] Undefined property: stdClass::$ticket D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\Lib\ORG\Jssdk.class.php 第 53 行.
+NOTIC: [8] Undefined variable: IIIII11IIIll D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\Lib\Action\Wap\VoteAction.class.php 第 217 行.
+NOTIC: [8] Undefined variable: IIIII11IIIl1 D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\Lib\Action\Wap\VoteAction.class.php 第 223 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-1.334076s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant statdate - assumed 'statdate' D:\phpStudy\WWW\weixintoupiaoyuanma\Data\logs\Cache\Wap\ac7b54a5f6ff18a7a700bb4afd040872.php 第 604 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-1.334076s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-1.348077s ]
+INFO: Run TokenBuild Behavior [ RunTime:-1.348077s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-1.349077s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-1.349077s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-1.349077s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-10-13T11:27:15+08:00 ] 0.0.0.0 /weixintoupiaoyuanma/index.php?g=Wap&m=Vote&a=detail&token=Eioa5C5oj3S32qhH&id=19&zid=1
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: 1 D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\_Core\Lib\Core\Action.class.php 第 209 行.
+NOTIC: [2] Cannot use a scalar value as an array D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\_Core\Lib\Core\Action.class.php 第 209 行.
+SQL: SHOW COLUMNS FROM `tp_agent` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://localhost' ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: wxd_openid D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\Lib\Action\Wap\VoteAction.class.php 第 1870 行.
+NOTIC: [8] Undefined index: isappinstalled D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\Lib\Action\Wap\VoteAction.class.php 第 1459 行.
+NOTIC: [8] Undefined index: from D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\Lib\Action\Wap\VoteAction.class.php 第 1461 行.
+SQL: SHOW COLUMNS FROM `tp_vote` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `tp_vote` WHERE ( `token` = 'Eioa5C5oj3S32qhH' ) AND ( `id` = 19 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tp_vote_item` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `tp_vote_item` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_vote_item` WHERE ( `vcount` > '6845454' ) AND ( `vid` = 19 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tp_token_open` [ RunTime:0.002000s ]
+SQL: SELECT `uid` FROM `tp_token_open` WHERE ( `token` = 'Eioa5C5oj3S32qhH' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_users` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `tp_users` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: wxd_openid D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\Lib\Action\Wap\VoteAction.class.php 第 1537 行.
+SQL: SHOW COLUMNS FROM `tp_guanggao` [ RunTime:0.002001s ]
+SQL: SELECT * FROM `tp_guanggao` WHERE vid=19 ORDER BY id desc  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_diymen_set` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `tp_diymen_set` WHERE ( `token` = 'Eioa5C5oj3S32qhH' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_diymen_set` WHERE ( `id` = 3 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_diymen_set` WHERE ( `id` = 3 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined property: stdClass::$access_token D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\Lib\ORG\Jssdk.class.php 第 72 行.
+NOTIC: [8] Undefined property: stdClass::$ticket D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\Lib\ORG\Jssdk.class.php 第 53 行.
+NOTIC: [8] Undefined variable: IIIII11IIIll D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\Lib\Action\Wap\VoteAction.class.php 第 1581 行.
+NOTIC: [8] Undefined variable: IIIII11IIIl1 D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\Lib\Action\Wap\VoteAction.class.php 第 1583 行.
+NOTIC: [8] Undefined variable: IIIII11IIIl1 D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\Lib\Action\Wap\VoteAction.class.php 第 1589 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-1.362078s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant statdate - assumed 'statdate' D:\phpStudy\WWW\weixintoupiaoyuanma\Data\logs\Cache\Wap\9aa5e928900fa17229d5d23cbfa8480c.php 第 567 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-1.362078s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-1.376079s ]
+INFO: Run TokenBuild Behavior [ RunTime:-1.376079s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-1.376079s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-1.377079s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-1.377079s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-10-13T11:27:22+08:00 ] 0.0.0.0 /weixintoupiaoyuanma/index.php?g=Wap&m=Vote&a=index&token=Eioa5C5oj3S32qhH&id=19
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: 1 D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\_Core\Lib\Core\Action.class.php 第 209 行.
+NOTIC: [2] Cannot use a scalar value as an array D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\_Core\Lib\Core\Action.class.php 第 209 行.
+SQL: SHOW COLUMNS FROM `tp_agent` [ RunTime:0.006000s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://localhost' ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: wxd_openid D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\Lib\Action\Wap\VoteAction.class.php 第 1870 行.
+NOTIC: [8] Undefined index: isappinstalled D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\Lib\Action\Wap\VoteAction.class.php 第 38 行.
+NOTIC: [8] Undefined index: from D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\Lib\Action\Wap\VoteAction.class.php 第 40 行.
+SQL: SHOW COLUMNS FROM `tp_vote` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `tp_vote` WHERE ( `token` = 'Eioa5C5oj3S32qhH' ) AND ( `id` = 19 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tp_token_open` [ RunTime:0.002001s ]
+SQL: SELECT `uid` FROM `tp_token_open` WHERE ( `token` = 'Eioa5C5oj3S32qhH' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_users` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `tp_users` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: UPDATE `tp_vote` SET `check`=30 WHERE ( `token` = 'Eioa5C5oj3S32qhH' ) AND ( `id` = 19 ) [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: wxd_openid D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\Lib\Action\Wap\VoteAction.class.php 第 125 行.
+SQL: SHOW COLUMNS FROM `tp_vote_item` [ RunTime:0.002000s ]
+SQL: SELECT SUM(vcount) AS tp_sum FROM `tp_vote_item` WHERE vid=19 LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT SUM(dcount) AS tp_sum FROM `tp_vote_item` WHERE vid=19 LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_vote_item` WHERE ( `vid` = 19 ) AND ( `status` > '0' ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: page D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\Lib\Action\Wap\VoteAction.class.php 第 165 行.
+SQL: SELECT * FROM `tp_vote_item` WHERE ( `vid` = 19 ) AND ( `status` > '0' )  [ RunTime:0.000000s ]
+NOTIC: [8192] Function ereg() is deprecated D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\Lib\ORG\Ppage.class.php 第 53 行.
+NOTIC: [8192] Function ereg() is deprecated D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\Lib\ORG\Ppage.class.php 第 53 行.
+SQL: SELECT * FROM `tp_vote_item` WHERE ( `vid` = 19 ) AND ( `status` > '0' ) ORDER BY `rank` asc,`id` desc LIMIT 0,10   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_guanggao` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `tp_guanggao` WHERE vid=19 ORDER BY id desc  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_diymen_set` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `tp_diymen_set` WHERE ( `token` = 'Eioa5C5oj3S32qhH' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_diymen_set` WHERE ( `id` = 3 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_diymen_set` WHERE ( `id` = 3 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined property: stdClass::$access_token D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\Lib\ORG\Jssdk.class.php 第 72 行.
+NOTIC: [8] Undefined property: stdClass::$ticket D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\Lib\ORG\Jssdk.class.php 第 53 行.
+NOTIC: [8] Undefined variable: IIIII11IIIll D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\Lib\Action\Wap\VoteAction.class.php 第 217 行.
+NOTIC: [8] Undefined variable: IIIII11IIIl1 D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\Lib\Action\Wap\VoteAction.class.php 第 223 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-1.342077s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant statdate - assumed 'statdate' D:\phpStudy\WWW\weixintoupiaoyuanma\Data\logs\Cache\Wap\ac7b54a5f6ff18a7a700bb4afd040872.php 第 604 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-1.343077s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013000s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-1.357077s ]
+INFO: Run TokenBuild Behavior [ RunTime:-1.357077s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-1.357077s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-1.357077s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001001s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-1.358078s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-10-13T11:27:28+08:00 ] 0.0.0.0 /weixintoupiaoyuanma/index.php?g=Wap&m=Vote&a=ticket
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: 1 D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\_Core\Lib\Core\Action.class.php 第 209 行.
+NOTIC: [2] Cannot use a scalar value as an array D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\_Core\Lib\Core\Action.class.php 第 209 行.
+SQL: SHOW COLUMNS FROM `tp_agent` [ RunTime:0.006000s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://localhost' ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: wxd_openid D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\Lib\Action\Wap\VoteAction.class.php 第 1870 行.
+NOTIC: [8] Undefined index: wxd_openid D:\phpStudy\WWW\weixintoupiaoyuanma\31cms\Lib\Action\Wap\VoteAction.class.php 第 515 行.
+
+[ 2016-10-13T11:27:30+08:00 ] ERR: (ThinkException) 无法加载模块:优精联盟送土豪金啦

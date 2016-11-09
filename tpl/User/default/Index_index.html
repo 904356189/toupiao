@@ -1,0 +1,188 @@
+﻿<!DOCTYPE html>
+<html lang="zh_CN" >
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="X-UA-Compatible" content="chrome=1,IE=edge" />
+<meta name="renderer" content="webkit|ie-comp|ie-stand">
+<meta charset="utf-8">
+<title>{iMicms:$f_siteName} {iMicms:$f_siteTitle}</title>
+<meta name="description" content="This is page-header (.page-header &gt; h1)">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="tpl/static/simpleboot/themes/flat/theme.min.css" rel="stylesheet">
+<link href="tpl/static/simpleboot/css/simplebootadmin.css" rel="stylesheet">
+<link href="tpl/static/simpleboot/font-awesome/4.1.0/css/font-awesome.min.css"  rel="stylesheet" type="text/css">
+<!--[if IE 7]>
+	<link rel="stylesheet" href="tpl/static/simpleboot/simpleboot/font-awesome/4.1.0/css/font-awesome-ie7.min.css{$js_debug}">
+<![endif]-->
+<link rel="stylesheet" href="tpl/static/simpleboot/themes/flat/simplebootadminindex.min.css?">
+<!--[if lte IE 8]>
+	<link rel="stylesheet" href="tpl/static/simpleboot/simpleboot/css/simplebootadminindex-ie.css?{$js_debug}" />
+<![endif]-->
+
+<script>
+//全局变量
+var GV = {
+	HOST:"{$_SERVER['HTTP_HOST']}",
+    DIMAUB: "__ROOT__/",
+    JS_ROOT: "statics/js/",
+    TOKEN: ""
+};
+</script>
+<if condition="APP_DEBUG">
+<style>
+#think_page_trace_open{left: 0 !important;
+right: initial !important;}			
+</style>
+</if>
+
+</head>
+
+<body style="min-width:900px;" screen_capture_injected="true">
+	<div id="loading"><i class="loadingicon"></i><span>正在加载...</span></div>
+	<div id="right_tools_wrapper">
+		<span id="refresh_wrapper" title="刷新当前页" ><i class="fa fa-refresh right_tool_icon"></i></span>
+	</div>
+<div class="navbar">
+  <div class="navbar-inner">
+    <div class="container-fluid"> <a href="{iMicms:$f_siteUrl}/index.php" class="brand"> <small>  {iMicms:$f_siteName}用户管理中心</small> </a>
+      <div class="pull-left nav_shortcuts" > 
+	   <a class="btn btn-small btn-success" href="" title=""> <i class="fa fa-users"></i> </a> 
+	   <a class="btn btn-small btn-info" href="javascript:openapp('{iMicms::U('Index/useredit')}','index_postlist','修改密码');" title="修改密码"> <i class="fa fa-cog"></i> </a>
+	   <a class="btn btn-small btn-warning" href="" title="返回首页"  > <i class="fa fa-home"></i> </a> 
+	   <a class="btn btn-small btn-danger" href="{iMicms::U('Home/Index/logout')}" title="退出"> <i class="fa fa-play"></i> </a>
+	 </div>
+      <ul class="nav simplewind-nav pull-right">
+        <li class="light-blue" style="background:none;"> 
+		<a data-toggle="dropdown" href="#" class="dropdown-toggle"> <img class="nav-user-photo" src="{iMicms:$wecha.headerpic}" alt="{$admin.user_login}"> <span class="user-info"> <small>欢迎,</small>{iMicms:$Think.session.uname} </span> <i class="fa fa-caret-down"></i> </a>
+          <ul class="user-menu pull-right dropdown-menu dropdown-yellow dropdown-caret dropdown-closer">
+            <li><a href=""><i class="fa fa-cog"></i>账号管理</a></li>
+            <li><a href="{iMicms::U('Index/useredit')}" target="iframeshow"><i class="fa fa-user"></i>修改密码</a></li>
+            <li class="divider"></li>
+            <li><a href="{iMicms::U('Home/Index/logout')}"><i class="fa fa-off"></i>退出</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+	<div  class="main-container container-fluid">
+  <div class="sidebar" id="sidebar"> 
+    <div id="nav_wraper">
+
+      <ul class="nav nav-list">
+         <if condition="$thisUser[weiyuyue] eq '1'">
+        <li class="open"> <a href="#" class="dropdown-toggle"> <i class="fa fa-windows normal"></i> <span class="menu-text">微 应 用</span> <b class="arrow fa fa-angle-right"></b> </a>
+          <ul class="submenu" style="display: block; ">
+          <if condition="$thisUser[wtp] eq '1'">
+            <li> <a href="javascript:openapp('{iMicms::U('Vote/index',array('token'=>$token))}','76Admin','微投票');"> <i class="fa fa-angle-double-right"></i> <span class="menu-text">微投票</span> </a> </li>
+          </if>
+			<if condition="$thisUser[wdy] eq '1'">
+            <li> <a href="javascript:openapp('#"> <i class="fa fa-angle-double-right"></i> <span class="menu-text">微调研</span> </a> </li>
+          </if>
+          <if condition="$thisUser[wxc] eq '1'">
+            <li> <a href="#"> <i class="fa fa-angle-double-right"></i> <span class="menu-text">微相册</span> </a> </li>
+          </if>
+            <if condition="$thisUser[qj] eq '1'">
+            <li> <a href="#"> <i class="fa fa-angle-double-right"></i> <span class="menu-text">360°全景</span> </a> </li>
+          </if>
+          <if condition="$thisUser[wnbd] eq '1'">
+            <li> <a href="#"> <i class="fa fa-angle-double-right"></i> <span class="menu-text">万能表单</span> </a> </li></if>
+        <if condition="$thisUser[zxyd] eq '1'">
+             
+            <li> <a href="#"> <i class="fa fa-angle-double-right"></i> <span class="menu-text">新微场景</span></a> </li> 
+            <li> <a href="#"> <i class="fa fa-angle-double-right"></i> <span class="menu-text">场景第二版</span> </a> </li>
+
+          </if>
+          <if condition="$thisUser[wlt] eq '1'">
+            <li> <a href="#"> <i class="fa fa-angle-double-right"></i> <span class="menu-text">微论坛</span> </a> </li>
+          </if>
+             <if condition="$thisUser[wyy] eq '1'">
+
+            <li> <a href="#"> <i class="fa fa-angle-double-right"></i> <span class="menu-text">微预约（预定）</span> </a> </li>
+          </if>
+          <if condition="$thisUser[wyq] eq '1'">
+            <li> <a href="#"> <i class="fa fa-angle-double-right"></i> <span class="menu-text">微邀请</span> </a> </li>
+          </if>
+          <if condition="$thisUser[wsm] eq '1'">
+             <li> <a href="#"> <i class="fa fa-angle-double-right"></i> <span class="menu-text">微商盟</span> </a> </li>
+
+            </if>
+            <if condition="$thisUser[wxt] eq '1'">
+            <li> <a href="#"> <i class="fa fa-angle-double-right"></i> <span class="menu-text">微喜帖</span> </a> </li>
+          </if>
+          <if condition="$thisUser[zhaopin] eq '1'">
+            <li> <a href="#"> <i class="fa fa-angle-double-right"></i> <span class="menu-text">微招聘</span> </a> </li>
+          </if>
+            </if>
+
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+</div>
+<div class="main-content">
+  <div class="breadcrumbs" id="breadcrumbs"> <a id="task-pre" class="task-changebt">←</a>
+    <div id="task-content">
+      <ul class="macro-component-tab" id="task-content-inner">
+       <li class="macro-component-tabitem" app-id="76Admin" app-url="/index.php?g=user&m=Vote&a=index&token=>$token" app-name="微投票"> <span class="macro-tabs-item-text">微投票</span> </li>
+      </ul>
+      <div style="clear:both;"></div>
+    </div>
+    <a id="task-next" class="task-changebt">→</a> </div>
+  <div class="page-content" id="content">
+    <iframe name="iframeshow"  src="{iMicms::U('User/Vote/index',array('token'=>$token,'id'=>session('wxid')))}" style="width:100%;height: 800px;" frameborder="0" id="appiframe-76Admin" class="appiframe"></iframe>
+  </div>
+</div>
+</div>
+<script src="tpl/static/simpleboot/js/jquery.js"></script> 
+<script src="tpl/static/simpleboot/bootstrap/js/bootstrap.min.js"></script> 
+<script>
+	var b = $("#sidebar").hasClass("menu-min");
+	var a = "ontouchend" in document;
+	$(".nav-list").on(
+			"click",
+			function(g) {
+				var f = $(g.target).closest("a");
+				if (!f || f.length == 0) {
+					return
+				}
+				if (!f.hasClass("dropdown-toggle")) {
+					if (b && "click" == "tap"
+							&& f.get(0).parentNode.parentNode == this) {
+						var h = f.find(".menu-text").get(0);
+						if (g.target != h && !$.contains(h, g.target)) {
+							return false
+						}
+					}
+					return
+				}
+				var d = f.next().get(0);
+				if (!$(d).is(":visible")) {
+					var c = $(d.parentNode).closest("ul");
+					if (b && c.hasClass("nav-list")) {
+						return
+					}
+					c.find("> .open > .submenu").each(
+							function() {
+								if (this != d
+										&& !$(this.parentNode).hasClass(
+												"active")) {
+									$(this).slideUp(150).parent().removeClass(
+											"open")
+								}
+							})
+				} else {
+				}
+				if (b && $(d.parentNode.parentNode).hasClass("nav-list")) {
+					return false;
+				}
+				$(d).slideToggle(150).parent().toggleClass("open");
+				return false;
+			});
+	</script> 
+<script src="tpl/static/simpleboot/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,200 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0137)http://demo.iMicms.cn/index.php?g=Wap&m=Index&a=index&token=vemmyj1400164325&wecha_id=oKhaVjqgLaKArgt56avxkHtsuPtI&sgssz=mp.weixin.qq.com -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>{iMicms:$tpl['wxname']}</title>
+<meta name="viewport" content="width=device-width,height=device-height,inital-scale=1.0,maximum-scale=1.0,user-scalable=no;">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+<meta charset="utf-8">
+<link href="{iMicms::RES}/css/1135/cate.css" rel="stylesheet" type="text/css">
+<link href="{iMicms::RES}/css/1135/iscroll.css" rel="stylesheet" type="text/css">
+<script src="{iMicms::RES}/css/1135/jquery.min.js" type="text/javascript"></script><script src="{iMicms::RES}/css/1135/swipe2.js" type="text/javascript"></script><script src="{iMicms::RES}/css/1135/iscroll.js" type="text/javascript"></script><script type="text/javascript">var myScroll;
+
+function loaded() {
+myScroll = new iScroll('wrapper', {
+snap: true,
+momentum: false,
+hScrollbar: false,
+onScrollEnd: function () {
+document.querySelector('#indicator > li.active').className = '';
+document.querySelector('#indicator > li:nth-child(' + (this.currPageX+1) + ')').className = 'active';
+}
+ });
+ 
+ 
+}
+
+document.addEventListener('DOMContentLoaded', loaded, false);
+</script><script>   $(function(){
+        window.swiper_2 = new Swipe(document.getElementById('list_uls'), {
+            speed:500,
+           // auto:3000,
+            callback: function(){
+               var lis = $(".nav_for_list_ul ul:first-of-type li");
+               lis.removeClass("on").eq(this.index).addClass("on");
+               var las = $(".nav_for_list_ul ul:nth-of-type(2) a");
+               las.removeClass("on").eq(this.index).addClass("on");
+
+               var minIndex = 0;
+               //var maxIndex = Math.max(0, nav_uls.length - 3);
+               var range = [this.index-1, minIndex, maxIndex];
+               //
+
+               range = range.sort(function(a, b){
+                       	return a>b?1:-1;
+                       });
+               window.nav_uls.slide(range[1]);
+            }
+        });
+    }); 
+</script>
+</head>
+<body style="">
+<!--music-->
+<div class="banner">
+  <div id="wrapper" style="overflow: hidden;">
+    <div id="scroller" style="width: 1222px; -webkit-transition: -webkit-transform 0ms; transition: -webkit-transform 0ms; -webkit-transform-origin: 0px 0px; -webkit-transform: translate3d(0px, 0px, 0px) scale(1);">
+      <ul id="thelist">
+        <volist name="flash" id="so">
+<li><p>{iMicms:$so.info}</p><a href="{iMicms:$so.url}"><img src="{iMicms:$so.img}" /></a></li>
+</volist>
+      </ul>
+    </div>
+  </div>
+  <div id="nav">
+    <div id="prev" onclick="myScroll.scrollToPage(&#39;prev&#39;, 0,400,2);return false">← prev</div>
+    <ul id="indicator">
+      <li class="active"></li>
+    </ul>
+    <div id="next" onclick="myScroll.scrollToPage(&#39;next&#39;, 0,400,2);return false">next →</div>
+  </div>
+  <div class="clr"></div>
+</div>
+
+<div id="insert1"></div>
+<span class="gradient_h_wbw"></span>
+<section>
+  <nav class="nav_for_list_ul">
+    <div class="ofh">
+      <ul>
+        <PHP>
+$ii=1;
+</PHP>
+<volist name="vo['sub']" id='res'>
+<PHP>
+if($ii==1){echo '<li>';}
+</PHP>
+<if condition="$res['fid'] neq 0 && $res['fid'] eq $vo['id']">  
+<a href="<if condition="$res['url'] eq ''" >{iMicms::U('Wap/Index/lists',array('classid'=>$res['id'],'token'=>$res['token']))}<else/>{iMicms:$res.url}</if>">{iMicms:$res.name}</a>
+</if>
+<PHP>
+if($ii==4){echo '<div class="clr"></div>
+</li>';}
+$ii++;
+if($ii>4)$ii=1;
+</PHP>
+</volist>
+<PHP>
+if($ii<>1){echo '</li>';}
+</PHP>    
+      </ul>
+      <ul>
+        <div id="nav_uls" style="max-width: 75px; visibility: visible;">
+          <ol style="list-style: none; width: 600px; transition: 0ms; -webkit-transition: 0ms; -webkit-transform: translate3d(0px, 0, 0);">
+           <volist name="vo['sub']" id='res'>
+            <li style="width: auto; float: left; vertical-align: top;"><a href="javascript:swiper_2.slide(0);" class="on">{iMicms:$res.name}</a></li>
+            </volist>
+            
+          </ol>
+        </div>
+      </ul>
+      <script>window.nav_uls = new Swipe(document.getElementById('nav_uls'), {
+speed:500,
+callback: function(){
+/*if(this.index>(this.length-8)){
+alert(this.length);
+alert(this.index);
+this.slide(this.length-8);
+}*/
+}
+});
+ 
+</script></div>
+  </nav>
+  <span class="gradient_h_wbw"></span>
+  <div id="list_uls" class="list_uls box_swipe" style="visibility: visible;">
+    <ul style="list-style: none; width: 9776px; transition: 0ms; -webkit-transition: 0ms; -webkit-transform: translate3d(0px, 0, 0);">
+      <volist name="info" id="vo">
+      <li style="width: 1222px; float: left; vertical-align: top;">
+      <a href="<if condition="$vo['url'] eq ''">{iMicms::U('Wap/Index/lists',array('classid'=>$vo['id'],'token'=>$vo['token']))}<else/>{iMicms:$vo.url|htmlspecialchars_decode}</if>" >
+        <dl>
+          <img class="catebanner" src="{iMicms:$vo.img}">
+        </dl>
+        </a>
+      </li>
+      </volist>
+    </ul>
+  </div>
+</section>
+<script>var count = document.getElementById("thelist").getElementsByTagName("img").length;	
+
+
+for(i=0;i<count;i++){
+ document.getElementById("thelist").getElementsByTagName("img").item(i).style.cssText = " width:"+document.body.clientWidth+"px";
+
+}
+
+document.getElementById("scroller").style.cssText = " width:"+document.body.clientWidth*count+"px";
+
+
+ setInterval(function(){
+myScroll.scrollToPage('next', 0,400,count);
+},3500 );
+
+window.onresize = function(){ 
+for(i=0;i<count;i++){
+document.getElementById("thelist").getElementsByTagName("img").item(i).style.cssText = " width:"+document.body.clientWidth+"px";
+
+}
+
+ document.getElementById("scroller").style.cssText = " width:"+document.body.clientWidth*count+"px";
+} 
+
+</script>
+<div id="insert2"></div>
+<div class="copyright"></div>
+<script src="./1135_files/jquery.min(1).js" type="text/javascript"></script><script>function displayit(n){
+	for(i=0;i<4;i++){
+		if(i==n){
+			var id='menu_list'+n;
+			if(document.getElementById(id).style.display=='none'){
+				document.getElementById(id).style.display='';
+				document.getElementById("plug-wrap").style.display='';
+			}else{
+				document.getElementById(id).style.display='none';
+				document.getElementById("plug-wrap").style.display='none';
+			}
+		}else{
+			if($('#menu_list'+i)){
+				$('#menu_list'+i).css('display','none');
+			}
+		}
+	}
+}
+function closeall(){
+	var count = document.getElementById("top_menu").getElementsByTagName("ul").length;
+	for(i=0;i<count;i++){
+		document.getElementById("top_menu").getElementsByTagName("ul").item(i).style.display='none';
+	}
+	document.getElementById("plug-wrap").style.display='none';
+}
+
+document.addEventListener('WeixinJSBridgeReady', function onBridgeReady() {
+	WeixinJSBridge.call('hideToolbar');
+});
+</script>
+</body>
+</html>

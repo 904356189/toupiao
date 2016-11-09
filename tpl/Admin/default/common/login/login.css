@@ -1,0 +1,39 @@
+@charset "gb2312";
+/***
+ * @website
+ * @QQ£º497146
+ * @author£ºÒ¶³¬
+ * @author£ºhttp://web.admin5.com
+ * @e-mail: 497146@qq.com
+ */
+* {margin:0px;padding:0px;}
+body {font:12px/1.5 tahoma,arial,\5b8b\4f53;color:#666666;background:#378ECD url(A001.jpg)repeat-x;}
+a {text-decoration:none;color:#000;}
+a:hover {text-decoration:underline;}
+li {list-style-type:none;}
+img {border:0px;}
+.clear {margin:0px;padding:0px;clear:both;}
+img, fieldset {border: 0 none;vertical-align: middle;}
+.h5 {height:5px;overflow:hidden;display:block;margin:0px;padding:0px;clear:both;}
+.h8 {height:8px;overflow:hidden;display:block;margin:0px;padding:0px;clear:both;}
+
+#user_admin {width:478px;overflow:hidden;margin:200px auto 0 auto;}
+.user_admin_u {height:50px;line-height:30px; text-align:center}
+.user_admin_u h1 {font-family:Î¢ÈíÑÅºÚ,ºÚÌå,Hei,ËÎÌå;font-size:22px; text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.8);color:#FFF;font-weight:lighter;}
+.user_admin_a {height:197px;overflow:hidden;width:478px;background:url(A001.png) no-repeat;}
+.user_admin_a ul.us {padding-left:65px;padding-top:39px;display:block;height:85px;overflow:hidden;float:left;}
+.user_admin_a ul.us li {float:left;}
+.user_admin_a ul.us li input {width:155px;height:27px;color:#0c4a95;border:none;background:none;line-height:27px;padding:0px 5px;}
+.user_admin_a ul.us li.user_a {}
+.user_admin_a ul.us li.user_b {padding-left:50px;}
+.user_admin_a ul.us li.user_c {padding-top:11px;}
+.user_admin_a ul.us li.user_d {padding-top:11px;padding-left:50px;}
+.user_admin_a ul.ub {padding-left:100px;height:30px;overflow:hidden;}
+.user_admin_a ul.ub li {float: left;}
+.user_admin_a ul.ub li.user_e {}
+.user_admin_a ul.ub li.user_e input {background:url(A003.jpg) no-repeat;width:111px;overflow:hidden;height:30px;border:none; }
+.user_admin_a ul.ub li.user_f input {background:url(A003.jpg) no-repeat -111px 0;width:111px;overflow:hidden;height:30px;border:none; }
+.user_admin_a ul.ub li.user_f {padding-left:80px;}
+.user_admin_a ul.uc {height:30px;line-height:30px;text-align: center;}
+.user_admin_a ul.uc a {color:#bddefc;}
+.user_admin_b {height:30px;line-height:30px;font-family:Î¢ÈíÑÅºÚ,ºÚÌå,Hei,ËÎÌå;font-size:12px; text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.8);color:#FFF; text-align:center}

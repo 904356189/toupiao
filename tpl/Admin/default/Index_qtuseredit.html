@@ -1,0 +1,116 @@
+<include file="header" />
+
+<include file="Public:header" />
+
+<div id="content">
+	
+	<div class="container">
+		
+		<div class="row">
+			
+			<include file="Public:left" />
+				
+			<div class="span9">
+
+				<div class="widget widget-table">
+										
+					<div class="widget-header">
+						<i class="icon-th-list"></i>
+						<h3>用户管理 >>  用户中心 >> 
+						
+						修改用户
+						
+						</h3>
+					</div> <!-- /widget-header -->
+					
+					<div class="widget-content">
+
+		 <form action="" method="post" >
+			<table class="table table-striped table-bordered" style="margin-top:10px;" id="set_table" <gt name="info.id" value="0"><else />style="display:none"</gt>>
+
+				 <tr>
+					<th colspan="4">{iMicms:$title}</th>
+				</tr>
+				<tr>
+					<td><strong>用户名称：</strong></td>
+					<td colspan="3" class="lt">
+						<input type="text" name="username" class="ipt" size="45" value="{iMicms:$info.username}" readonly>
+					</td>
+				</tr>
+				<tr>
+					<td><strong>密　　码：</strong></td>
+					<td colspan="3" class="lt">
+						<input type="password" name="password" class="ipt" size="45" value="" >
+					</td>
+				</tr>
+				<tr>
+					<td><strong>用户token：</strong></td>
+					<td colspan="3" class="lt">
+						<input type="text" name="token" class="ipt" size="45" value="{iMicms:$info.token}" / readonly>
+					</td>
+				</tr>
+
+				<tr>
+					<td><strong>用户活动名称：</strong></td>
+					<td colspan="3" class="lt">
+						<input type="text" name="tel" class="ipt" size="45" value="{iMicms:$info.tel}" />
+					</td>
+				</tr>
+
+				<tr>
+					<td><strong>可创建活动数：</strong></td>
+					<td colspan="3" class="lt">
+						<input type="text" name="sum" class="ipt" size="45" value="{iMicms:$info['sum']}") />
+					</td>
+				</tr>
+
+				<tr>
+					<td><strong>到期时间：</strong></td>
+					<td colspan="3" class="lt">
+						<input type="text" name="overtime" class="ipt" size="45" value=<php>echo date('Y-m-d H:i:s', $info['overtime'])</php> />
+					</td>
+				</tr>
+
+				<tr>
+					<td height="48" align="right"><strong>用户状态：</strong></td>
+					<td colspan="3" class="lt">
+						<input type="radio" class="radio" class="ipt" value="1" name="status" id="status1" <if condition="($info.status eq 1)  ">checked=""</if> >
+							启用
+							<input type="radio" class="radio" class="ipt"  value="0" name="status" id="status2" <eq name="info.status" value="0">checked=""</eq> >
+							关闭
+					</td>
+				</tr>
+			
+				
+			
+
+	<tr>
+		<td colspan="4">
+		<input type="hidden" name="id" value={iMicms:$info.id}>
+			
+				<input class="btn" type="submit" name="dosubmit" value="修 改" >
+				
+		
+			<input class="btn" type="button" onclick="javascript:history.back(-1);" value="返 回" ></td>
+	</tr>
+</table>
+</form>
+
+					
+					</div> <!-- /widget-content -->
+					
+				</div> <!-- /widget -->
+			
+			</div> <!-- /span9 -->
+			
+			
+		</div> <!-- /row -->
+		
+	</div> <!-- /container -->
+	
+</div> <!-- /content -->
+					
+	
+<include file="Public:footer" />
+
+<include file="footer" />

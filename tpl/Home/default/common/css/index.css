@@ -1,0 +1,17 @@
+.join li a{
+	font-family: microsoft yahei;
+	line-height: 30px; color: #1D80D0; font-size: 18px;
+}
+.join ul{
+	margin-left:80px;
+}
+.join .left{
+	float: left;
+	width:40%;
+	overflow: hidden;
+}
+.join .right{
+	float:right;
+	width: 40%;
+	overflow: hidden;
+}

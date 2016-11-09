@@ -1,0 +1,309 @@
+ <include file="Public:head"/>
+	<script src="{iMicms::STATICS}/jquery-ui.js" type="text/javascript"></script>
+	<link rel="stylesheet" type="text/css" href="{iMicms::STATICS}/jquery-ui.css" />
+    <link rel="stylesheet" type="text/css" href="{iMicms::STATICS}/jquery-ui.theme.css" />
+	<link rel="stylesheet" type="text/css" href="{iMicms::STATICS}/jquery-ui.structure.css" />
+	<style>
+.img{
+  width:80px;
+  height:80px;
+}
+.img img{
+	width:100%;
+	display:block;
+}
+.countadd{
+margin-top:-10px;
+}
+label{
+display:inline;
+}
+.linkp{
+list-style-type:none;
+margin-right:30px;
+text-align:right;
+color:red;
+letter-spacing:5px;
+}
+.linkp a{
+color:#000;
+}
+.linkp li a{
+letter-spacing:2px;
+}
+.linkp .total{
+float:right;
+}
+</style>
+<div class="content">
+         
+          <div class="cLineB">
+             <h4 class="left">投票选手管理  (共报名{iMicms:$count}个选手) <span class="FAQ"></span></h4>
+              <div class="clr"></div>	
+			  
+         
+
+              <a href="{iMicms::U('User/Vote/index')}" class="right btn btn-primary btn_submit  J_ajax_submit_btn" style="margin-top:-27px">返回</a>
+			  <a href="javascript:;" onclick="additem()" class="right btn btn-primary btn_submit  J_ajax_submit_btn" style="margin-top:-27px;margin-right:20px;">添加新选手</a> 
+			  <form action="" method="post" >
+			  <input type="submit" value="搜索" class="right btn btn-primary btn_submit  J_ajax_submit_btn" style="margin-top:-27px;margin-right:40px;">  <input type="text" name="searchitem" class="right" style="margin-top:-27px;margin-right:8px;" placeholder="请输入选手编号或姓名">
+			  <input type="hidden" name="vid" value="{iMicms:$vid}">
+			  </form>
+          </div>
+          <div class="msgWrap">
+          <form method="post" action="" id="info">
+            <table class="ListProduct" border="0" cellspacing="0" cellpadding="0" width="100%">
+              <thead>
+                <tr>
+					<th>序号</th>
+					<th>名称</th>
+					<th>微信号</th>
+					<th>排序</th>
+					<th>票数</th>
+					<th>电话</th>
+					<th>报名时间</th>
+					<th>照片1</th>
+					<th>照片2</th>
+					<th>照片3</th>
+					<th>照片4</th>
+					<th class="norightborder">操作</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr></tr>
+                  <volist id="list" name="liinfo">
+                <tr id="item_{iMicms:$list.id}">
+                  <td> {iMicms:$list.id}</td>
+                  <td>{iMicms:$list.item}</td>
+                  <td>{iMicms:$list.wechat}</td>
+				  <td>{iMicms:$list.rank}</td>
+                  <td>{iMicms:$list.vcount}</td>
+				  <td>{iMicms:$list.tourl}</td>
+				  <td>{iMicms:$list.addtime|date='Y-m-d H:i:s',###}</td>
+				  <td style="display:none">{iMicms:$list.intro}</td>
+                  <td class="img"><img src="{iMicms:$list.startpicurl}" ></td>
+				  <td class="img"> <notempty name="list.startpicurl2"> <img src="{iMicms:$list.startpicurl2}" ></notempty></td>
+				  <td class="img">  <notempty name="list.startpicurl3"><img src="{iMicms:$list.startpicurl3}" ></notempty></td>
+				  <td class="img">  <notempty name="list.startpicurl4"><img src="{iMicms:$list.startpicurl4}" ></notempty></td>
+				 
+				
+				  </td>
+                  <td class="norightborder">
+				   <a href="javascript:;" onclick="thisedit('{iMicms:$list.id}')"  name="onedit" id="onedit" class="btn btn-primary btn_submit  J_ajax_submit_btn">
+				   修改
+					</a> 
+				<a href="javascript:;" onclick="dooow('{iMicms:$list.id}')"  name="ondell" id="ondell" class="btn btn-primary btn_submit  J_ajax_submit_btn">
+				   删除
+					</a> 
+					</a> 
+				<a href="{iMicms::U('User/Vote/tpjl',array('zid'=>$list['id'],'vid'=>$vid))}"  name="tpjl" id="tpjl" class="btn btn-primary btn_submit ">
+				   投票记录
+					</a>
+                  </td>
+                </tr>
+                  </volist>
+              </tbody>
+            </table>
+           </form> 
+		   <div id="editit" style="display:none;width:100%;">
+		   <table>
+			 <input type="hidden" id="itemid" size="30" class="msgtext" style="width:80%;" >
+			<div> 姓名：<input type="text" id="itemitem" name="itemitem" size="30" class="msgtext" style="width:70%;" ></div>
+			<div> 排序：<input type="text" id="itemrank" name="itemrank" size="30" class="msgtext" style="width:70%;" ></div>
+			<div>票数：	<input type="radio" name="countadd" checked="checked" id="countadd" value="up" /><label style="display:inline" for="countadd"> 加票</label>
+						<input type="text" id="itemvcount" value="0" name="itemvcount" size="30" class="msgtext" style="width:40%;" >
+						<input type="radio" name="countadd"  id="countzz" value="down" /><label style = "display:inline" for="countzz">减票</label>
+			</div>
+			 <div>电话：<input type="text" id="itemtourl" name="itemtourl" size="30" class="msgtext" style="width:70%;" ></div>
+			 <div>简介：<input type="text" id="itemintro" name="itemintro" size="30" class="msgtext" style="width:70%;" ></div>
+			<div> 照片1：<input type="text" id="itemstartpicurl" name="itemstartpicurl" size="30" class="msgtext" style="width:50%;" >
+					<a href="#" onclick="upyunPicUpload('itemstartpicurl',700,400,'{iMicms:$token}')" class="btn btn-primary btn_submit  J_ajax_submit_btn">上传</a> 
+					<a href="#" onclick="viewImg('itemstartpicurl')">预览</a></div>
+
+					<div> 照片2：<input type="text" id="itemstartpicurl2" name="itemstartpicurl2" size="30" class="msgtext" style="width:50%;" >
+					<a href="#" onclick="upyunPicUpload('itemstartpicurl2',700,400,'{iMicms:$token}')" class="btn btn-primary btn_submit  J_ajax_submit_btn">上传</a> 
+					<a href="#" onclick="viewImg('itemstartpicurl2')">预览</a></div>
+
+					<div> 照片3：<input type="text" id="itemstartpicurl3" name="itemstartpicurl3" size="30" class="msgtext" style="width:50%;" >
+					<a href="#" onclick="upyunPicUpload('itemstartpicurl3',700,400,'{iMicms:$token}')" class="btn btn-primary btn_submit  J_ajax_submit_btn">上传</a> 
+					<a href="#" onclick="viewImg('itemstartpicurl3')">预览</a></div>
+
+					<div> 照片4：<input type="text" id="itemstartpicurl4" name="itemstartpicurl4" size="30" class="msgtext" style="width:50%;" >
+					<a href="#" onclick="upyunPicUpload('itemstartpicurl4',700,400,'{iMicms:$token}')" class="btn btn-primary btn_submit  J_ajax_submit_btn">上传</a> 
+					<a href="#" onclick="viewImg('itemstartpicurl4')">预览</a></div>
+		   </table>
+		   </div>
+		   
+		   	<div id="addit" style="display:none;width:100%;">
+			<table>
+			 <div> 姓名：<input type="text" id="additem" size="30" class="msgtext" style="width:70%;" ></div>
+			 <div> 排序：<input type="text" id="addrank" size="30" class="msgtext" style="width:70%;" ></div>
+			<div>票数：<input type="text" id="addvcount" size="30" class="msgtext" style="width:70%;" ></div>
+			 <div>电话： <input type="text" id="addtourl" size="30" class="msgtext" style="width:70%;" ></div>
+			 <div>简介： <input type="text" id="addintro" size="30" class="msgtext" style="width:70%;" ></div>
+			<div> 照片1： <input type="text" id="addstartpicurl" id="addstartpicurl" size="30" class="msgtext" style="width:50%;" >
+					<a href="#" onclick="upyunPicUpload('addstartpicurl',700,400,'{iMicms:$token}')" class="btn btn-primary btn_submit  J_ajax_submit_btn">上传</a> 
+					<a href="#" onclick="viewImg('addstartpicurl')">预览</a></div>
+					<div> 照片2： <input type="text" id="addstartpicurl2" id="addstartpicurl2" size="30" class="msgtext" style="width:50%;" >
+					<a href="#" onclick="upyunPicUpload('addstartpicurl2',700,400,'{iMicms:$token}')" class="btn btn-primary btn_submit  J_ajax_submit_btn">上传</a> 
+					<a href="#" onclick="viewImg('addstartpicurl2')">预览</a></div>
+					<div> 照片3： <input type="text" id="addstartpicurl3" id="addstartpicurl3" size="30" class="msgtext" style="width:50%;" >
+					<a href="#" onclick="upyunPicUpload('addstartpicurl3',700,400,'{iMicms:$token}')" class="btn btn-primary btn_submit  J_ajax_submit_btn">上传</a> 
+					<a href="#" onclick="viewImg('addstartpicurl3')">预览</a></div>
+					<div> 照片4： <input type="text" id="addstartpicurl4" id="addstartpicurl4" size="30" class="msgtext" style="width:50%;" >
+					<a href="#" onclick="upyunPicUpload('addstartpicurl4',700,400,'{iMicms:$token}')" class="btn btn-primary btn_submit  J_ajax_submit_btn">上传</a> 
+					<a href="#" onclick="viewImg('addstartpicurl4')">预览</a></div>
+			
+			</table>
+			</div>
+		<div style="clear:both"></div>
+		<div class="linkp">{iMicms:$page}</div>
+	<script type="text/javascript">
+	$(document).ready(function(){
+
+		});
+	function thisedit(id){
+	var thisitem = $("#item_"+id);
+	$("#itemid").val(thisitem.children("td").eq(0).text());
+	$("#itemitem").val(thisitem.children("td").eq(1).text());
+	$("#itemrank").val(thisitem.children("td").eq(2).text());
+	$("#itemtourl").val(thisitem.children("td").eq(4).text());
+	$("#itemintro").val(thisitem.children("td").eq(6).text());
+	$("#itemstartpicurl").val(thisitem.children("td").eq(7).children("img").attr("src"));
+	$("#itemstartpicurl2").val(thisitem.children("td").eq(8).children("img").attr("src"));
+	$("#itemstartpicurl3").val(thisitem.children("td").eq(9).children("img").attr("src"));
+	$("#itemstartpicurl4").val(thisitem.children("td").eq(10).children("img").attr("src"));
+	
+	$("#editit").dialog(
+		{
+		modal: true,
+		title:"投票选项管理",
+		width:400,
+		buttons: {
+			"确定": function() {
+			var id = $("#itemid").val();
+			var item = $("#itemitem").val();
+			var rank = $("#itemrank").val();
+			var vcount = $("#itemvcount").val();
+			var vtype  =$('input[name="countadd"]:checked').val();
+			var tourl = $("#itemtourl").val();
+			var intro = $("#itemintro").val();
+			var startpicurl = $("#itemstartpicurl").val();
+			var startpicurl2 = $("#itemstartpicurl2").val();
+			var startpicurl3 = $("#itemstartpicurl3").val();
+			var startpicurl4 = $("#itemstartpicurl4").val();
+
+			
+			var submitData={
+				id  : id,
+				item : item,
+				rank : rank,
+				vcount : vcount,
+				vtype : vtype,
+				tourl : tourl,
+				intro :intro,
+				startpicurl : startpicurl,
+				startpicurl2 : startpicurl2,
+				startpicurl3 : startpicurl3,
+				startpicurl4 : startpicurl4
+			};		
+			$.post('index.php?g=User&m=Vote&a=eitem_vote', submitData, function(bakcdata) 
+			{
+					var obj=eval('('+bakcdata+')');
+						if(obj.success == 1)
+							{
+								alert(obj.msg);
+								parent.location="javascript:location.reload()";
+								return 0;
+							}
+						else
+							{
+								alert(obj.msg);
+								return false;
+							}  
+				});
+				$(this).dialog('close');
+			},
+			"取消": function() {
+				$(this).dialog('close');
+			}
+		}
+		});
+	}
+	function dooow(objsp) {
+   var obj = {id:objsp}
+   var statu = confirm("确定要删除该选项么?");
+     if(statu){
+        $.post("{iMicms::U('Vote/del_tab')}", obj,function(data) {
+		parent.location="javascript:location.reload()";
+		},"json");
+}
+	}
+	
+	function additem(){
+	
+	$("#addit").dialog(
+		{
+		modal: true,
+		title:"添加新选手",
+		width:400,
+		buttons: {
+			"添加": function() {
+			var item = $("#additem").val();
+			var rank = $("#addrank").val();
+			var vcount = $("#addvcount").val();
+			var tourl = $("#addtourl").val();
+			var intro = $("#addintro").val();
+			var startpicurl = $("#addstartpicurl").val();
+			var startpicurl2 = $("#addstartpicurl2").val();
+			var startpicurl3 = $("#addstartpicurl3").val();
+			var startpicurl4 = $("#addstartpicurl4").val();
+			
+			var submitData={
+				vid  : {iMicms:$vid},
+				item : item,
+				rank : rank,
+				vcount : vcount,
+				tourl : tourl,
+				intro : intro,
+				startpicurl : startpicurl,
+				startpicurl2 : startpicurl2,
+				startpicurl3 : startpicurl3,
+				startpicurl4 : startpicurl4
+			};		
+			$.post('index.php?g=User&m=Vote&a=eitem_add', submitData, function(bakcdata) 
+			{
+					var obj=eval('('+bakcdata+')');
+						if(obj.success == 1)
+							{
+								alert(obj.msg);
+								parent.location="javascript:location.reload()";
+								return 0;
+							}
+						else
+							{
+								alert(obj.msg);
+								return false;
+							}  
+				});
+				$(this).dialog('close');
+			},
+			"取消": function() {
+				$(this).dialog('close');
+			}
+		}
+		});
+	}
+	
+ 
+
+ </script>
+   </div> 
+          <div class="cLine">
+            <div class="pageNavigator right">
+                 <div class="pages"></div>
+              </div>
+            <div class="clr"></div>
+          </div>
+  </div>
+<include file="Public:footer"/>

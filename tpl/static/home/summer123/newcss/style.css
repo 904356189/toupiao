@@ -1,0 +1,64 @@
+@charset "UTF-8";
+
+input,button{border:1px solid #DDD;font-size:13px;margin:0;height:auto}
+a{color:#6B7985;text-decoration:none;outline:none}
+a:hover{color:#084b91;text-decoration:none}
+fieldset{border-width:1px 0 0 0;border-style:solid;padding:0 10px 0 18px;border-color:#bebec0}
+legend{padding:0 5px;font-size:12px;font-weight:bold}span{display:inline-block;*display:inline;*zoom:1}h1,h2,h3,h4,h5,h6{margin:0;padding:0;font-weight:normal;color:#6b7985;line-height:1}h1{font-size:40px}h2{font-size:30px}h3{font-size:25px}h4{font-size:20px}h5{font-size:15px}h6{font-size:13px}ul{list-style:none;margin:0;padding:0}ul li{line-height:1}
+
+.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden}.clearfix{display:inline-table}*html
+.clearfix{height:1%}.clearfix{display:block}*+html
+.clearfix{min-height:1%}
+
+
+.btn01{color:#fff; background:#000000; display:block; width:100px; margin:20px auto; font-size:16px; font-weight:bold; letter-spacing:3px; height:35px; line-height:35px; text-align:center;}
+.btn02{color:#fff; background:#CC00FF; display:block; width:100px; margin:20px auto; font-size:16px; font-weight:bold; letter-spacing:3px; height:35px; line-height:35px; text-align:center;}
+.btn03{color:#fff; background:#66CC33; display:block; width:100px; margin:20px auto; font-size:16px; font-weight:bold; letter-spacing:3px; height:35px; line-height:35px; text-align:center;}
+
+
+
+/* modal */
+.modal-backdrop{position:fixed;top:0;right:0;bottom:0;left:0;z-index:1040;background-color:#000000;opacity:0.6;filter:alpha(opacity=60)}
+.modal{position:fixed;top:50%;left:50%;z-index:1050;width:560px;margin:-250px 0 0 -280px;background-color:#ffffff;border:1px solid #999;border:1px solid rgba(0,0,0,0.3);*border:1px solid #999;-webkit-border-radius:6px;-moz-border-radius:6px;border-radius:6px;outline:none;-webkit-box-shadow:0 3px 7px rgba(0,0,0,0.3);-moz-box-shadow:0 3px 7px rgba(0,0,0,0.3);box-shadow:0 3px 7px rgba(0,0,0,0.3);-webkit-background-clip:padding-box;-moz-background-clip:padding-box;background-clip:padding-box}
+
+
+.close{cursor:pointer;padding:2px 3px;cursor:pointer;padding:2px 3px;position:absolute;right:10px;top:14px}
+.close:hover{background-color:grey;color:#ffffff}
+
+.button-blue{display:block;float:left;padding:5px 0;width:80px;margin-right:10px;color:#fff;background:#407acc;text-align:center;cursor:pointer}
+.button-blue:hover{background:#084b91;text-decoration:none;color:#ffffff}
+
+.button-grey{display:block;float:left;padding:5px 0;width:80px;color:#fff;background:#ccc;text-align:center;cursor:pointer}
+.button-grey:hover{background:#aaa;text-decoration:none}
+
+
+.login-form .form-arrow,.signup-form .form-arrow,.forgot-form .form-arrow{display:block;width:30px;height:15px;background:url(/static/img/arrow.png?2013033000) no-repeat;position:absolute;left:95px;top:-15px}
+.login-form input,.signup-form input,.forgot-form input{padding:9px 9px 9px 9px;margin-bottom:20px;width:94%}
+.login-form .forgot,.login-form .login,.login-form .reg,.signup-form .forgot,.signup-form .login,.signup-form .reg,.forgot-form .forgot,.forgot-form .login,.forgot-form .reg{width:302px;padding:0;margin:0 0 10px 0;height:35px;font-size:18px;cursor:pointer}
+.login-form label.remember,.signup-form label.remember,.forgot-form label.remember{font-size:13px}
+.login-form input[type="checkbox"],.signup-form input[type="checkbox"],.forgot-form input[type="checkbox"]{width:auto;height:auto;padding:0;margin:3px 5px 0 0}
+.login-form a.forgot,.signup-form a.forgot,.forgot-form a.forgot{font-size:13px;float:right;margin-top:2px;width:auto;cursor:pointer}
+.login-form p.error,.signup-form p.error,.forgot-form p.error{font-size:13px;margin-bottom:5px;color:#b22d2d}
+#signup-modal,#login-modal,#forgetform,.modal{display:none;width:300px;padding:0 40px 20px;background:white;border:5px solid rgba(0,0,0,0.2);margin-left:-190px;border-radius:10px;overflow:hidden;margin-bottom:40px;box-shadow:0 1px 0 white inset;margin-top:-267px}
+#signup-modal a:hover,#login-modal a:hover,#forgetform a:hover,.modal a:hover{text-decoration:none}
+.modal h1,#forgetform h1,#signup-modal h1,#login-modal h1{margin:0 -40px;background:#EEE;border-bottom:1px solid #CCC;border-top:1px solid #CCC;font-size:16px;padding:13px 40px;border-top-left-radius:6px;border-top-right-radius:6px;text-align:center;margin-bottom:30px}
+.modal .close,#signup-modal .close,#login-modal .close,#forgetform .close{position:absolute;top:0;right:0;padding:12px 18px 16px 18px;height:16px;overflow:hidden;opacity:.8;border-left:1px solid #BBB}
+.forgot-btn,.login-btn{display:inline-block;*display:inline;*zoom:1;margin-top:14px;color:#ffffff}
+
+.share{text-align:left;overflow:hidden;display:block !important;height:16px !important;line-height:16px !important;padding-left:20px !important;background:url(../img/v2/share.png) no-repeat left;cursor:pointer;float:right}
+.share:hover{opacity:0.8}
+.share.weibo{background-position:0px -96px}
+.share.qq{background-position:0px -64px}
+.share.douban{background-position:0px -560px}
+.share.renren{background-position:0px -160px}
+.third-parties{display:none}
+.login-bind-tp{margin:-5px 0 30px 0}
+.login-bind-tp em{padding:1px 8px}
+.login-bind-tp li{border-radius:5px;margin-bottom:10px;cursor:pointer}
+.login-bind-tp li a{text-align:center;display:block;color:white;padding:12px 30px 12px 0}
+.login-bind-tp .qweibo{background-color:#3671d2;border:1px solid #136ac1;border-radius:3px;margin:10px 0 25px;box-shadow:0 1px 0 rgba(255,255,255,0.25) inset;text-shadow:0 1px 0 #1a64bf;cursor:pointer;text-align:left;background-color:#369ad2}
+.login-bind-tp .qweibo em{background:url(/static/img/tp/qq_logo.png) no-repeat}
+.login-bind-tp .sina{background-color:#b9e6eb;border:1px solid #c12f13;border-radius:3px;margin:10px 0 25px;box-shadow:0 1px 0 rgba(255,255,255,0.25) inset;text-shadow:0 1px 0 #921414;cursor:pointer;text-align:left;background-color:#d6514b}
+.login-bind-tp .sina em{background:url(/static/img/tp/sina_logo.png) no-repeat}
+.login-bind-tp .douban{border:1px solid #54c113;border-radius:3px;margin:10px 0 25px;box-shadow:0 1px 0 rgba(255,255,255,0.25) inset;text-shadow:0 1px 0 #921414;text-align:left;background-color:#41a41a}
+.login-bind-tp .douban em{background:url(/static/img/tp/douban_logo.png) no-repeat}

@@ -1,0 +1,86 @@
+@charset "UTF-8";
+.content{
+margin-left:0;
+}
+section .list ul{
+overflow: hidden;
+_zoom: 1;
+padding-bottom: 10px;
+border-bottom: 1px dashed #CCC;
+margin-bottom: 15px;
+}
+section.list ul li{
+float: left;
+display: inline;
+width: 190px;
+margin-top: -1px;
+text-align: center;
+padding-top: 10px;
+padding-right: 4px;
+padding-bottom: 10px;
+padding-left: 4px;
+}
+ul{list-style-type:none; }
+.operators {
+width: 180px;
+border: 1px solid #d8d8d8;
+text-align: center;
+background: url(../images/company_list_bg.png) repeat-x 0 bottom;
+}
+.operators .pic {
+text-align: center;
+vertical-align: middle;
+margin: 4px auto;
+width: 130px;
+height: 150px;
+overflow:hidden
+}
+.operators .pic img {
+vertical-align: middle;
+text-align: center;
+margin: 0 auto;}
+.operators dt {
+height: 2em;
+}
+.operators dd {
+line-height: 26px;
+border-top: 1px solid #fff;
+}
+.operators dd span {
+font-weight: bold;
+color: #cc0000;
+}
+/*.top{height: 26px;
+  text-align:center;
+background: url(box_tit_bg.png) ;
+}*/
+.top span{height: 32px;
+  text-align:center;
+  margin-top: 5px;
+  font-size:18px;
+}
+.pxbtn{
+padding:0px;
+margin:0px;
+font-size:14px;
+margin:0 auto 10px auto;
+width:90%;
+}
+ .sm{padding:10px;}
+ .sm .f14{font-size:14px;}
+ .sm p{font-size:12px;color:#666;line-height:24px;}
+.sm img{max-width:100%;display:block}
+	.title{
+		margin-top: 0px; margin-bottom: 0px; 
+		white-space: normal; max-width: 100%; min-height: 1.5em; 
+		padding: 5px 3px; line-height: 2em; color: rgb(255, 255, 255); font-family: 微软雅黑; 
+		border-top-left-radius: 10px; border-top-right-radius: 10px; border-bottom-left-radius: 0px; 
+		text-align: center; background-color: #f9cbb4; word-wrap: break-word !important; box-sizing: border-box !important;
+		font-size:16px; !important; font-weight:bold !important;
+		}
+	.box{
+		white-space: normal; max-width: 100%; color: rgb(62, 62, 62); margin: 0px; padding: 5px; 
+		line-height: 24px; border: 3px dashed rgb(243, 173, 13); font-family: 微软雅黑; border-image-source: none; 
+		background-color: rgb(255, 255, 255); word-wrap: break-word !important; box-sizing: border-box !important;
+		<strong style="max-width: 100%; word-wrap: break-word !important; box-sizing: border-box !important;">
+}

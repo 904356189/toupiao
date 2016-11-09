@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" /> 
+<meta name="keywords" content="{iMicms::C('keyword')}" />
+<meta name="description" content="{iMicms::C('content')}" /> 
+<link rel="stylesheet" type="text/css" href="{iMicms::RES}/css/vote/bootstrap_min.css" media="all" />
+<link rel="stylesheet" type="text/css" href="{iMicms::RES}/css/vote/bootstrap_responsive_min.css" media="all" />
+<link rel="stylesheet" type="text/css" href="{iMicms::RES}/css/vote/sstyle.css" media="all" />
+<link rel="stylesheet" type="text/css" href="{iMicms::RES}/css/vote/todc_bootstrap.css" media="all" />
+<link rel="stylesheet" type="text/css" href="{iMicms::RES}/css/vote/themes.css" media="all" />
+<link rel="stylesheet" type="text/css" href="{iMicms::RES}/css/vote/inside.css" media="all" />
+<script type="text/javascript" src="{iMicms::RES}/js/jQuery.js"></script>
+<script type="text/javascript" src="{iMicms::RES}/js/bootstrap_min.js"></script>
+<script type="text/javascript" src="{iMicms::RES}/js/inside.js"></script>
+<title>{iMicms::C('site_name')}-{iMicms::C('site_title')}</title>
+<link rel="shortcut icon" href="/tpl/static/favicon.ico" />
+    <!--[if lte IE 9]><script src="{iMicms::RES}/js/watermark.js"></script><![endif]-->
+	<!--[if IE 7]><link href="{iMicms::RES}/css/vote/font_awesome_ie7.css" rel="stylesheet" /><![endif]-->
+</head>
+<body>
+	<body>
+    <div id="main">
+        <div class="container-fluid">
+
+            <div class="row-fluid">
+                <div class="span12">
+
+                    <div class="box">
+                        <div class="box-title">
+                            <div class="span8">
+                                <h3><i class="icon-table"></i>投票管理 </h3>
+                            </div>
+                            <div class="span4">
+                                <form action="/Weactivity/Vote" method="get" class="form-horizontal">
+                                    <input type="text" id="keyword-input" name="keywords" class="input-small-z" placeholder="请输入关键词" data-rule-required="true" />
+                                    <input type="hidden" name="aid" id="aid" value="1990">
+                                    <button class="btn">查询</button>
+                                </form>
+                            </div>
+                        </div>
+
+                        <div class="box-content">
+
+                            <div class="row-fluid">
+                                <div class="span12 control-group">
+                                    <div class="span7">
+                                        <a class="btn" href="/Weactivity/AddVote?pid=1990&type=1"><i class="icon-file-text-alt"></i>发起文字投票</a>
+                                        <a class="btn" href="/Weactivity/AddVote?pid=1990&type=2"><i class="icon-picture"></i>发起图片投票</a>
+                                        <a class="btn" href="javascript:location.reload()"><i class="icon-refresh"></i>刷新</a>
+                                    </div>
+                                    <div class="span4 datatabletool">
+                                        <a class="btn" attr="BatchDel" title="删除"><i class="icon-trash"></i>删除</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row-fluid dataTables_wrapper">
+                                <form action="/plus/formajax.php" method="post" class="form-horizontal">
+
+
+
+
+                                    <table id="listTable" class="table table-bordered table-hover  dataTable">
+                                        <thead>
+                                            <tr>
+                                                <th class='with-checkbox'>
+                                                    <input type="checkbox" class="check_all" /></th>
+                                                <th>关键词</th>
+                                                <th>标题</th>
+                                                <th>类型</th>
+                                                <th class="time">开始时间</th>
+                                                <th class="time">结束时间</th>
+                                                <th>外链代码</th>
+                                                <th class="norightborder">操作</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr></tr>
+                                                                                        <tr>
+                                                <td class="with-checkbox">
+                                                    <input type="checkbox" name="check" value="208" /></td>
+                                                <td>牛奶 面包</td>
+                                                <td>牛奶和面包，谁更好</td>
+                                                <td>文字投票</td>
+                                                <td>2013-09-07</td>
+                                                <td>2013-09-14</td>
+                                                <td>文字投票208</td>
+                                                <td><a href="/Weactivity/VoteResult?id=208&pid=1990" class="btn" rel="tooltip" title="投票结果"><i class="icon-search"></i></a>
+                                                    <a class="btn" rel="tooltip" href="/Weactivity/UpdateVote?id=208&pid=1990&type=1" title="编辑"><i class="icon-edit"></i></a>
+                                                    <a class="btn" title="结束活动" href="javascript:drop_confirm('你确定要结束活动吗，结束后不可再开启本活动! ', '/Weactivity/UpVote?pid=1990&id=208&state=2');"><i class="icon-stop"></i></a>                                                    <a class="btn" rel="tooltip" href="javascript:drop_confirm('您确定要删除吗?', '/Weactivity/DelVote?id=208&pid=1990');" title="删除"><i class="icon-remove"></i></a>
+
+                                                </td>
+
+                                            </tr>
+                                                                                    </tbody>
+                                    </table>
+                                </form>
+                                 <div class="dataTables_paginate paging_full_numbers"><span>       </span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+<script>
+
+$(function(){
+	$("[attr='BatchDel']").click(function(){
+		var check = $("input:checked");
+		if(check.length<1){
+			alert('请选择删除项');
+			return false;
+		}
+		var id = new Array();
+		check.each(function(i){
+			id[i] = $(this).val();
+		});
+
+		$.post('/Weactivity/DelVoteBatch', {tid:id, aid:$('#aid').val()},function(data){
+			if (data.errno ==0)
+			{
+				location.reload();
+			} else {
+				alert(data.error);
+			}
+
+
+		},'json');
+
+	});
+});
+</script>
+<script>
+function drop_confirm(msg, url){
+    if(confirm(msg)){
+        window.location = url;
+    }
+}
+</script></body>
+</html>

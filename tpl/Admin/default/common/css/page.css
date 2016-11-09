@@ -1,0 +1,31 @@
+/*登录边框*/
+.loginBox{width:359px;margin:95px auto 20px;}
+	.top, .bottom{height:5px; _overflow:hidden; }
+	.top .tl{ float:left; width:5px; height:5px; background:url(http://img1.youxinpai.com/image/chengxp/experience/topL.gif) no-repeat 0 0;_margin-right:-5px;}
+	.top .tr{ float:right; width:5px; height:5px; background:url(http://img1.youxinpai.com/image/chengxp/experience/topR.gif) no-repeat 0 0; _margin-left:-5px;}
+	.top .t{ margin:0 5px; background:url(http://img1.youxinpai.com/image/chengxp/experience/bg_t.gif) repeat-x 0 0; height:5px;_margin_left:-3px; }
+	.bottom .bl{ float:left; width:5px; height:5px; background:url(http://img1.youxinpai.com/image/chengxp/experience/bottomL.gif) no-repeat 0 0;_margin-right:-5px;}
+	.bottom .br{ float:right; width:5px; height:5px; background:url(http://img1.youxinpai.com/image/chengxp/experience/bottomR.gif) no-repeat 0 0;_margin-left:-5px;}
+	.bottom .b{ margin:0 5px; background:url(http://img1.youxinpai.com/image/chengxp/experience/bg_b.gif) repeat-x 0 0; height:5px; }
+	.content{height:288px; background:url(http://img1.youxinpai.com/image/chengxp/experience/bg_content.gif) repeat-x 0 0;border-left:1px solid #99b7d2; border-right:1px solid #99b7d2;}
+
+/*表单内容*/
+.myform fieldset{overflow:hidden;}
+.myform fieldset legend{padding-top:14px; padding-left:33px;height:36px;}
+.myform fieldset p{margin-top:15px;margin-left:33px;height:35px;width:324px}
+.myform fieldset p.error{color:red;text-align:left;padding-left:33px;margin-top:5px;margin-left:0;height:20px;}
+	.username_input,.ps_input{display:inline;padding-left:13px;margin:0;height:33px;width:276px;border:solid 1px #d2d9dc;border-radius:2px;overflow:hidden;}
+	.username_input{background:#fff url(http://img1.youxinpai.com/image/chengxp/experience/user_bg.gif) no-repeat 256px center;}
+	.ps_input{background:#fff url(http://img1.youxinpai.com/image/chengxp/experience/ps_bg.gif) no-repeat 256px center;}
+	.chk_input{padding-left:13px;background-color:#fff;width:103px;height:33px;vertical-align:middle;border:solid 1px #d2d9dc;border-radius:2px;}
+	.chk_img{display:inline-block;margin-left:5px;padding:0px 10px 14px 0px;vertical-align:middle;width:51px;height:14px;line-height:33px;background-color:#fff;border:solid 1px #d2d9dc;}
+	.chk_txt{display:inline-block;margin-left:5px;color:#386693;height:33px;line-height:33px;}
+	.subBtn{cursor:pointer;margin-top:18px;margin-left:33px;background:url(http://img1.youxinpai.com/image/chengxp/experience/ty_button.gif) no-repeat 0 0;border:0;height:33px;width:290px;}
+/*表单获取焦点样式*/
+	.inputFocus{border:solid 1px #b7d4ea;}
+
+/*阴影样式*/
+.shadeImg{height:15px;width:388px;margin:0 auto 60px;}
+
+/*shade*/
+.shade {background: none repeat scroll 0 0 #333;height: 100%;left: 0;opacity: 0.7;filter:alpha(opacity=70);position: absolute;top: 0;width: 100%;z-index: 100;}

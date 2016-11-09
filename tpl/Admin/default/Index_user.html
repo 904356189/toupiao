@@ -1,0 +1,69 @@
+<include file="header" />
+
+<include file="Public:header" />
+
+<div id="content">
+	
+	<div class="container">
+		
+		<div class="row">
+			
+			<include file="Public:left" />
+				
+			<div class="span9">
+
+				<div class="widget widget-table">
+										
+					<div class="widget-header">
+						<i class="icon-th-list"></i>
+						<h3>用户管理 >> 管理员中心>>  管理员</h3>
+					</div> <!-- /widget-header -->
+					
+					<div class="widget-content">
+						<!--<include file="common:public" />-->
+			            <table class="table table-striped table-bordered" style="margin-top:10px;" id="set_table">
+						  <tr>
+							<td width="70">ID</td>
+							<td width="150">用户名称</td>
+							
+							<td width="100">最后登录IP</td>
+							
+							<td width="150">最后登录时间</td>
+							
+							<td width="150">管理操作</td>
+						  </tr>
+						    <volist name="list" id="vo">
+								<tr>
+									<td align='center'>{iMicms:$vo.id}</td>
+									<td >{iMicms:$vo.username}</td>
+									<td >{iMicms:$vo.login_ip}</td>
+									<td >{iMicms:$vo.login_date}</td>
+									
+									<td align='center'>
+										<a href="{iMicms::U('Index/useredit',array('id'=>$vo['id']))}">修改</a>
+										 <!-- <eq name="vo.username" value="admin"><font color="#cccccc">删除</font><else/><a href="javascript:void(0)" onclick="return confirmurl('{iMicms::U('User/del/',array('id'=>$vo['id']))}','确定删除该用户吗?')">删除</a></eq> -->
+									</td>
+								</tr>
+						    </volist>
+					     <tr bgcolor="#FFFFFF"> 
+					      <td colspan="9"><div class="listpage">{iMicms:$page}</div></td>
+					    </tr>
+			            </table>				
+					
+					</div> <!-- /widget-content -->
+					
+				</div> <!-- /widget -->
+			
+			</div> <!-- /span9 -->
+			
+			
+		</div> <!-- /row -->
+		
+	</div> <!-- /container -->
+	
+</div> <!-- /content -->
+					
+	
+<include file="Public:footer" />
+
+<include file="footer" />

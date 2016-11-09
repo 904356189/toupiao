@@ -1,0 +1,148 @@
+<include file="Public:head"/>
+<link rel="stylesheet" type="text/css" href="./tpl/User/default/common/css/cymain.css" />
+<div class="content">
+         
+          <div class="cLineB">
+              <h4 class="left">"{iMicms:$thisLottery.title}"SN码发放管理</h4>
+                  <div>
+         
+          <a href="{iMicms::U('User/Lottery/index')}" class="right btn btn-primary btn_submit  J_ajax_submit_btn" style="margin-top:-7px">返回</a>
+          
+          </div>
+              <div class="clr"></div> 
+          </div>
+        
+  <div class="cLineB">
+            本次活动奖品总数：<span class="redamount">{iMicms:$datacount}</span>个　　　中奖人数：<span class="redamount">{iMicms:$recordcount} </span>个　　已发奖品：<span class="redamount">{iMicms:$sendCount}</span>个          </div>
+            <div class="ftip" style="margin:0 auto">导出Excel后把Excel表格中的手机号等列弄宽一点就会显示真正完整的手机号等信息
+    </div>
+            <div style="margin-top:20px;"><!-- <a href="###" onclick="$('#import').css('display','')" class="btnGrayS vm">导入SN码</a> -->&nbsp;&nbsp;<a href="?g=User&m=Lottery&a=exportSN&id={iMicms:$thisLottery.id}" class="btnGrayS vm">导出中奖数据</a>&nbsp;&nbsp;<!-- <a href="/tpl/User/default/common/images/sndemo.xls" class="btnGrayS vm">下载导入Excel模板</a></div>
+             <div style="margin-top:20px;display:none" id="import"><form enctype="multipart/form-data" action="?g=User&m=Upyun&a=localUploadSNExcel" id="thumbForm" method="POST" style="font-size:14px;padding:10px 20px 10px 0px;"><div>选择本地文件：<input type="file" style="width:250px;border:1px solid #ddd" name="photo"></input> <input id="submitbtn" name="doSubmit" type="submit" class="btnGreen" value="上传" onclick="this.value='上传中...'"></input> <a href="###" onclick="$('#import').css('display','none')" class="btnGrayS vm">取消导入</a> 注意：不支持xlsx格式</div><input type="hidden" value="{iMicms:$thisLottery.id}" name="lid" /></form> --></div>
+  <div class="cLine" style=" padding: 8px 0">
+          </div>
+          <div class="msgWrap">
+          <form method="post"  action="" id="info" >
+          <input name="delall"  type="hidden" value="" />
+           <input name="wxid"  type="hidden" value="" />
+            <TABLE class="ListProduct" border="0" cellSpacing="0" cellPadding="0" width="100%">
+              <THEAD>
+                <TR style="text-align: center;">
+					<TH class="select">序号</TH>
+					<TH>SN码(中奖号)</TH>
+					<TH>奖项</TH>
+					<TH>是否已发奖品</TH>
+					<TH>奖品发送时间</TH>
+					 
+					<TH>手机号</TH>
+					<TH>微信号</TH>
+					<TH  >参与时间</TH>
+					<TH  >操作</TH>
+                </TR>
+				
+              </THEAD>
+              <TBODY>
+				<volist name="record" id="record">
+					 <TR style="line-height:30px;height: 43px;line-height: 59px;">
+						<td class="select">{iMicms:$i}</td>
+						<td>
+							<?php if($record['sn'] == null){?>
+							未中奖
+							<?php }else{?>
+							{iMicms:$record.sn}
+							<?php }?>
+						</td>
+						<td>
+							<?php if($record['sn'] == null){?>
+							未中奖
+							<?php }else{?>
+							{iMicms:$record.prize}
+							<?php }?>
+						</td>
+						 <td>
+              <if condition="$record['sendstutas'] eq 0">否<else/>是</if>
+            </td>
+            <td><if condition="$record['sendtime'] eq 0"> <else/>{iMicms:$record.sendtime|date='Y-m-d H:i:s',###}</if>
+            </td>
+						<td>
+							<?php if($phone[$record['id']] == null){?>
+							{iMicms:$record.phone}
+							<?php }else{
+									echo $phone[$record['id']];
+								  }
+							?>
+							
+						</td>
+						<td>{iMicms:$record.wecha_name}</td>
+						<td><if condition="$record['time'] neq 0"> {iMicms:$record.time|date='Y-m-d H:i:s',###}</if></td>
+						<td>
+               <if condition="$record['sendstutas'] eq 0"> 
+				<?php if($record['sn'] == null){?>
+				未中奖
+				<?php }else{?>
+                <a href="index.php?g=User&m=Lottery&a=sendprize&id={iMicms:$record.id}">发奖</a>
+				<?php }?>
+              <else/>
+               <a href="index.php?g=User&m=Lottery&a=sendnull&id={iMicms:$record.id}">取消发奖</a>
+              </if> <a href="javascript:drop_confirm('您确定要删除吗?', '{iMicms::U('Lottery/snDelete',array('token'=>$token,'id'=>$record['id']))}');">删除</a>
+             
+            </td>
+					</TR>
+				</volist>
+			  </TBODY>
+            </TABLE>
+           </form> 
+           <script>
+   function checkvotethis() {
+var aa=document.getElementsByName('del_id[]');
+var mnum = aa.length;
+j=0;
+for(i=0;i<mnum;i++){
+if(aa[i].checked){
+j++;
+}
+}
+if(j>0) {
+document.getElementById('info').submit();
+} else {
+alert('未选中任何文章或回复！')
+}
+}
+
+   </script>
+          </div>
+            
+ 
+          <div class="cLine">
+            <div class="pageNavigator right">
+                 <div class="pages">{iMicms:$page}</div>
+              </div>
+            <div class="clr"></div>
+          </div>
+        </div>
+
+        <div class="clr"></div>
+      </div>
+    </div>
+  </div>
+  <script>
+
+function checkAll(form, name) {
+for(var i = 0; i < form.elements.length; i++) {
+var e = form.elements[i];
+if(e.name.match(name)) {
+e.checked = form.elements['chkall'].checked;
+}
+}
+}
+
+function changesort(tid,sortval){
+
+var image=new Image();   
+image.src='index.php?ac=app&op=sort&wxid=gh_423dwjkewad&tid='+tid+'&sort='+sortval+'&r='+Math.random(); 
+
+}
+  </script>
+  <!--底部-->
+  	</div>
+<include file="Public:footer"/>
+        

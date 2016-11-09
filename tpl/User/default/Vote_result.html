@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="keywords" content="{iMicms::C('keyword')}" />
+<meta name="description" content="{iMicms::C('content')}" />  
+<link rel="stylesheet" type="text/css" href="{iMicms::RES}/css/vote/bootstrap_min.css?2013-9-13-2" media="all" />
+<link rel="stylesheet" type="text/css" href="{iMicms::RES}/css/vote/bootstrap_responsive_min.css?2013-9-13-2" media="all" />
+<link rel="stylesheet" type="text/css" href="{iMicms::RES}/css/vote/sstyle.css?2013-9-13-2" media="all" />
+<link rel="stylesheet" type="text/css" href="{iMicms::RES}/css/vote/themes.css?2013-9-13-2" media="all" />
+<link rel="stylesheet" type="text/css" href="{iMicms::RES}/css/vote/inside.css?2013-9-13-2" media="all" />
+<script type="text/javascript" src="{iMicms::RES}/js/jQuery.js?2013-9-13-2"></script>
+<script type="text/javascript" src="{iMicms::RES}/js/bootstrap_min.js?2013-9-13-2"></script>
+<script type="text/javascript" src="{iMicms::RES}/js/inside.js?2013-9-13-2"></script>
+<title>{iMicms::C('site_name')}-{iMicms::C('site_title')}</title>
+<link rel="shortcut icon" href="/tpl/static/favicon.ico" />
+    <!--[if lte IE 9]><script src="{iMicms::RES}/js/watermark.js"></script><![endif]-->
+	<!--[if IE 7]><link href="{iMicms::RES}/css/vote/font_awesome_ie7.css" rel="stylesheet" /><![endif]-->
+</head>
+<body>
+	<body>
+    <div id="main">
+        <div class="container-fluid">
+            <div class="row-fluid">
+                <div class="span12">
+                    <div class="box">
+                        <div class="box-title">
+                            <div class="span10">
+                                <h3><i class="icon-edit"></i>投票结果</h3>
+                            </div>
+                            <div class="span2"><a class="btn" href="Javascript:window.history.go(-1)">返回</a></div>
+                        </div>
+                        <div class="box-content">
+                            
+                            <div class="span6">
+                                <h5>{iMicms:$info.title}</h5>
+                                 <p> <if condition="$info.is_radio eq 1">单选投票，<else/>多选投票，最多可以选择{iMicms:$info.select_num}项，</if>共有{iMicms:$Total}个投票</p>
+                                 
+                     <volist name="list" id="vo" key="b">
+				 <strong>{iMicms:$vo.vtitle}</strong><span class="pull-right"><php>echo number_format($vo['num']*100/$Total,2);</php>%({iMicms:$vo.num}票)</span>
+                                <div class="progress {iMicms:$bar[$b]}">
+                                    <div class="bar" style="width: {iMicms:$vo['num']*100/$Total}%;"></div>
+                                </div>
+                              </volist>  
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</body>
+</html>

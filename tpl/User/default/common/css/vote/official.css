@@ -1,0 +1,280 @@
+﻿.deltw:hover {
+    background: url(../img/xx_hover.gif) no-repeat;
+}
+/* 图文分类 */
+.board {
+    background: url("../img/bg_repno.gif") no-repeat scroll 0 0 transparent;
+    padding-left: 55px;
+}
+
+.cateimg {
+    position: relative;
+    float: left;
+}
+
+    .cateimg .cateimg_small {
+        width: 50px;
+    }
+
+    .cateimg:hover .cateimg_big {
+        display: block;
+    }
+
+    .cateimg .cateimg_big {
+        position: absolute;
+        left: 51px;
+        top: 0px;
+        display: none;
+        width: 320px;
+    }
+
+#tagContent li {
+    position: relative;
+}
+
+.cateradio {
+    padding-top: 20px;
+}
+
+    .cateradio li {
+        float: left;
+        margin: 0 0 20px 20px;
+        width: 170px;
+        height: 383px;
+        text-align: center;
+        background: url(../img/radio_iphone0.png) no-repeat center top;
+        position: relative;
+    }
+
+        .cateradio li:hover {
+            background: url(../img/radio_iphone.png) no-repeat center top;
+        }
+
+        .cateradio li:active {
+            background: url(../img/radio_iphone.png) no-repeat center top;
+        }
+
+        .cateradio li.active {
+            background: url(../img/radio_iphone.png) no-repeat center top;
+        }
+
+li .mbtip {
+    display: none;
+}
+
+li:hover .mbtip {
+    position: absolute;
+    top: 60px;
+    right: -100px;
+    display: block;
+    width: 90px;
+    padding: 6px;
+    background-color: #000;
+    color: #FFF;
+    border-radius: 7px;
+    text-align: left;
+    border: 1px solid rgba(0,0,0,0.15);
+    -moz-box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.15);
+    z-index: 999;
+}
+
+
+.cateradio2 {
+    padding-top: 20px;
+}
+
+    .cateradio2 li {
+        float: left;
+        margin: 0 0 20px 20px;
+        width: 170px;
+        height: 383px;
+        text-align: center;
+        background: url(../img/radio_iphone0.png) no-repeat center top;
+    }
+
+        .cateradio2 li:hover {
+            background: url(../img/radio_iphone.png) no-repeat center top;
+        }
+
+        .cateradio2 li:active {
+            background: url(../img/radio_iphone.png) no-repeat center top;
+        }
+
+        .cateradio2 li.active {
+            background: url(../img/radio_iphone.png) no-repeat center top;
+        }
+
+.cateradio3 {
+    padding-top: 20px;
+}
+
+    .cateradio3 li {
+        float: left;
+        margin: 0 0 20px 20px;
+        width: 170px;
+        height: 383px;
+        text-align: center;
+        background: url(../img/radio_iphone0.png) no-repeat center top;
+    }
+
+        .cateradio3 li:hover {
+            background: url(../img/radio_iphone.png) no-repeat center top;
+        }
+
+        .cateradio3 li:active {
+            background: url(../img/radio_iphone.png) no-repeat center top;
+        }
+
+        .cateradio3 li.active {
+            background: url(../img/radio_iphone.png) no-repeat center top;
+        }
+
+
+.msgWrap fieldset {
+    background-color: #f8f8f8;
+    margin-top: 10px;
+    border-radius: 0 5px 5px 5px;
+    -webkit-border-radius: 0 5px 5px 5px;
+    -moz-border-radius: 0 5px 5px;
+}
+
+    .msgWrap fieldset label img {
+        margin-bottom: 10px;
+    }
+
+    .msgWrap fieldset legend {
+        background-color: #f8f8f8;
+        color: #C18E06;
+        display: block;
+        font-size: 14px;
+        margin: 0 0 0 -1px;
+        padding: 10px 20px 10px 10px;
+        border-radius: 5px 5px 0 0;
+        -webkit-border-radius: 5px 5px 0 0;
+        -moz-border-radius: 5px 5px 0 0;
+    }
+
+.tagContent fieldset {
+    margin-top: 0;
+    background-color: #EEEEEE;
+}
+
+#tags {
+    MARGIN: 15px 0 0 0;
+    WIDTH: 990px;
+    PADDING-TOP: 0px;
+    HEIGHT: 40px;
+}
+
+    #tags LI {
+        BACKGROUND: url(../img/tagleft.gif) no-repeat left bottom;
+        FLOAT: left;
+        MARGIN-RIGHT: 3px;
+        LIST-STYLE-TYPE: none;
+        HEIGHT: 40px;
+    }
+
+        #tags LI A {
+            PADDING: 0 20px;
+            BACKGROUND: url(../img/tagright.gif) no-repeat right bottom;
+            FLOAT: left;
+            COLOR: #999;
+            LINE-HEIGHT: 40px;
+            HEIGHT: 40px;
+            TEXT-DECORATION: none;
+            font-size: 16px;
+        }
+
+        #tags LI.emptyTag {
+            BACKGROUND: none transparent scroll repeat 0% 0%;
+            WIDTH: 4px;
+        }
+
+        #tags LI.selectTag {
+            BACKGROUND-POSITION: left top;
+            MARGIN-BOTTOM: -2px;
+            POSITION: relative;
+            HEIGHT: 40px;
+        }
+
+            #tags LI.selectTag A {
+                BACKGROUND-POSITION: right top;
+                COLOR: #000;
+                LINE-HEIGHT: 40px;
+                HEIGHT: 40px;
+            }
+
+#tagContent {
+    display: block;
+}
+
+.tagContent {
+    DISPLAY: none;
+}
+
+#tagContent DIV.selectTag {
+    DISPLAY: block;
+}
+
+.cateradio4 {
+    padding: 20px;
+}
+
+    .cateradio4 h3 {
+        font-size: 16px;
+        color: #333333;
+    }
+
+.samsung-render {
+    background: url(../img/samsung-render.jpg) no-repeat;
+    width: 368px;
+    height: 480px;
+    padding: 146px 0 0 24px;
+}
+
+.iframe-iphone {
+    height: 406px;
+    overflow: hidden;
+    width: 322px;
+}
+
+.cateradio4 li {
+    background-color: #F5F5F5;
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+    .cateradio4 li label {
+        display: block;
+        font-size: 12px;
+        padding: 10px;
+    }
+
+.zujianContent {
+    padding: 40px;
+}
+
+    .zujianContent h3 {
+        font-size: 16px;
+        color: #333333;
+    }
+
+    .zujianContent li {
+        background-color: #F5F5F5;
+        float: left;
+        font-size: 14px;
+        line-height: 26px;
+        margin: 10px 10px 10px 0;
+        width: 260px;
+        -moz-border-radius: 6px;
+        -webkit-border-radius: 6px;
+        border-radius: 6px;
+    }
+
+        .zujianContent li label {
+            font-size: 12px;
+            padding: 20px 10px 20px 20px;
+            display: block;
+        }

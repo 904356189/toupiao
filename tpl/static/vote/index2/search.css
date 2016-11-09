@@ -1,0 +1,32 @@
+@charset "gb2312";
+/* CSS Document */
+@import url("common.css");
+
+.main{
+  width:100%; height:80px; background:#ffd5ab; -moz-box-shadow:4px 4px 3px rgba(20%,20%,40%,0.3); -webkit-box-shadow:4px 4px 3px rgba(20%,20%,40%,0.3); box-shadow:0px 4px 3px rgba(20%,20%,40%,0.3);
+}
+
+.so_main{
+  width:90%; height:80px; margin:0px auto;
+}
+
+.li_ipt{
+  width:78%; height:59px; padding-top:21px; float:left;
+}
+
+.input_text{
+  width:89%; height:28px; padding:2px 8px; font-size:16px; color:#c2c2c2; border-radius:6px; border:2px solid #da8f44; background-image:-webkit-linear-gradient(top,#ffffff 0,#efefef 100%); background-image:linear-gradient(to bottom,#ffffff 0,#efefef 100%);
+}
+
+.li_btn{
+  width:22%; height:59px; padding-top:21px; float:left;
+}
+
+.btn {
+  padding:6px 15px; margin-bottom:0; font-weight:normal; line-height:1.428571429; white-space:nowrap; vertical-align:middle; color:#ffd5ab; font-size:16px; text-align:center; border-radius:6px; border:#9c2d1f solid 1px; background:#b13a2a;
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select:none;
+  -o-user-select:none;
+  user-select:none;
+}

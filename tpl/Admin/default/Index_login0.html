@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>{iMicms::C('site_name')}</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />    
+    
+  <link href="style/css/style2.css" rel="stylesheet" type="text/css" />
+<script language="JavaScript" src="style/js/jquery1.6.js"></script>
+<script src="style/js/cloud.js" type="text/javascript"></script>
+
+<script language="javascript">
+	$(function(){
+    $('.loginbox').css({'position':'absolute','left':($(window).width()-692)/2});
+	$(window).resize(function(){  
+    $('.loginbox').css({'position':'absolute','left':($(window).width()-692)/2});
+    })  
+});  
+</script> 
+<style>
+html{
+overflow:hidden}
+</style>
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="{iMicms::RES}/js/html5.css"></script>
+    <![endif]-->
+	
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /></head>
+
+<body style="background-color:#1c77ac; background-image:url(style/images/img/light.png); background-repeat:no-repeat; background-position:center top; overflow:hidden;">
+
+<form action="index.php?g=Admin&m=Index&a=dologin" method="post"  style="background:url(style/images/img/ybg.png) center center no-repeat"/>
+
+    <div id="mainBody">
+      <div id="cloud1" class="cloud"></div>
+      <div id="cloud2" class="cloud"></div>
+    </div>  
+
+
+<div class="logintop" style="position:fixed">    
+    <span>欢迎登录微信分销后台</span>    
+    <ul>
+    <li><a href="http://fx.weiapp.cc/m/">回首页</a></li>
+   
+    </ul>    
+    </div>
+    
+    <div class="loginbody">
+    
+    <span class="systemlogo"></span> 
+       
+    <div class="loginbox">
+    
+    <ul style="margin-top:75px; float:left  ">
+    <li style="margin-bottom:15px;"><span>用户名：</span><input type="text" name="user" id="user" value="" class="loginuser uname" /></li>
+    <li style="margin-bottom:15px;"><span>密　码：</span>	<input type="password" name="password" id="password" value="" class="loginpwd pass" />
+	</li>
+	 
+    
+	<li><input value="Login" type="submit" class="btn btn-warning btn-large" class="loginbtn login_button" style="float:left; margin-left:60px; display:inline"  style="width:383px; value="登录" ">
+	<span style=" color:#FF0000; padding-left:10px;" class="error_msg"></span>
+	</li>
+    </ul>
+    
+    
+    </div>
+    
+    </div>
+    
+    
+    
+    <div class="loginbm" style="left:0; position:fixed">版权所有© 2016　微信分销后台管理系统 </div>
+	</form>
+  <script type="text/javascript">
+$('.login_button').click(function(){
+	submit_data(this);
+});
+	
+//回车键提交
+document.onkeypress=function(e)
+{
+	　　var code;
+	　　if  (!e)
+	　　{
+	　　		var e=window.event;
+	　　}
+	　　if(e.keyCode)
+	　　{
+	　　		code=e.keyCode;
+	　　}
+	　　else if(e.which)
+	　　{
+	　　		code   =   e.which;
+	　　}
+	　　if(code==13) //回车键
+	　　{
+			submit_data();
+	　　}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+<!-- Le javascript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="{iMicms::RES}/js/jquery-1.7.2.min.js"></script>
+
+
+<script src="{iMicms::RES}/js/bootstrap.js"></script>
+
+  </body>
+</html>

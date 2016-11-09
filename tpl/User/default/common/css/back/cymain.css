@@ -1,0 +1,26 @@
+.tab {height: 35px; margin:10px 0 0 0;background:#eee;border-bottom: 1px solid #d7dde6;}
+.tab ul{ height: 35px;}
+
+.tab ul li{ float:left; height:30px; border: 1px solid #d7dde6; background: #f6f6f6; font-size: 14px; line-height: 30px; margin: 4px 0 0 10px; display: inline; cursor: pointer; white-space: nowrap ;  padding:0 18px}
+.tab ul li.current{ background:#fff; font-weight:bold; line-height:28px; border-bottom:none; height:31px;padding:0 18px; cursor:default;}
+.tab ul li.last{border:none; margin-left:50px; background:none;}
+
+.oper{margin:20px 0; background:#f9fcff}
+.oper a{height:18px; line-height:18px; margin: 0 20px 0 0; font-size:14px}
+a.back{background:url(/tpl/User/default/common/images/icons/arrow_redo.png) no-repeat; padding:2px 0 2px 20px}
+a.add{background:url(/tpl/User/default/common/images/icons/add.png) no-repeat; padding:0px 0 0px 20px}
+a.taxis{background:url(/tpl/User/default/common/images/icons/arrow_switch.png) no-repeat; padding:2px 0 2px 20px}
+a.delete{background:url(/tpl/User/default/common/images/icons/cross.png) no-repeat; padding:2px 0 2px 20px}
+a.recommend{background:url(/tpl/User/default/common/images/icons/layers.png) no-repeat; padding:2px 0 2px 20px}
+a.excel{background:url(/tpl/User/default/common/images/icons/page_excel.png) no-repeat; padding:2px 0 2px 20px}
+a.handle{background:url(/tpl/User/default/common/images/icons/folder_database.png) no-repeat; padding:2px 0 2px 20px}
+a.transfer{background:url(/tpl/User/default/common/images/icons/arrow_redo.png) no-repeat; padding:2px 0 2px 20px}
+a.mp{background:url(/tpl/User/default/common/images/icons/phone.png) no-repeat; padding:2px 0 2px 20px}
+a.help{background:url(/tpl/User/default/common/images/icons/help.png) no-repeat; padding:2px 0 2px 20px}
+a.grade{background:url(/tpl/User/default/common/images/icons/photocat.gif) no-repeat; padding:2px 0 2px 20px}
+
+input.error,textarea.error{ border:1px solid #f00; } label.error,option.error{ color:#f00; } 
+
+.ftip{background:#fefbe4 url(/tpl/User/default/common/images/icons/lightbulb.gif) no-repeat 10px 16px;border:1px solid #F3ECB9;padding:6px 20px 6px 36px;height:36px;font-size:14px; margin:10px; color:#993300; line-height:36px;}
+.ftip a{font-size:12px; float:right}
+.ftip a.normal{font-size:14px; float:none}
